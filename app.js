@@ -6,9 +6,9 @@
 const trips = [
   {
     id: 0,
-    image: 'pictures/R.jpg',
+    image: 'pictures/como lago bellagio.jpg',
     image2: 'pictures/things-to-do-in-lake-como-in-october.jpg',
-    image3: 'pictures/ambiente-suggestivo-e.jpg',
+    image3: 'pictures/como brunate.jpg',
     badge: 'Popular',
     en: {
       name: 'Bellagio & the Villages',
@@ -34,8 +34,8 @@ const trips = [
   {
     id: 1,
     image: 'pictures/things-to-do-in-lake-como-in-october.jpg',
-    image2: 'pictures/R.jpg',
-    image3: 'pictures/ambiente-suggestivo-e.jpg',
+    image2: 'pictures/Como Lago menaggio.jpg',
+    image3: 'pictures/orrido bellano.jpg',
     badge: 'Top Rated',
     en: {
       name: 'Varenna & Menaggio',
@@ -60,9 +60,9 @@ const trips = [
   },
   {
     id: 2,
-    image: 'pictures/istockphoto-1407114590-170667a.jpg',
-    image2: 'pictures/como-cathedral-jeremy-voisey.jpg',
-    image3: 'pictures/Como-From-Above.jpg',
+    image: 'pictures/como duomo.jpg',
+    image2: 'pictures/duomo como 2.jpg',
+    image3: 'pictures/como brunate.jpg',
     badge: 'Guided',
     en: {
       name: 'Como City & Silk Heritage',
@@ -87,9 +87,9 @@ const trips = [
   },
   {
     id: 3,
-    image: 'pictures/ambiente-suggestivo-e.jpg',
-    image2: 'pictures/Como-From-Above.jpg',
-    image3: 'pictures/R.jpg',
+    image: 'pictures/como brunate.jpg',
+    image2: 'pictures/como lago bellagio.jpg',
+    image3: 'pictures/como duomo.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Lugano & Switzerland Day',
@@ -115,8 +115,8 @@ const trips = [
   {
     id: 4,
     image: 'pictures/milan.jpg',
-    image2: 'pictures/Como-From-Above.jpg',
-    image3: 'pictures/R.jpg',
+    image2: 'pictures/como brunate.jpg',
+    image3: 'pictures/como duomo.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Milan Fashion & Culture Day',
@@ -141,9 +141,9 @@ const trips = [
   },
   {
     id: 5,
-    image: 'pictures/R.jpg',
-    image2: 'pictures/things-to-do-in-lake-como-in-october.jpg',
-    image3: 'pictures/ambiente-suggestivo-e.jpg',
+    image: 'pictures/orrido bellano.jpg',
+    image2: 'pictures/como lago bellagio.jpg',
+    image3: 'pictures/things-to-do-in-lake-como-in-october.jpg',
     badge: 'Half Day',
     en: {
       name: 'Villa del Balbianello Tour',
@@ -168,9 +168,9 @@ const trips = [
   },
   {
     id: 6,
-    image: 'pictures/image_processing20190719-4-1u3whr0.jpg',
-    image2: 'pictures/Como-From-Above.jpg',
-    image3: 'pictures/como-cathedral-jeremy-voisey.jpg',
+    image: 'pictures/bergamo citta alta 2.jpeg',
+    image2: 'pictures/como brunate.jpg',
+    image3: 'pictures/como duomo.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Bergamo Alta: Walled City',
@@ -195,9 +195,9 @@ const trips = [
   },
   {
     id: 7,
-    image: 'pictures/things-to-do-in-lake-como-in-october.jpg',
-    image2: 'pictures/R.jpg',
-    image3: 'pictures/ambiente-suggestivo-e.jpg',
+    image: 'pictures/como lago bellagio.jpg',
+    image2: 'pictures/Como Lago menaggio.jpg',
+    image3: 'pictures/things-to-do-in-lake-como-in-october.jpg',
     badge: 'Scenic',
     en: {
       name: 'Stresa & Lake Maggiore',
@@ -222,9 +222,9 @@ const trips = [
   },
   {
     id: 8,
-    image: 'pictures/ambiente-suggestivo-e.jpg',
-    image2: 'pictures/R.jpg',
-    image3: 'pictures/things-to-do-in-lake-como-in-october.jpg',
+    image: 'pictures/duomo como 2.jpg',
+    image2: 'pictures/como brunate.jpg',
+    image3: 'pictures/como lago bellagio.jpg',
     badge: 'Sunset',
     en: {
       name: 'Sunset & Aperitivo Drive',
@@ -249,9 +249,9 @@ const trips = [
   },
   {
     id: 9,
-    image: 'pictures/como-cathedral-jeremy-voisey.jpg',
-    image2: 'pictures/istockphoto-1407114590-170667a.jpg',
-    image3: 'pictures/R.jpg',
+    image: 'pictures/Como Lago menaggio.jpg',
+    image2: 'pictures/como lago bellagio.jpg',
+    image3: 'pictures/orrido bellano.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Tremezzo & Villa Carlotta',
@@ -303,8 +303,8 @@ const trips = [
   },
   {
     id: 11,
-    image: 'pictures/Como-From-Above.jpg',
-    image2: 'pictures/ambiente-suggestivo-e.jpg',
+    image: 'pictures/como brunate.jpg',
+    image2: 'pictures/Como Lago menaggio.jpg',
     image3: 'pictures/things-to-do-in-lake-como-in-october.jpg',
     badge: 'Day Trip',
     en: {
