@@ -366,25 +366,26 @@ function applyLanguage() {
     el.innerHTML = isEn ? el.dataset.en : (el.dataset.th || el.dataset.en);
   });
 
-  // Flag button active states (navbar + mobile)
-  ['langBtnEN','langBtnEN2'].forEach(id => {
+  // Flag button active states (navbar only — mobile-util removed)
+  ['langBtnEN'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.toggle('active-flag', isEn);
   });
-  ['langBtnTH','langBtnTH2'].forEach(id => {
+  ['langBtnTH'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.toggle('active-flag', !isEn);
   });
 
   const cfg = messengerConfig[currentLang];
 
-  // Topbar chat button
-  const topbarHref  = document.getElementById('topbarMessenger');
-  const topbarIcon  = document.getElementById('topbarChatIcon');
-  const topbarLabel = document.getElementById('topbarChatLabel');
-  if (topbarHref)  topbarHref.href = cfg.href;
-  if (topbarIcon)  topbarIcon.className = cfg.iconClass;
-  if (topbarLabel) topbarLabel.textContent = cfg.label;
+  // Navbar messenger icon (icon-only, update href + icon + tooltip)
+  const topbarHref = document.getElementById('topbarMessenger');
+  const topbarIcon = document.getElementById('topbarChatIcon');
+  if (topbarHref) {
+    topbarHref.href  = cfg.href;
+    topbarHref.title = cfg.label;
+  }
+  if (topbarIcon) topbarIcon.className = cfg.iconClass;
 
   // Contact section
   const cHref  = document.getElementById('contactMessenger');
@@ -407,16 +408,6 @@ function applyLanguage() {
   if (fHref)  fHref.href = cfg.href;
   if (fIcon)  fIcon.className = cfg.iconClass;
   if (fLabel) fLabel.textContent = cfg.label;
-
-  // Mobile chat button
-  const mBtn = document.getElementById('mobileChatBtn');
-  if (mBtn) {
-    mBtn.href = cfg.href;
-    const mIcon = mBtn.querySelector('i');
-    const mLabel = mBtn.querySelector('span');
-    if (mIcon)  mIcon.className = cfg.iconClass;
-    if (mLabel) mLabel.textContent = cfg.label;
-  }
 
   // Re-render cards so names are in the right language
   renderMosaic();

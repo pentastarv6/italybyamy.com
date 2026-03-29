@@ -61,15 +61,20 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .nav-inner{display:flex;align-items:center;gap:.8rem;max-width:var(--max);margin:0 auto;padding:.6rem 1.5rem}
 .brand{display:flex;align-items:center;gap:.4rem;color:var(--text);flex-shrink:0}
 /* Lang flags — styled for white navbar */
+.nav-utility{display:flex;align-items:center;gap:.25rem;flex-shrink:0;margin-left:.5rem}
+.nav-social-btn{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;font-size:1.15rem;color:var(--text-m);transition:color var(--trans),background var(--trans);text-decoration:none;flex-shrink:0}
+.nav-social-btn:hover{background:var(--grey)}
+.nav-social-btn:hover .fa-instagram{color:#E1306C}
+.nav-social-btn:hover .fa-facebook{color:#1877F2}
+.nav-social-btn:hover .fa-whatsapp{color:#25D366}
+.nav-social-btn:hover .fa-line{color:#06C755}
+.nav-messenger{color:var(--green)}
+.nav-divider{width:1px;height:20px;background:var(--border);margin:0 .2rem;flex-shrink:0}
 .lang-flags{display:flex;align-items:center;gap:.3rem;flex-shrink:0}
 .lang-flag-btn{background:none;border:2px solid transparent;padding:.1rem .15rem;border-radius:4px;cursor:pointer;opacity:.5;transition:opacity var(--trans),border-color var(--trans);line-height:0;flex-shrink:0}
 .lang-flag-btn:hover{opacity:1}
 .lang-flag-btn.active-flag{opacity:1;border-color:var(--green)}
-.lang-flag-btn img{display:block;width:22px;height:auto;border-radius:2px}
-/* Messenger button in navbar */
-.nav-chat-btn{display:inline-flex;align-items:center;gap:.35rem;background:var(--green);color:#fff;padding:.4rem .85rem;border-radius:20px;font-size:.78rem;font-weight:600;transition:background var(--trans);white-space:nowrap;flex-shrink:0}
-.nav-chat-btn:hover{background:var(--green-l)}
-.nav-chat-btn .fa-brands{font-size:.95rem;line-height:1}
+.lang-flag-btn img{display:block;width:28px;height:auto;border-radius:2px}
 .brand{display:flex;align-items:center;gap:.4rem;color:var(--text)}
 .brand-text{display:flex;flex-direction:column;line-height:1.1}
 .brand-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--text);letter-spacing:-.01em}
@@ -86,7 +91,6 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .mobile-menu a{font-size:.9rem;font-weight:500;color:var(--text);padding:.6rem 0;border-bottom:1px solid #f0f0f0}
 .mobile-menu .mobile-cta{background:var(--green);color:#fff;padding:.6rem 1.2rem;border-radius:6px;text-align:center;margin-top:.5rem;border:none;font-weight:600}
 .mobile-menu.open{display:flex}
-.mobile-util{display:flex;align-items:center;gap:.8rem;padding:.7rem 0;border-bottom:1px solid #f0f0f0}
 
 /* =========================================================
    HERO � full height, image bg, text left, search bar bottom
@@ -291,7 +295,6 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
   .deals-row{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:960px){
-  .nav-chat-btn span{display:none}
   .features-inner{grid-template-columns:repeat(2,1fr)}
   .mosaic-grid{grid-template-columns:1fr 1fr;grid-template-rows:260px 200px}
   .mosaic-card:first-child{grid-column:1/2;grid-row:1/3}
@@ -304,6 +307,8 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 @media(max-width:768px){
   .nav-links,.nav-actions{display:none}
   .hamburger{display:block}
+  .nav-social-btn{width:30px;height:30px;font-size:1.05rem}
+  .lang-flag-btn img{width:24px}
   .hero-search-inner{flex-direction:column;align-items:stretch}
   .search-divider{display:none}
   .search-field{padding:.5rem 0;border-bottom:1px solid var(--border)}

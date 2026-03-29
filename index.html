@@ -38,15 +38,20 @@
       <a href="#van" data-en="Our Vehicle" data-th="รถของเรา">Our Vehicle</a>
       <a href="#contact" data-en="Contact" data-th="ติดต่อ">Contact</a>
     </nav>
-    <div class="nav-actions">
-      <div class="lang-flags">
-        <button class="lang-flag-btn active-flag" id="langBtnEN" onclick="setLang('en')" title="English"><img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x" alt="EN" /></button>
-        <button class="lang-flag-btn" id="langBtnTH" onclick="setLang('th')" title="ภาษาไทย"><img src="https://flagcdn.com/w20/th.png" srcset="https://flagcdn.com/w40/th.png 2x" alt="TH" /></button>
-      </div>
-      <a id="topbarMessenger" href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener" class="nav-chat-btn">
+    <!-- Always-visible utility: socials + flags -->
+    <div class="nav-utility">
+      <a href="https://instagram.com/italybyamy" target="_blank" rel="noopener" class="nav-social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com/italybyamy" target="_blank" rel="noopener" class="nav-social-btn" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a id="topbarMessenger" href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener" class="nav-social-btn nav-messenger" title="WhatsApp Us">
         <i id="topbarChatIcon" class="fa-brands fa-whatsapp"></i>
-        <span id="topbarChatLabel" data-en="WhatsApp Us" data-th="Line หาเรา">WhatsApp Us</span>
       </a>
+      <div class="nav-divider"></div>
+      <div class="lang-flags">
+        <button class="lang-flag-btn active-flag" id="langBtnEN" onclick="setLang('en')" title="English"><img src="https://flagcdn.com/w28/gb.png" srcset="https://flagcdn.com/w56/gb.png 2x" alt="EN" /></button>
+        <button class="lang-flag-btn" id="langBtnTH" onclick="setLang('th')" title="ภาษาไทย"><img src="https://flagcdn.com/w28/th.png" srcset="https://flagcdn.com/w56/th.png 2x" alt="TH" /></button>
+      </div>
+    </div>
+    <div class="nav-actions">
       <a href="#contact" class="cta-btn" data-en="Book Now" data-th="จองเลย">Book Now</a>
     </div>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
@@ -57,16 +62,6 @@
     <a href="#services"    onclick="toggleMenu()" data-en="Transfers"       data-th="รถรับส่ง">Transfers</a>
     <a href="#van"         onclick="toggleMenu()" data-en="Our Vehicle"     data-th="รถของเรา">Our Vehicle</a>
     <a href="#contact"     onclick="toggleMenu()" data-en="Contact"         data-th="ติดต่อ">Contact</a>
-    <div class="mobile-util">
-      <div class="lang-flags">
-        <button class="lang-flag-btn active-flag" id="langBtnEN2" onclick="setLang('en')" title="English"><img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x" alt="EN" /></button>
-        <button class="lang-flag-btn" id="langBtnTH2" onclick="setLang('th')" title="ภาษาไทย"><img src="https://flagcdn.com/w20/th.png" srcset="https://flagcdn.com/w40/th.png 2x" alt="TH" /></button>
-      </div>
-      <a href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener" class="nav-chat-btn" id="mobileChatBtn">
-        <i class="fa-brands fa-whatsapp"></i>
-        <span data-en="WhatsApp Us" data-th="Line หาเรา">WhatsApp Us</span>
-      </a>
-    </div>
     <a href="#contact" onclick="toggleMenu()" class="mobile-cta" data-en="Book Now" data-th="จองเลย">Book Now</a>
   </div>
 </header>
