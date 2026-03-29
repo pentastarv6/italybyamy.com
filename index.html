@@ -17,6 +17,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -29,9 +30,12 @@
       <span class="topbar-email">✉️ hello@italybyamy.com</span>
     </div>
     <div class="topbar-right">
-      <button class="lang-btn" id="langToggle" onclick="toggleLang()">🇹🇭</button>
+      <div class="lang-flags">
+        <button class="lang-flag-btn active-flag" id="langBtnEN" onclick="setLang('en')" title="English"><img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x" alt="EN" /></button>
+        <button class="lang-flag-btn" id="langBtnTH" onclick="setLang('th')" title="ภาษาไทย"><img src="https://flagcdn.com/w20/th.png" srcset="https://flagcdn.com/w40/th.png 2x" alt="TH" /></button>
+      </div>
       <a id="topbarMessenger" href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener" class="topbar-chat">
-        <span id="topbarChatIcon">💬</span>
+        <i id="topbarChatIcon" class="fa-brands fa-whatsapp"></i>
         <span id="topbarChatLabel" data-en="WhatsApp Us" data-th="Line หาเรา">WhatsApp Us</span>
       </a>
     </div>
@@ -314,7 +318,7 @@
       <div class="contact-left">
         <div class="contact-cards contact-cards-vert">
           <a class="contact-card whatsapp-card" id="contactMessenger" href="https://wa.me/39XXXXXXXXXX?text=Hello%20Italy%20by%20Amy!" target="_blank" rel="noopener">
-            <div class="contact-icon" id="contactIcon">💬</div>
+            <div class="contact-icon"><i id="contactIcon" class="fa-brands fa-whatsapp"></i></div>
             <div>
               <strong id="contactLabel" data-en="Chat on WhatsApp" data-th="คุยผ่าน Line">Chat on WhatsApp</strong>
               <p id="contactSub" data-en="Quick replies · 7 days a week" data-th="ตอบกลับเร็ว · 7 วันต่อสัปดาห์">Quick replies · 7 days a week</p>
@@ -420,7 +424,7 @@
         <h4 data-en="Stay Connected" data-th="ติดตามเรา">Stay Connected</h4>
         <p data-en="Questions? We reply fast." data-th="มีคำถาม? เราตอบเร็ว">Questions? We reply fast.</p>
         <a id="footerMessenger" href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener" class="footer-chat-btn">
-          <span id="footerChatIcon">💬</span>
+          <i id="footerChatIcon" class="fa-brands fa-whatsapp"></i>
           <span id="footerChatLabel" data-en="WhatsApp Us" data-th="Line หาเรา">WhatsApp Us</span>
         </a>
         <p class="footer-lang" data-en="🇬🇧 English &amp; 🇹🇭 Thai support" data-th="🇬🇧 ภาษาอังกฤษ &amp; 🇹🇭 ภาษาไทย พร้อมให้บริการ">🇬🇧 English &amp; 🇹🇭 Thai support</p>

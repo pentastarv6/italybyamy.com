@@ -63,10 +63,14 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .topbar-email{display:none}
 @media(min-width:600px){.topbar-email{display:inline}}
 .topbar-right{display:flex;align-items:center;gap:.8rem}
-.lang-btn{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);color:#fff;padding:.3rem .8rem;border-radius:20px;font-size:.78rem;cursor:pointer;transition:background var(--trans);font-family:'Inter',sans-serif}
-.lang-btn:hover{background:rgba(255,255,255,.3)}
+.lang-flags{display:flex;align-items:center;gap:.35rem}
+.lang-flag-btn{background:none;border:2px solid transparent;padding:.1rem .15rem;border-radius:4px;cursor:pointer;opacity:.55;transition:opacity var(--trans),border-color var(--trans);line-height:0;flex-shrink:0}
+.lang-flag-btn:hover{opacity:1}
+.lang-flag-btn.active-flag{opacity:1;border-color:rgba(255,255,255,.7)}
+.lang-flag-btn img{display:block;width:22px;height:auto;border-radius:2px}
 .topbar-chat{display:flex;align-items:center;gap:.35rem;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:.3rem .8rem;border-radius:20px;color:#fff;font-size:.78rem;font-weight:500;transition:background var(--trans)}
 .topbar-chat:hover{background:rgba(255,255,255,.28)}
+.topbar-chat .fa-brands{font-size:1rem;line-height:1}
 
 /* =========================================================
    NAVBAR � always white/solid
@@ -247,7 +251,8 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .contact-cards-vert{display:flex;flex-direction:column;gap:.8rem;margin-bottom:1rem}
 .contact-card{background:#fff;border-radius:var(--radius-s);padding:1rem 1.2rem;display:flex;align-items:center;gap:.9rem;border:1px solid var(--border);transition:transform var(--trans),box-shadow var(--trans)}
 .contact-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.contact-icon{font-size:1.7rem;flex-shrink:0}
+.contact-icon{font-size:1.7rem;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.contact-icon .fa-brands{font-size:1.7rem;line-height:1}
 .contact-card strong{display:block;font-weight:600;font-size:.9rem;margin-bottom:.1rem}
 .contact-card p{font-size:.8rem;color:var(--text-m)}
 .whatsapp-card{border-left:4px solid #25D366;text-decoration:none;color:var(--text)}
@@ -280,6 +285,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .footer-brand-logo .brand-name{color:#fff;font-size:1.25rem}
 .footer-chat-btn{display:inline-flex;align-items:center;gap:.4rem;background:var(--green);color:#fff;padding:.5rem 1.1rem;border-radius:6px;font-size:.83rem;font-weight:600;transition:background var(--trans);width:fit-content}
 .footer-chat-btn:hover{background:var(--green-l)}
+.footer-chat-btn .fa-brands{font-size:1.05rem;line-height:1}
 .footer-bottom{background:rgba(0,0,0,.25);padding:1rem 1.5rem}
 .footer-bottom-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
 .footer-copy{font-size:.78rem;color:rgba(255,255,255,.35)}
@@ -334,3 +340,10 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 
 /* Line card */
 .line-card{border-left:4px solid #06C755!important;text-decoration:none;color:var(--text)}
+
+/* Inline FA icons in card meta */
+.mosaic-meta .fa-solid,.mosaic-meta .fa-regular,
+.deal-location .fa-solid,.deal-meta .fa-solid,.deal-meta .fa-regular,
+.trip-card-location .fa-solid,.trip-meta .fa-solid,.trip-meta .fa-regular,
+.modal-meta .fa-solid,.modal-meta .fa-regular,
+.highlight-item .fa-solid,.modal-includes .fa-solid{font-size:.78em;opacity:.7;vertical-align:middle;margin-right:.15em}
