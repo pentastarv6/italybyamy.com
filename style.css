@@ -1,19 +1,19 @@
 /* =========================================================
-   Italy by Amy — Style v2 (BookYourTravel-inspired layout)
+   Italy by Amy ï¿½ Style v2 (BookYourTravel-inspired layout)
    ========================================================= */
 
 :root {
-  --green:    #2e7d32;
-  --green-l:  #43a047;
-  --green-d:  #1b5e20;
-  --gold:     #c8973a;
-  --gold-l:   #f0b429;
-  --dark:     #1a1a2e;
+  --green:    #1a8abf;
+  --green-l:  #2ea7db;
+  --green-d:  #0f6594;
+  --gold:     #e8921e;
+  --gold-l:   #f5b322;
+  --dark:     #1a2035;
   --text:     #2d2d2d;
   --text-m:   #666;
-  --bg:       #f7f8fa;
+  --bg:       #fffcf7;
   --white:    #ffffff;
-  --grey:     #f0f2f4;
+  --grey:     #fef6ea;
   --border:   #e0e0e0;
   --radius:   12px;
   --radius-s: 8px;
@@ -37,7 +37,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 
 /* -- Buttons -- */
 .btn-primary,.btn-book{display:inline-block;background:var(--green);color:#fff;padding:.7rem 1.6rem;border-radius:6px;font-weight:600;font-size:.9rem;transition:background var(--trans),transform var(--trans),box-shadow var(--trans);border:none;cursor:pointer}
-.btn-primary:hover,.btn-book:hover{background:var(--green-l);transform:translateY(-2px);box-shadow:0 6px 20px rgba(46,125,50,.35)}
+.btn-primary:hover,.btn-book:hover{background:var(--green-l);transform:translateY(-2px);box-shadow:0 6px 20px rgba(26,138,191,.35)}
 .btn-book.full-width{width:100%;text-align:center;padding:.85rem;font-size:1rem}
 .btn-urgent{display:inline-block;background:#c0392b;color:#fff;padding:.7rem 1.6rem;border-radius:6px;font-weight:600;font-size:.9rem;transition:all var(--trans);border:none;cursor:pointer}
 .btn-urgent:hover{background:#e74c3c;transform:translateY(-2px)}
@@ -69,7 +69,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .topbar-chat:hover{background:rgba(255,255,255,.28)}
 
 /* =========================================================
-   NAVBAR — always white/solid
+   NAVBAR ï¿½ always white/solid
    ========================================================= */
 .navbar{position:sticky;top:0;left:0;right:0;z-index:1000;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.06)}
 .nav-inner{display:flex;align-items:center;gap:1.2rem;max-width:var(--max);margin:0 auto;padding:.75rem 1.5rem}
@@ -92,10 +92,10 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .mobile-menu.open{display:flex}
 
 /* =========================================================
-   HERO — full height, image bg, text left, search bar bottom
+   HERO ï¿½ full height, image bg, text left, search bar bottom
    ========================================================= */
-.hero{position:relative;min-height:88vh;display:flex;flex-direction:column;justify-content:center;background:url('https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1800&auto=format&fit=crop&q=80') center/cover no-repeat;overflow:visible}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(130deg,rgba(0,0,0,.62) 0%,rgba(0,0,0,.3) 60%,rgba(0,0,0,.08) 100%);pointer-events:none}
+.hero{position:relative;min-height:88vh;display:flex;flex-direction:column;justify-content:center;background:url('pictures/banner.png') center/cover no-repeat;overflow:visible}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(130deg,rgba(15,50,80,.45) 0%,rgba(10,35,60,.2) 55%,rgba(0,0,0,.04) 100%);pointer-events:none}
 .hero-content{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding:5rem 1.5rem 3rem;color:#fff;flex:1;display:flex;flex-direction:column;justify-content:center}
 .hero-eyebrow{font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l);margin-bottom:.8rem;font-weight:600;font-family:'Inter',sans-serif}
 .hero-content h1{margin-bottom:1rem;text-shadow:0 2px 16px rgba(0,0,0,.4);max-width:660px}
@@ -197,7 +197,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .modal-includes h3{font-family:'Inter',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:.6rem}
 .modal-includes ul{display:grid;grid-template-columns:1fr 1fr;gap:.35rem}
 .modal-includes li{font-size:.84rem;color:var(--text-m)}
-.modal-booking{background:#f0f7f0;border-radius:8px;padding:1.1rem 1.3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;border:1px solid #d4e8d4}
+.modal-booking{background:#e8f5fb;border-radius:8px;padding:1.1rem 1.3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;border:1px solid #b8ddf0}
 .modal-price{font-size:.97rem;font-weight:600;color:var(--green)}
 .modal-price-sub{font-size:.78rem;color:var(--text-m);margin-top:.15rem}
 .modal-cta{padding:.55rem 1.4rem;font-size:.88rem}
@@ -205,13 +205,13 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 /* =========================================================
    CTA BANNER
    ========================================================= */
-.cta-banner{background:var(--green-d);padding:3rem 1.5rem;text-align:center}
+.cta-banner{background:linear-gradient(135deg,#0f6594 0%,#1a8abf 50%,#e8921e 100%);padding:3rem 1.5rem;text-align:center}
 .cta-banner-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
 .cta-banner-text h2{color:#fff;font-size:clamp(1.4rem,2.5vw,2rem)}
 .cta-banner-text p{color:rgba(255,255,255,.75);margin-top:.5rem;font-size:.97rem}
 
 /* =========================================================
-   SERVICES — light background, side-by-side cards
+   SERVICES ï¿½ light background, side-by-side cards
    ========================================================= */
 .services-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem}
 .service-card-new{background:#fff;border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;box-shadow:var(--shadow);transition:box-shadow var(--trans)}
@@ -238,7 +238,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .van-text h2{margin-bottom:1rem}
 .van-text p{color:var(--text-m);font-size:.95rem;line-height:1.75;margin-bottom:1.5rem}
 .van-features-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
-.van-feature{display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text-m);background:#f0f7f0;border-radius:6px;padding:.5rem .8rem}
+.van-feature{display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text-m);background:#fef0d8;border-radius:6px;padding:.5rem .8rem}
 .van-feat-icon{font-size:1.1rem;flex-shrink:0}
 
 /* =========================================================
@@ -254,7 +254,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .whatsapp-card{border-left:4px solid #25D366;text-decoration:none;color:var(--text)}
 .email-card{border-left:4px solid #4285f4;text-decoration:none;color:var(--text)}
 .info-card{border-left:4px solid var(--gold)}
-.contact-info-box{background:#f0f7f0;border-radius:var(--radius-s);padding:1.2rem;border:1px solid #d4e8d4}
+.contact-info-box{background:#e8f5fb;border-radius:var(--radius-s);padding:1.2rem;border:1px solid #b8ddf0}
 .contact-info-box h3{font-family:'Inter',sans-serif;font-size:.9rem;font-weight:700;margin-bottom:.7rem;color:var(--green-d)}
 .contact-info-box li{font-size:.85rem;color:var(--text-m);padding:.25rem 0}
 /* Contact form */
@@ -264,12 +264,12 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .form-row label{font-size:.8rem;font-weight:600;color:var(--text)}
 .form-row.full{grid-column:1/-1}
 .contact-form input,.contact-form select,.contact-form textarea{border:1.5px solid var(--border);border-radius:6px;padding:.65rem .9rem;font-size:.9rem;font-family:'Inter',sans-serif;outline:none;transition:border-color var(--trans);background:#fff;color:var(--text);width:100%}
-.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(46,125,50,.1)}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(26,138,191,.1)}
 
 /* =========================================================
    FOOTER
    ========================================================= */
-.footer{background:var(--dark);color:rgba(255,255,255,.72)}
+.footer{background:#0d2a40;color:rgba(255,255,255,.72)}
 .footer-top{padding:3.5rem 1.5rem 2.5rem}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.5rem;max-width:var(--max);margin:0 auto}
 .footer-col{display:flex;flex-direction:column;gap:.6rem}
