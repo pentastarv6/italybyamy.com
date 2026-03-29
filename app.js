@@ -6,9 +6,9 @@
 const trips = [
   {
     id: 0,
-    image: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1579027989536-b7b1f875659b?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400&auto=format&fit=crop',
+    image: 'pictures/R.jpg',
+    image2: 'pictures/things-to-do-in-lake-como-in-october.jpg',
+    image3: 'pictures/ambiente-suggestivo-e.jpg',
     badge: 'Popular',
     en: {
       name: 'Bellagio & the Villages',
@@ -33,9 +33,9 @@ const trips = [
   },
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=400&auto=format&fit=crop',
+    image: 'pictures/things-to-do-in-lake-como-in-october.jpg',
+    image2: 'pictures/R.jpg',
+    image3: 'pictures/ambiente-suggestivo-e.jpg',
     badge: 'Top Rated',
     en: {
       name: 'Varenna & Menaggio',
@@ -60,9 +60,9 @@ const trips = [
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&auto=format&fit=crop',
+    image: 'pictures/istockphoto-1407114590-170667a.jpg',
+    image2: 'pictures/como-cathedral-jeremy-voisey.jpg',
+    image3: 'pictures/Como-From-Above.jpg',
     badge: 'Guided',
     en: {
       name: 'Como City & Silk Heritage',
@@ -87,9 +87,9 @@ const trips = [
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=400&auto=format&fit=crop',
+    image: 'pictures/ambiente-suggestivo-e.jpg',
+    image2: 'pictures/Como-From-Above.jpg',
+    image3: 'pictures/R.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Lugano & Switzerland Day',
@@ -114,9 +114,9 @@ const trips = [
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=400&auto=format&fit=crop',
+    image: 'pictures/milan.jpg',
+    image2: 'pictures/Como-From-Above.jpg',
+    image3: 'pictures/R.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Milan Fashion & Culture Day',
@@ -141,9 +141,9 @@ const trips = [
   },
   {
     id: 5,
-    image: 'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&auto=format&fit=crop&q=80&sat=-20',
-    image2: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=400&auto=format&fit=crop',
+    image: 'pictures/R.jpg',
+    image2: 'pictures/things-to-do-in-lake-como-in-october.jpg',
+    image3: 'pictures/ambiente-suggestivo-e.jpg',
     badge: 'Half Day',
     en: {
       name: 'Villa del Balbianello Tour',
@@ -168,9 +168,9 @@ const trips = [
   },
   {
     id: 6,
-    image: 'https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=400&auto=format&fit=crop',
+    image: 'pictures/image_processing20190719-4-1u3whr0.jpg',
+    image2: 'pictures/Como-From-Above.jpg',
+    image3: 'pictures/como-cathedral-jeremy-voisey.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Bergamo Alta: Walled City',
@@ -195,9 +195,9 @@ const trips = [
   },
   {
     id: 7,
-    image: 'https://images.unsplash.com/photo-1579027989536-b7b1f875659b?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&auto=format&fit=crop',
+    image: 'pictures/things-to-do-in-lake-como-in-october.jpg',
+    image2: 'pictures/R.jpg',
+    image3: 'pictures/ambiente-suggestivo-e.jpg',
     badge: 'Scenic',
     en: {
       name: 'Stresa & Lake Maggiore',
@@ -222,9 +222,9 @@ const trips = [
   },
   {
     id: 8,
-    image: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1579027989536-b7b1f875659b?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=400&auto=format&fit=crop',
+    image: 'pictures/ambiente-suggestivo-e.jpg',
+    image2: 'pictures/R.jpg',
+    image3: 'pictures/things-to-do-in-lake-como-in-october.jpg',
     badge: 'Sunset',
     en: {
       name: 'Sunset & Aperitivo Drive',
@@ -249,9 +249,9 @@ const trips = [
   },
   {
     id: 9,
-    image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&auto=format&fit=crop',
+    image: 'pictures/como-cathedral-jeremy-voisey.jpg',
+    image2: 'pictures/istockphoto-1407114590-170667a.jpg',
+    image3: 'pictures/R.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Tremezzo & Villa Carlotta',
@@ -276,9 +276,9 @@ const trips = [
   },
   {
     id: 10,
-    image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1579027989536-b7b1f875659b?w=400&auto=format&fit=crop',
+    image: 'pictures/arena verona.jpg',
+    image2: 'pictures/verona.jpg',
+    image3: 'pictures/verona 2.webp',
     badge: 'Day Trip',
     en: {
       name: 'Verona: Romeo & Juliet',
@@ -303,9 +303,9 @@ const trips = [
   },
   {
     id: 11,
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&auto=format&fit=crop',
-    image2: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&auto=format&fit=crop',
-    image3: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&auto=format&fit=crop',
+    image: 'pictures/Como-From-Above.jpg',
+    image2: 'pictures/ambiente-suggestivo-e.jpg',
+    image3: 'pictures/things-to-do-in-lake-como-in-october.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Ascona & Locarno, Switzerland',
@@ -364,7 +364,7 @@ function applyLanguage() {
 
   // Language toggle button label
   const btn = document.getElementById('langToggle');
-  if (btn) btn.textContent = isEn ? '???? Thai' : '???? English';
+  if (btn) btn.textContent = isEn ? '🇹🇭' : '🇬🇧';
 
   const cfg = messengerConfig[currentLang];
 

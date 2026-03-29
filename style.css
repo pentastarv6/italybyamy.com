@@ -73,10 +73,9 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
    ========================================================= */
 .navbar{position:sticky;top:0;left:0;right:0;z-index:1000;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.06)}
 .nav-inner{display:flex;align-items:center;gap:1.2rem;max-width:var(--max);margin:0 auto;padding:.75rem 1.5rem}
-.brand{display:flex;align-items:center;gap:.6rem;color:var(--text)}
-.brand-icon{font-size:1.5rem}
+.brand{display:flex;align-items:center;gap:.4rem;color:var(--text)}
 .brand-text{display:flex;flex-direction:column;line-height:1.1}
-.brand-name{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--text)}
+.brand-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--text);letter-spacing:-.01em}
 .brand-name em{font-style:italic;color:var(--green)}
 .brand-tagline{font-size:.7rem;color:var(--text-m);font-family:'Inter',sans-serif;letter-spacing:.03em}
 .nav-links{display:flex;gap:.2rem;margin-left:auto}
