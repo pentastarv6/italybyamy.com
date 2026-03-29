@@ -21,87 +21,164 @@
 </head>
 <body>
 
+<!-- ===== TOP UTILITY BAR ===== -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span>📍 <span data-en="Como, Lake Como — Italy" data-th="โคโม่ ทะเลสาบโคโม่ — อิตาลี">Como, Lake Como — Italy</span></span>
+      <span class="topbar-email">✉️ hello@italybyamy.com</span>
+    </div>
+    <div class="topbar-right">
+      <button class="lang-btn" id="langToggle" onclick="toggleLang()">🇹🇭 Thai</button>
+      <a id="topbarMessenger" href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener" class="topbar-chat">
+        <span id="topbarChatIcon">💬</span>
+        <span id="topbarChatLabel" data-en="WhatsApp Us" data-th="Line หาเรา">WhatsApp Us</span>
+      </a>
+    </div>
+  </div>
+</div>
+
 <!-- ===== NAVBAR ===== -->
 <header class="navbar" id="navbar">
   <div class="nav-inner">
     <a href="#" class="brand">
       <span class="brand-icon">🇮🇹</span>
-      <span class="brand-name">Italy <em>by Amy</em></span>
+      <div class="brand-text">
+        <span class="brand-name">Italy <em>by Amy</em></span>
+        <span class="brand-tagline" data-en="Private Tours · Lake Como" data-th="ทัวร์ส่วนตัว · ทะเลสาบโคโม่">Private Tours · Lake Como</span>
+      </div>
     </a>
     <nav class="nav-links">
-      <a href="#experiences" data-en="Experiences" data-th="ทริปโคโม่">Experiences</a>
-      <a href="#services" data-en="Special Services" data-th="บริการพิเศษ">Special Services</a>
+      <a href="#top-offers" data-en="Day Trips" data-th="ทริปประจำวัน">Day Trips</a>
+      <a href="#all-trips" data-en="All Experiences" data-th="ทริปทั้งหมด">All Experiences</a>
+      <a href="#services" data-en="Transfers" data-th="รถรับส่ง">Transfers</a>
+      <a href="#van" data-en="Our Vehicle" data-th="รถของเรา">Our Vehicle</a>
       <a href="#contact" data-en="Contact" data-th="ติดต่อ">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button class="lang-btn" id="langToggle" onclick="toggleLang()">🇹🇭 Thai</button>
-      <a href="#contact" class="cta-btn" data-en="Book Now" data-th="จองเลย">Book Now</a>
+      <a href="#contact" class="cta-btn" data-en="📋 Book Now" data-th="📋 จองเลย">📋 Book Now</a>
     </div>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#experiences" onclick="toggleMenu()" data-en="Experiences" data-th="ทริปโคโม่">Experiences</a>
-    <a href="#services" onclick="toggleMenu()" data-en="Special Services" data-th="บริการพิเศษ">Special Services</a>
-    <a href="#contact" onclick="toggleMenu()" data-en="Contact" data-th="ติดต่อ">Contact</a>
+    <a href="#top-offers"  onclick="toggleMenu()" data-en="Day Trips"       data-th="ทริปประจำวัน">Day Trips</a>
+    <a href="#all-trips"   onclick="toggleMenu()" data-en="All Experiences" data-th="ทริปทั้งหมด">All Experiences</a>
+    <a href="#services"    onclick="toggleMenu()" data-en="Transfers"       data-th="รถรับส่ง">Transfers</a>
+    <a href="#van"         onclick="toggleMenu()" data-en="Our Vehicle"     data-th="รถของเรา">Our Vehicle</a>
+    <a href="#contact"     onclick="toggleMenu()" data-en="Contact"         data-th="ติดต่อ">Contact</a>
+    <a href="#contact" class="mobile-cta" data-en="Book Now" data-th="จองเลย">Book Now</a>
   </div>
 </header>
 
 <!-- ===== HERO ===== -->
-<section class="hero">
+<section class="hero" id="hero">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow" data-en="Lake Como · Italy" data-th="ทะเลสาบโคโม่ · อิตาลี">Lake Como · Italy</p>
-    <h1 data-en="Private Day Trips &amp;<br>Luxury Transfers" data-th="ทริปส่วนตัว &amp;<br>รถรับส่งหรูหรา">Private Day Trips &amp;<br>Luxury Transfers</h1>
-    <p class="hero-sub" data-en="Explore the most breathtaking corners of Lake Como and Northern Italy in a premium 7-seat VW Multivan — hotel pickup &amp; drop-off included." data-th="สำรวจมุมที่สวยที่สุดของทะเลสาบโคโม่และอิตาลีตอนเหนือในรถตู้ VW Multivan 7 ที่นั่งสุดหรู — รับ-ส่งโรงแรมฟรี">Explore the most breathtaking corners of Lake Como and Northern Italy in a premium 7-seat VW Multivan — hotel pickup &amp; drop-off included.</p>
-    <div class="hero-actions">
-      <a href="#experiences" class="btn-primary" data-en="View Experiences" data-th="ดูทริปทั้งหมด">View Experiences</a>
-      <a href="#contact" class="btn-secondary" data-en="Get a Quote" data-th="ขอใบเสนอราคา">Get a Quote</a>
-    </div>
-    <div class="hero-badges">
-      <div class="badge"><span>⭐</span><span data-en="Private Group" data-th="กลุ่มส่วนตัว">Private Group</span></div>
-      <div class="badge"><span>🚐</span><span data-en="VW Multivan 7 seats" data-th="VW Multivan 7 ที่นั่ง">VW Multivan 7 seats</span></div>
-      <div class="badge"><span>🏨</span><span data-en="Hotel Pickup Included" data-th="รับที่โรงแรมฟรี">Hotel Pickup Included</span></div>
+    <p class="hero-eyebrow" data-en="🇮🇹 Lake Como · Northern Italy" data-th="🇮🇹 ทะเลสาบโคโม่ · อิตาลีตอนเหนือ">🇮🇹 Lake Como · Northern Italy</p>
+    <h1 data-en="Where Every Journey<br>Becomes a Memory" data-th="ที่ซึ่งทุกการเดินทาง<br>กลายเป็นความทรงจำ">Where Every Journey<br>Becomes a Memory</h1>
+    <p class="hero-sub" data-en="Private day trips, luxury transfers &amp; bespoke experiences across Lake Como and Northern Italy — in a premium 7-seat VW Multivan." data-th="ทริปส่วนตัว รถรับส่งหรูหรา และประสบการณ์สุดพิเศษทั่วทะเลสาบโคโม่และอิตาลีตอนเหนือ — ในรถ VW Multivan พรีเมียม 7 ที่นั่ง">Private day trips, luxury transfers &amp; bespoke experiences across Lake Como and Northern Italy — in a premium 7-seat VW Multivan.</p>
+  </div>
+
+  <!-- Search / Enquiry Form -->
+  <div class="hero-search">
+    <div class="hero-search-inner">
+      <div class="search-field">
+        <label data-en="Service" data-th="บริการ">Service</label>
+        <select id="searchService">
+          <option data-en="Day Trip" data-th="ทริปประจำวัน">Day Trip</option>
+          <option data-en="Luxury Transfer" data-th="รถรับส่งหรูหรา">Luxury Transfer</option>
+          <option data-en="Emergency Transfer" data-th="รถรับส่งฉุกเฉิน">Emergency Transfer</option>
+        </select>
+      </div>
+      <div class="search-divider"></div>
+      <div class="search-field">
+        <label data-en="Date" data-th="วันที่">Date</label>
+        <input type="date" id="searchDate" />
+      </div>
+      <div class="search-divider"></div>
+      <div class="search-field">
+        <label data-en="Guests" data-th="จำนวนคน">Guests</label>
+        <select id="searchGuests">
+          <option>1</option><option>2</option><option>3</option>
+          <option>4</option><option>5</option><option>6</option><option>7</option>
+        </select>
+      </div>
+      <div class="search-divider"></div>
+      <div class="search-field">
+        <label data-en="Destination" data-th="จุดหมาย">Destination</label>
+        <input type="text" id="searchDest" placeholder="e.g. Bellagio" />
+      </div>
+      <button class="search-btn" onclick="handleSearch()" data-en="🔍 Search" data-th="🔍 ค้นหา">🔍 Search</button>
     </div>
   </div>
 </section>
 
-<!-- ===== TRUST BAR ===== -->
-<section class="trust-bar">
-  <div class="trust-inner">
-    <div class="trust-item">
-      <strong>100%</strong>
-      <span data-en="Private Tours" data-th="ทริปส่วนตัว">Private Tours</span>
+<!-- ===== FEATURES BAR ===== -->
+<section class="features-bar">
+  <div class="features-inner">
+    <div class="feature-item">
+      <div class="feature-icon">🚐</div>
+      <div>
+        <strong data-en="Premium VW Multivan" data-th="VW Multivan พรีเมียม">Premium VW Multivan</strong>
+        <span data-en="7 seats · Private group" data-th="7 ที่นั่ง · กลุ่มส่วนตัว">7 seats · Private group</span>
+      </div>
     </div>
-    <div class="trust-item">
-      <strong data-en="Flexible" data-th="ยืดหยุ่น">Flexible</strong>
-      <span data-en="Half-day &amp; Full-day" data-th="ครึ่งวัน &amp; เต็มวัน">Half-day &amp; Full-day</span>
+    <div class="feature-item">
+      <div class="feature-icon">🏨</div>
+      <div>
+        <strong data-en="Hotel Pickup Included" data-th="รับที่โรงแรมฟรี">Hotel Pickup Included</strong>
+        <span data-en="Door-to-door service" data-th="บริการถึงประตูบ้าน">Door-to-door service</span>
+      </div>
     </div>
-    <div class="trust-item">
-      <strong>7-Seat</strong>
-      <span data-en="Premium VW Multivan" data-th="VW Multivan พรีเมียม">Premium VW Multivan</span>
+    <div class="feature-item">
+      <div class="feature-icon">🗓️</div>
+      <div>
+        <strong data-en="Flexible Booking" data-th="จองได้ยืดหยุ่น">Flexible Booking</strong>
+        <span data-en="Half-day &amp; full-day trips" data-th="ครึ่งวันและเต็มวัน">Half-day &amp; full-day trips</span>
+      </div>
     </div>
-    <div class="trust-item">
-      <strong data-en="Door-to-Door" data-th="ถึงประตูบ้าน">Door-to-Door</strong>
-      <span data-en="Hotel pickup &amp; drop-off" data-th="รับ-ส่งโรงแรม">Hotel pickup &amp; drop-off</span>
-    </div>
-    <div class="trust-item">
-      <strong data-en="English &amp; Thai" data-th="ภาษาอังกฤษ &amp; ไทย">English &amp; Thai</strong>
-      <span data-en="Support Available" data-th="พร้อมให้บริการ">Support Available</span>
+    <div class="feature-item">
+      <div class="feature-icon">💬</div>
+      <div>
+        <strong data-en="English &amp; Thai Support" data-th="รองรับภาษาอังกฤษและไทย">English &amp; Thai Support</strong>
+        <span data-en="7 days a week" data-th="7 วันต่อสัปดาห์">7 days a week</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== EXPERIENCES SECTION ===== -->
-<section class="section" id="experiences">
+<!-- ===== TOP OFFERS MOSAIC ===== -->
+<section class="section" id="top-offers">
   <div class="section-inner">
     <div class="section-header">
-      <h2 data-en="Around Como Experiences" data-th="ประสบการณ์รอบโคโม่">Around Como Experiences</h2>
-      <p data-en="All trips depart from your accommodation in Como. We collect you in our premium VW Multivan (up to 7 guests) and return you at the end of the day — no stress, no logistics." data-th="ทุกทริปออกเดินทางจากที่พักของคุณในโคโม่ เราจะมารับคุณด้วยรถ VW Multivan สุดหรู (รองรับสูงสุด 7 คน) และส่งคืนเมื่อสิ้นสุดทริป">All trips depart from your accommodation in Como. We collect you in our premium VW Multivan (up to 7 guests) and return you at the end of the day — no stress, no logistics.</p>
+      <p class="section-eyebrow" data-en="HAND-PICKED FAVOURITES" data-th="ทริปแนะนำ">HAND-PICKED FAVOURITES</p>
+      <h2 data-en="Explore Our Top Offers" data-th="สำรวจทริปแนะนำของเรา">Explore Our Top Offers</h2>
+      <p data-en="The most loved experiences on Lake Como, curated for private groups. All include hotel pickup &amp; return in our VW Multivan." data-th="ประสบการณ์ที่ได้รับความนิยมมากที่สุดบนทะเลสาบโคโม่ คัดสรรมาสำหรับกลุ่มส่วนตัว ทุกทริปรวมรับ-ส่งโรงแรมด้วยรถ VW Multivan">The most loved experiences on Lake Como, curated for private groups. All include hotel pickup &amp; return in our VW Multivan.</p>
     </div>
+    <div class="mosaic-grid" id="mosaicGrid"><!-- injected by JS --></div>
+  </div>
+</section>
 
-    <div class="trips-grid" id="tripsGrid">
-      <!-- Cards injected by JS -->
+<!-- ===== MOST POPULAR ===== -->
+<section class="section section-grey" id="popular">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-eyebrow" data-en="MOST POPULAR" data-th="ยอดนิยม">MOST POPULAR</p>
+      <h2 data-en="Most Popular Experiences" data-th="ประสบการณ์ยอดนิยม">Most Popular Experiences</h2>
     </div>
+    <div class="deals-row" id="dealsRow"><!-- injected by JS --></div>
+  </div>
+</section>
+
+<!-- ===== ALL EXPERIENCES ===== -->
+<section class="section" id="all-trips">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-eyebrow" data-en="AROUND COMO" data-th="รอบโคโม่">AROUND COMO</p>
+      <h2 data-en="All Como Experiences" data-th="ทริปรอบโคโม่ทั้งหมด">All Como Experiences</h2>
+      <p data-en="Choose your adventure — every trip departs from your accommodation in Como and returns you home at the end of the day." data-th="เลือกการผจญภัยของคุณ — ทุกทริปออกเดินทางจากที่พักของคุณในโคโม่และส่งคืนเมื่อสิ้นสุดวัน">Choose your adventure — every trip departs from your accommodation in Como and returns you home at the end of the day.</p>
+    </div>
+    <div class="trips-grid" id="tripsGrid"><!-- injected by JS --></div>
   </div>
 </section>
 
@@ -112,14 +189,16 @@
     <div class="modal-images" id="modalImages"></div>
     <div class="modal-body">
       <div class="modal-header">
+        <div class="modal-badge-row" id="modalBadgeRow"></div>
         <h2 id="modalTitle"></h2>
+        <div class="modal-stars" id="modalStars">★★★★★</div>
         <div class="modal-meta" id="modalMeta"></div>
       </div>
       <div class="modal-highlights" id="modalHighlights"></div>
       <div class="modal-desc" id="modalDesc"></div>
       <div class="modal-includes">
         <h3 data-en="What's Included" data-th="สิ่งที่รวมอยู่">What's Included</h3>
-        <ul>
+        <ul id="modalIncludes">
           <li data-en="🚐 Private 7-seat VW Multivan" data-th="🚐 รถ VW Multivan ส่วนตัว 7 ที่นั่ง">🚐 Private 7-seat VW Multivan</li>
           <li data-en="🏨 Pickup &amp; drop-off at your accommodation" data-th="🏨 รับ-ส่งที่ที่พักของคุณ">🏨 Pickup &amp; drop-off at your accommodation</li>
           <li data-en="👤 Professional local driver-guide" data-th="👤 คนขับ-ไกด์ท้องถิ่นมืออาชีพ">👤 Professional local driver-guide</li>
@@ -127,157 +206,234 @@
         </ul>
       </div>
       <div class="modal-booking">
-        <p class="modal-price" data-en="Price: Contact us for a personalised quote" data-th="ราคา: ติดต่อเราเพื่อรับใบเสนอราคา">Price: Contact us for a personalised quote</p>
-        <a href="#contact" class="btn-primary modal-cta" onclick="closeModal()" data-en="Request a Quote" data-th="ขอใบเสนอราคา">Request a Quote</a>
+        <div>
+          <p class="modal-price" data-en="💬 Contact us for a personalised quote" data-th="💬 ติดต่อเราเพื่อรับใบเสนอราคา">💬 Contact us for a personalised quote</p>
+          <p class="modal-price-sub" data-en="Private group · Up to 7 guests" data-th="กลุ่มส่วนตัว · สูงสุด 7 คน">Private group · Up to 7 guests</p>
+        </div>
+        <a href="#contact" class="btn-book modal-cta" onclick="closeModal()" data-en="Request a Quote" data-th="ขอใบเสนอราคา">Request a Quote</a>
       </div>
     </div>
   </div>
 </div>
 
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <div class="cta-banner-text">
+      <h2 data-en="Italy by Amy — Your Private Journey Starts Here" data-th="Italy by Amy — การเดินทางส่วนตัวของคุณเริ่มต้นที่นี่">Italy by Amy — Your Private Journey Starts Here</h2>
+      <p data-en="No crowds. No shared coaches. Just your group, your pace, and the most beautiful lake in the world." data-th="ไม่มีคนแออัด ไม่มีรถทัวร์ร่วม แค่กลุ่มของคุณ จังหวะของคุณ และทะเลสาบที่สวยที่สุดในโลก">No crowds. No shared coaches. Just your group, your pace, and the most beautiful lake in the world.</p>
+    </div>
+    <a href="#contact" class="btn-banner" data-en="Get Started Now" data-th="เริ่มจองเลย">Get Started Now</a>
+  </div>
+</section>
+
 <!-- ===== SPECIAL SERVICES ===== -->
-<section class="section section-dark" id="services">
+<section class="section" id="services">
   <div class="section-inner">
-    <div class="section-header light">
-      <h2 data-en="Special Services" data-th="บริการพิเศษ">Special Services</h2>
-      <p data-en="Beyond day trips, we offer a range of premium transport services across Como, Milan, and the wider Lombardy region." data-th="นอกจากทริปประจำวัน เรายังให้บริการขนส่งพรีเมียมในโคโม่ มิลาน และทั่วแคว้นลอมบาร์เดีย">Beyond day trips, we offer a range of premium transport services across Como, Milan, and the wider Lombardy region.</p>
+    <div class="section-header">
+      <p class="section-eyebrow" data-en="SPECIAL SERVICES" data-th="บริการพิเศษ">SPECIAL SERVICES</p>
+      <h2 data-en="Beyond Day Trips" data-th="มากกว่าแค่ทริป">Beyond Day Trips</h2>
+      <p data-en="Premium transport solutions connecting Como to Milan's airports, train stations, and beyond — available 24/7." data-th="บริการขนส่งพรีเมียมเชื่อมต่อโคโม่กับสนามบินมิลาน สถานีรถไฟ และอื่นๆ — บริการ 24/7">Premium transport solutions connecting Como to Milan's airports, train stations, and beyond — available 24/7.</p>
     </div>
 
-    <!-- Service A: Luxury Transfers -->
-    <div class="service-card" id="service-transfers">
-      <div class="service-img">
-        <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=900&auto=format&fit=crop&q=80" alt="Luxury VW Multivan transfer Como to Milan" loading="lazy" />
+    <div class="services-grid">
+      <!-- Service A -->
+      <div class="service-card-new" id="service-transfers">
+        <div class="service-img-new">
+          <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=900&auto=format&fit=crop&q=80" alt="Luxury VW Multivan transfer Como to Milan" loading="lazy" />
+          <div class="service-img-badge" data-en="Premium Transfer" data-th="รถรับส่งพรีเมียม">Premium Transfer</div>
+        </div>
+        <div class="service-body-new">
+          <h3 data-en="Como ↔ Milan &amp; Lombardy" data-th="โคโม่ ↔ มิลาน &amp; ลอมบาร์เดีย">Como ↔ Milan &amp; Lombardy</h3>
+          <p data-en="Travel in style between Como and Milan Malpensa (MXP), Linate (LIN), Central Station, or any destination across Lombardy. Spacious, air-conditioned comfort for up to 7 passengers." data-th="เดินทางด้วยสไตล์ระหว่างโคโม่กับมิลาน มัลเปนซา ลินาเต สถานีรถไฟกลาง หรือจุดหมายใดก็ได้ในลอมบาร์เดีย กว้างขวาง รองรับสูงสุด 7 คน">Travel in style between Como and Milan Malpensa (MXP), Linate (LIN), Central Station, or any destination across Lombardy. Spacious, air-conditioned comfort for up to 7 passengers.</p>
+          <ul class="service-list-new">
+            <li data-en="✈️ All Milan &amp; Bergamo airports" data-th="✈️ สนามบินมิลานและแบร์กาโมทุกแห่ง">✈️ All Milan &amp; Bergamo airports</li>
+            <li data-en="🚉 Milan Central Station" data-th="🚉 สถานีรถไฟกลางมิลาน">🚉 Milan Central Station</li>
+            <li data-en="🏙️ Como → Milan, Bergamo, Brescia, Verona" data-th="🏙️ โคโม่ → มิลาน, แบร์กาโม, เบรชา, เวโรนา">🏙️ Como → Milan, Bergamo, Brescia, Verona</li>
+            <li data-en="🕐 Available 24/7 with advance booking" data-th="🕐 บริการ 24/7 พร้อมการจองล่วงหน้า">🕐 Available 24/7 with advance booking</li>
+            <li data-en="💧 Complimentary water &amp; Wi-Fi on board" data-th="💧 น้ำดื่มและ Wi-Fi ฟรีบนรถ">💧 Complimentary water &amp; Wi-Fi on board</li>
+          </ul>
+          <a href="#contact" class="btn-book" data-en="Book a Transfer" data-th="จองรถรับส่ง">Book a Transfer</a>
+        </div>
       </div>
-      <div class="service-content">
-        <div class="service-tag" data-en="Premium Transfer" data-th="รถรับส่งพรีเมียม">Premium Transfer</div>
-        <h3 data-en="Como ↔ Milan &amp; Lombardy Transfers" data-th="รถรับส่งโคโม่ ↔ มิลาน &amp; ลอมบาร์เดีย">Como ↔ Milan &amp; Lombardy Transfers</h3>
-        <p data-en="Travel in style between Como and Milan Malpensa Airport (MXP), Milan Linate Airport (LIN), Milan Central Station, or any destination across Lombardy. Our VW Multivan offers spacious, air-conditioned comfort for up to 7 passengers with generous luggage capacity — ideal for families, business groups, or anyone who refuses to compromise on comfort." data-th="เดินทางด้วยความหรูหราระหว่างโคโม่กับสนามบินมิลาน มัลเปนซา (MXP) สนามบินมิลาน ลินาเต (LIN) สถานีรถไฟกลางมิลาน หรือจุดหมายใดก็ได้ในแคว้นลอมบาร์เดีย รถ VW Multivan ของเราให้ความสะดวกสบายกว้างขวาง มีเครื่องปรับอากาศ รองรับผู้โดยสารได้ถึง 7 คน พร้อมพื้นที่สัมภาระขนาดใหญ่">Travel in style between Como and Milan Malpensa Airport (MXP), Milan Linate Airport (LIN), Milan Central Station, or any destination across Lombardy. Our VW Multivan offers spacious, air-conditioned comfort for up to 7 passengers with generous luggage capacity — ideal for families, business groups, or anyone who refuses to compromise on comfort.</p>
-        <ul class="service-features">
-          <li data-en="✈️ Airport pickups: Malpensa, Linate, Bergamo Orio al Serio" data-th="✈️ รับจากสนามบิน: มัลเปนซา, ลินาเต, แบร์กาโม โอริโอ อัล เซริโอ">✈️ Airport pickups: Malpensa, Linate, Bergamo Orio al Serio</li>
-          <li data-en="🚉 Milan Central Station transfers" data-th="🚉 รับส่งสถานีรถไฟกลางมิลาน">🚉 Milan Central Station transfers</li>
-          <li data-en="🏙️ City-to-city: Como → Milan, Bergamo, Brescia, Verona" data-th="🏙️ เมืองต่อเมือง: โคโม่ → มิลาน, แบร์กาโม, เบรชา, เวโรนา">🏙️ City-to-city: Como → Milan, Bergamo, Brescia, Verona</li>
-          <li data-en="🕐 Available 24/7 — pre-book any time of day or night" data-th="🕐 บริการ 24/7 — จองล่วงหน้าได้ตลอดเวลา">🕐 Available 24/7 — pre-book any time of day or night</li>
-          <li data-en="💼 Ample boot space for suitcases and sports equipment" data-th="💼 พื้นที่ท้ายรถกว้างสำหรับกระเป๋าและอุปกรณ์กีฬา">💼 Ample boot space for suitcases and sports equipment</li>
-          <li data-en="💧 Complimentary water bottles on board" data-th="💧 น้ำดื่มฟรีบนรถ">💧 Complimentary water bottles on board</li>
-        </ul>
-        <a href="#contact" class="btn-primary" data-en="Book a Transfer" data-th="จองรถรับส่ง">Book a Transfer</a>
-      </div>
-    </div>
 
-    <!-- Service B: Emergency Transfers -->
-    <div class="service-card reverse" id="service-emergency">
-      <div class="service-img">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop&q=80" alt="Emergency luggage and people transfer Como" loading="lazy" />
-      </div>
-      <div class="service-content">
-        <div class="service-tag urgent" data-en="Emergency Service" data-th="บริการฉุกเฉิน">Emergency Service</div>
-        <h3 data-en="Emergency People &amp; Luggage Transfers" data-th="รับส่งฉุกเฉินสำหรับคนและสัมภาระ">Emergency People &amp; Luggage Transfers</h3>
-        <p data-en="Sometimes travel doesn't go to plan. A missed train, an unexpected hotel change, an overloaded taxi that can't fit your group — we're here for exactly those moments. Our on-call service means we can mobilise quickly to get you, your family, or your luggage to where it needs to be, without the stress." data-th="บางครั้งการเดินทางก็ไม่เป็นไปตามแผน พลาดรถไฟ เปลี่ยนโรงแรมกะทันหัน หรือแท็กซี่ที่ไม่สามารถรับกลุ่มของคุณได้ — เราอยู่ที่นี่เพื่อช่วงเวลาเหล่านั้น บริการออนคอลของเราช่วยให้เราเคลื่อนที่ได้รวดเร็ว">Sometimes travel doesn't go to plan. A missed train, an unexpected hotel change, an overloaded taxi that can't fit your group — we're here for exactly those moments. Our on-call service means we can mobilise quickly to get you, your family, or your luggage to where it needs to be, without the stress.</p>
-        <ul class="service-features">
-          <li data-en="⚡ Rapid-response when available — WhatsApp us now" data-th="⚡ ตอบสนองรวดเร็ว — ส่ง WhatsApp ถึงเรา">⚡ Rapid-response when available — WhatsApp us now</li>
-          <li data-en="🧳 Luggage-only transfers (we move your bags while you travel light)" data-th="🧳 บริการรับส่งสัมภาระอย่างเดียว (เราขนกระเป๋า คุณเดินสบาย)">🧳 Luggage-only transfers (we move your bags while you travel light)</li>
-          <li data-en="👨‍👩‍👧‍👦 Group rescue — up to 7 passengers with luggage" data-th="👨‍👩‍👧‍👦 รับกลุ่มฉุกเฉิน — สูงสุด 7 คนพร้อมสัมภาระ">👨‍👩‍👧‍👦 Group rescue — up to 7 passengers with luggage</li>
-          <li data-en="🏥 Medical or welfare assistance transfers (non-emergency)" data-th="🏥 รับส่งเพื่อรับการรักษา (ไม่ใช่กรณีฉุกเฉินทางการแพทย์)">🏥 Medical or welfare assistance transfers (non-emergency)</li>
-          <li data-en="🔄 Same-day return trips when needed" data-th="🔄 เที่ยวกลับในวันเดียวกันหากจำเป็น">🔄 Same-day return trips when needed</li>
-        </ul>
-        <a href="#contact" class="btn-urgent" data-en="Contact Us Now" data-th="ติดต่อเราเลย">Contact Us Now</a>
+      <!-- Service B -->
+      <div class="service-card-new" id="service-emergency">
+        <div class="service-img-new">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop&q=80" alt="Emergency luggage and people transfer Como" loading="lazy" />
+          <div class="service-img-badge urgent" data-en="Emergency Service" data-th="บริการฉุกเฉิน">Emergency Service</div>
+        </div>
+        <div class="service-body-new">
+          <h3 data-en="Emergency People &amp; Luggage Transfers" data-th="รับส่งฉุกเฉินสำหรับคนและสัมภาระ">Emergency People &amp; Luggage Transfers</h3>
+          <p data-en="Missed train? Hotel change? Group too big for a taxi? We mobilise fast to get you, your family, or your luggage to where it needs to be — no stress, no wasted time." data-th="พลาดรถไฟ? เปลี่ยนโรงแรม? กลุ่มใหญ่เกินแท็กซี่? เราเคลื่อนที่รวดเร็วเพื่อพาคุณไปยังจุดหมาย — ไม่เครียด ไม่เสียเวลา">Missed train? Hotel change? Group too big for a taxi? We mobilise fast to get you, your family, or your luggage to where it needs to be — no stress, no wasted time.</p>
+          <ul class="service-list-new">
+            <li data-en="⚡ Fast response — WhatsApp us directly" data-th="⚡ ตอบสนองรวดเร็ว — ส่ง WhatsApp หาเรา">⚡ Fast response — WhatsApp us directly</li>
+            <li data-en="🧳 Luggage-only transfers available" data-th="🧳 บริการขนสัมภาระอย่างเดียว">🧳 Luggage-only transfers available</li>
+            <li data-en="👨‍👩‍👧‍👦 Up to 7 passengers with full luggage" data-th="👨‍👩‍👧‍👦 รองรับสูงสุด 7 คนพร้อมสัมภาระ">👨‍👩‍👧‍👦 Up to 7 passengers with full luggage</li>
+            <li data-en="🏥 Medical &amp; welfare assistance transfers" data-th="🏥 รับส่งเพื่อรับการรักษาและสวัสดิการ">🏥 Medical &amp; welfare assistance transfers</li>
+            <li data-en="🔄 Same-day return journeys" data-th="🔄 เที่ยวกลับในวันเดียวกัน">🔄 Same-day return journeys</li>
+          </ul>
+          <a href="#contact" class="btn-urgent" data-en="Contact Us Now" data-th="ติดต่อเราเลย">Contact Us Now</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== VAN SHOWCASE ===== -->
-<section class="section van-section">
+<!-- ===== VAN SECTION ===== -->
+<section class="section section-grey van-section" id="van">
   <div class="section-inner van-inner">
-    <div class="van-text">
-      <h2 data-en="Your Home on the Road" data-th="บ้านของคุณบนถนน">Your Home on the Road</h2>
-      <p data-en="Every journey with Italy by Amy is made in our premium VW Multivan — a spacious, comfortable 7-seat vehicle equipped with air conditioning, generous luggage space, and USB charging ports. Whether you're a couple exploring hidden villages or a family of six on a grand day out, this is the way to travel in Northern Italy." data-th="ทุกการเดินทางกับ Italy by Amy ใช้รถ VW Multivan พรีเมียมของเรา — รถขนาดใหญ่ สะดวกสบาย 7 ที่นั่ง พร้อมเครื่องปรับอากาศ พื้นที่สัมภาระกว้างขวาง และช่อง USB ชาร์จ ไม่ว่าจะเป็นคู่รักที่ท่องเที่ยวหมู่บ้านเล็กๆ หรือครอบครัว 6 คนในทริปใหญ่ นี่คือวิธีเดินทางในอิตาลีตอนเหนือ">Every journey with Italy by Amy is made in our premium VW Multivan — a spacious, comfortable 7-seat vehicle equipped with air conditioning, generous luggage space, and USB charging ports. Whether you're a couple exploring hidden villages or a family of six on a grand day out, this is the way to travel in Northern Italy.</p>
-      <ul class="van-features">
-        <li data-en="7 comfortable seats with panoramic windows" data-th="7 ที่นั่งสะดวกสบายพร้อมหน้าต่างแพนอรามา">7 comfortable seats with panoramic windows</li>
-        <li data-en="Climate control air conditioning" data-th="ระบบปรับอากาศควบคุมอุณหภูมิ">Climate control air conditioning</li>
-        <li data-en="Large boot for suitcases &amp; strollers" data-th="ท้ายรถขนาดใหญ่สำหรับกระเป๋าและรถเข็นเด็ก">Large boot for suitcases &amp; strollers</li>
-        <li data-en="USB-C charging ports" data-th="ช่อง USB-C ชาร์จ">USB-C charging ports</li>
-        <li data-en="Complimentary mineral water" data-th="น้ำแร่ฟรี">Complimentary mineral water</li>
-      </ul>
-    </div>
     <div class="van-image">
-      <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&auto=format&fit=crop&q=80" alt="VW Multivan premium transport" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&auto=format&fit=crop&q=80" alt="VW Multivan premium 7-seat transport Lake Como" loading="lazy" />
+    </div>
+    <div class="van-text">
+      <p class="section-eyebrow" data-en="YOUR VEHICLE" data-th="ยานพาหนะของคุณ">YOUR VEHICLE</p>
+      <h2 data-en="Premium VW Multivan — Your Home on the Road" data-th="VW Multivan พรีเมียม — บ้านของคุณบนถนน">Premium VW Multivan — Your Home on the Road</h2>
+      <p data-en="Every journey with Italy by Amy is made in our premium VW Multivan — a spacious, comfortable 7-seat vehicle with climate control, generous luggage space, and USB charging. Whether you're a couple exploring hidden villages or a family of six on a grand day out, this is the way to travel in Northern Italy." data-th="ทุกการเดินทางกับ Italy by Amy ใช้รถ VW Multivan พรีเมียม — รถขนาดใหญ่ สะดวกสบาย 7 ที่นั่ง พร้อมระบบปรับอากาศ พื้นที่สัมภาระกว้าง และ USB ชาร์จ">Every journey with Italy by Amy is made in our premium VW Multivan — a spacious, comfortable 7-seat vehicle with climate control, generous luggage space, and USB charging. Whether you're a couple exploring hidden villages or a family of six on a grand day out, this is the way to travel in Northern Italy.</p>
+      <div class="van-features-grid">
+        <div class="van-feature"><span class="van-feat-icon">💺</span><span data-en="7 comfortable seats" data-th="7 ที่นั่งสะดวกสบาย">7 comfortable seats</span></div>
+        <div class="van-feature"><span class="van-feat-icon">❄️</span><span data-en="Climate control A/C" data-th="ระบบปรับอากาศ">Climate control A/C</span></div>
+        <div class="van-feature"><span class="van-feat-icon">🧳</span><span data-en="Large luggage boot" data-th="ท้ายรถขนาดใหญ่">Large luggage boot</span></div>
+        <div class="van-feature"><span class="van-feat-icon">🔌</span><span data-en="USB-C charging ports" data-th="ช่อง USB-C ชาร์จ">USB-C charging ports</span></div>
+        <div class="van-feature"><span class="van-feat-icon">💧</span><span data-en="Complimentary water" data-th="น้ำดื่มฟรี">Complimentary water</span></div>
+        <div class="van-feature"><span class="van-feat-icon">📶</span><span data-en="Wi-Fi on board" data-th="Wi-Fi บนรถ">Wi-Fi on board</span></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ===== CONTACT ===== -->
 <section class="section contact-section" id="contact">
-  <div class="section-inner contact-inner">
+  <div class="section-inner">
     <div class="section-header">
-      <h2 data-en="Get in Touch" data-th="ติดต่อเรา">Get in Touch</h2>
-      <p data-en="Ready to plan your perfect Italian experience? Send us a message and we'll come back to you with a personalised quote, usually within a few hours." data-th="พร้อมวางแผนประสบการณ์อิตาลีในฝันของคุณแล้วหรือยัง? ส่งข้อความมาและเราจะตอบกลับด้วยใบเสนอราคาส่วนตัว โดยปกติภายในไม่กี่ชั่วโมง">Ready to plan your perfect Italian experience? Send us a message and we'll come back to you with a personalised quote, usually within a few hours.</p>
-    </div>
-    <div class="contact-cards">
-      <!-- WhatsApp (English) / Line (Thai) -->
-      <a class="contact-card whatsapp-card" id="contactMessenger" href="https://wa.me/39XXXXXXXXXX?text=Hello%20Italy%20by%20Amy!%20I'm%20interested%20in%20booking%20a%20trip." target="_blank" rel="noopener">
-        <div class="contact-icon" id="contactIcon">💬</div>
-        <div>
-          <strong id="contactLabel" data-en="Chat on WhatsApp" data-th="คุยผ่าน Line">Chat on WhatsApp</strong>
-          <p id="contactSub" data-en="Quick replies, 7 days a week" data-th="ตอบกลับเร็ว 7 วันต่อสัปดาห์">Quick replies, 7 days a week</p>
-        </div>
-      </a>
-      <a class="contact-card email-card" href="mailto:hello@italybyamy.com" target="_blank" rel="noopener">
-        <div class="contact-icon">✉️</div>
-        <div>
-          <strong data-en="Email Us" data-th="ส่งอีเมล">Email Us</strong>
-          <p data-en="hello@italybyamy.com" data-th="hello@italybyamy.com">hello@italybyamy.com</p>
-        </div>
-      </a>
-      <div class="contact-card info-card">
-        <div class="contact-icon">📍</div>
-        <div>
-          <strong data-en="Based in Como, Italy" data-th="ตั้งอยู่ที่โคโม่ อิตาลี">Based in Como, Italy</strong>
-          <p data-en="Serving Lake Como &amp; all of Lombardy" data-th="ให้บริการทะเลสาบโคโม่และทั่วลอมบาร์เดีย">Serving Lake Como &amp; all of Lombardy</p>
-        </div>
-      </div>
+      <p class="section-eyebrow" data-en="GET IN TOUCH" data-th="ติดต่อเรา">GET IN TOUCH</p>
+      <h2 data-en="Plan Your Perfect Italian Journey" data-th="วางแผนการเดินทางอิตาลีในฝันของคุณ">Plan Your Perfect Italian Journey</h2>
+      <p data-en="Send us your trip details and we'll come back with a personalised quote — usually within a few hours." data-th="ส่งรายละเอียดทริปของคุณและเราจะตอบกลับด้วยใบเสนอราคาส่วนตัว — โดยปกติภายในไม่กี่ชั่วโมง">Send us your trip details and we'll come back with a personalised quote — usually within a few hours.</p>
     </div>
 
-    <form class="contact-form" onsubmit="submitForm(event)">
-      <div class="form-row">
-        <input type="text" id="formName" placeholder=" " required autocomplete="name" />
-        <label for="formName" data-en="Your Name" data-th="ชื่อของคุณ">Your Name</label>
+    <div class="contact-layout">
+      <div class="contact-left">
+        <div class="contact-cards contact-cards-vert">
+          <a class="contact-card whatsapp-card" id="contactMessenger" href="https://wa.me/39XXXXXXXXXX?text=Hello%20Italy%20by%20Amy!" target="_blank" rel="noopener">
+            <div class="contact-icon" id="contactIcon">💬</div>
+            <div>
+              <strong id="contactLabel" data-en="Chat on WhatsApp" data-th="คุยผ่าน Line">Chat on WhatsApp</strong>
+              <p id="contactSub" data-en="Quick replies · 7 days a week" data-th="ตอบกลับเร็ว · 7 วันต่อสัปดาห์">Quick replies · 7 days a week</p>
+            </div>
+          </a>
+          <a class="contact-card email-card" href="mailto:hello@italybyamy.com" target="_blank" rel="noopener">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <strong data-en="Email Us" data-th="ส่งอีเมล">Email Us</strong>
+              <p>hello@italybyamy.com</p>
+            </div>
+          </a>
+          <div class="contact-card info-card">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong data-en="Based in Como, Italy" data-th="ตั้งอยู่ที่โคโม่ อิตาลี">Based in Como, Italy</strong>
+              <p data-en="Serving Lake Como &amp; all Lombardy" data-th="บริการทะเลสาบโคโม่และทั่วลอมบาร์เดีย">Serving Lake Como &amp; all Lombardy</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-info-box">
+          <h3 data-en="Why book with us?" data-th="ทำไมต้องจองกับเรา?">Why book with us?</h3>
+          <ul>
+            <li data-en="✅ 100% private — your group only" data-th="✅ ส่วนตัว 100% — เฉพาะกลุ่มของคุณ">✅ 100% private — your group only</li>
+            <li data-en="✅ Hotel pickup &amp; drop-off included" data-th="✅ รับ-ส่งโรงแรมรวมอยู่แล้ว">✅ Hotel pickup &amp; drop-off included</li>
+            <li data-en="✅ Flexible — change plans on the day" data-th="✅ ยืดหยุ่น — เปลี่ยนแผนได้ในวันนั้น">✅ Flexible — change plans on the day</li>
+            <li data-en="✅ No hidden fees" data-th="✅ ไม่มีค่าใช้จ่ายซ่อนเร้น">✅ No hidden fees</li>
+          </ul>
+        </div>
       </div>
-      <div class="form-row">
-        <input type="email" id="formEmail" placeholder=" " required autocomplete="email" />
-        <label for="formEmail" data-en="Email Address" data-th="ที่อยู่อีเมล">Email Address</label>
-      </div>
-      <div class="form-row">
-        <select id="formService">
-          <option value="" disabled selected data-en="Select a service..." data-th="เลือกบริการ...">Select a service...</option>
-          <option data-en="Around Como Day Trip" data-th="ทริปรอบโคโม่">Around Como Day Trip</option>
-          <option data-en="Luxury Transfer" data-th="รถรับส่งหรูหรา">Luxury Transfer</option>
-          <option data-en="Emergency Transfer" data-th="รถรับส่งฉุกเฉิน">Emergency Transfer</option>
-          <option data-en="Other / Not sure" data-th="อื่นๆ / ยังไม่แน่ใจ">Other / Not sure</option>
-        </select>
-      </div>
-      <div class="form-row full">
-        <textarea id="formMessage" rows="4" placeholder=" " required></textarea>
-        <label for="formMessage" data-en="Tell us about your trip — dates, group size, destinations…" data-th="เล่าเรื่องทริปของคุณ — วันที่ จำนวนคน จุดหมาย…">Tell us about your trip — dates, group size, destinations…</label>
-      </div>
-      <button type="submit" class="btn-primary" data-en="Send Message" data-th="ส่งข้อความ">Send Message</button>
-    </form>
+
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="formName" data-en="Your Name" data-th="ชื่อของคุณ">Your Name</label>
+            <input type="text" id="formName" required autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <label for="formEmail" data-en="Email Address" data-th="ที่อยู่อีเมล">Email Address</label>
+            <input type="email" id="formEmail" required autocomplete="email" />
+          </div>
+          <div class="form-row">
+            <label for="formService" data-en="Service Required" data-th="บริการที่ต้องการ">Service Required</label>
+            <select id="formService">
+              <option value="" disabled selected data-en="Select a service…" data-th="เลือกบริการ…">Select a service…</option>
+              <option data-en="Around Como Day Trip" data-th="ทริปรอบโคโม่">Around Como Day Trip</option>
+              <option data-en="Luxury Transfer" data-th="รถรับส่งหรูหรา">Luxury Transfer</option>
+              <option data-en="Emergency Transfer" data-th="รถรับส่งฉุกเฉิน">Emergency Transfer</option>
+              <option data-en="Other / Not sure" data-th="อื่นๆ / ยังไม่แน่ใจ">Other / Not sure</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="formGuests" data-en="Number of Guests" data-th="จำนวนผู้โดยสาร">Number of Guests</label>
+            <select id="formGuests">
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6</option><option>7</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row full">
+          <label for="formMessage" data-en="Tell us about your trip — dates, destinations, special requests…" data-th="เล่าเรื่องทริปของคุณ — วันที่ จุดหมาย คำขอพิเศษ…">Tell us about your trip — dates, destinations, special requests…</label>
+          <textarea id="formMessage" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-book full-width" data-en="Send Enquiry" data-th="ส่งข้อความสอบถาม">Send Enquiry</button>
+      </form>
+    </div>
   </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <span class="brand-icon">🇮🇹</span>
-      <span class="brand-name">Italy <em>by Amy</em></span>
-      <p data-en="Private tours &amp; transfers on Lake Como" data-th="ทัวร์ส่วนตัวและรถรับส่งบนทะเลสาบโคโม่">Private tours &amp; transfers on Lake Como</p>
+  <div class="footer-top">
+    <div class="footer-grid">
+      <!-- Col 1: Brand -->
+      <div class="footer-col">
+        <a href="#" class="brand footer-brand-logo">
+          <span class="brand-icon">🇮🇹</span>
+          <span class="brand-name">Italy <em>by Amy</em></span>
+        </a>
+        <p data-en="Private day trips &amp; luxury transfers on Lake Como." data-th="ทริปส่วนตัวและรถรับส่งหรูหราบนทะเลสาบโคโม่">Private day trips &amp; luxury transfers on Lake Como.</p>
+        <p class="footer-detail">📍 Como, Lombardy, Italy</p>
+        <p class="footer-detail">✉️ hello@italybyamy.com</p>
+      </div>
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4 data-en="Quick Links" data-th="ลิงก์ด่วน">Quick Links</h4>
+        <a href="#top-offers" data-en="Top Offers" data-th="ทริปแนะนำ">Top Offers</a>
+        <a href="#all-trips" data-en="All Experiences" data-th="ทริปทั้งหมด">All Experiences</a>
+        <a href="#services" data-en="Transfers" data-th="รถรับส่ง">Transfers</a>
+        <a href="#van" data-en="Our Vehicle" data-th="รถของเรา">Our Vehicle</a>
+        <a href="#contact" data-en="Contact" data-th="ติดต่อ">Contact</a>
+      </div>
+      <!-- Col 3: Services -->
+      <div class="footer-col">
+        <h4 data-en="Our Services" data-th="บริการของเรา">Our Services</h4>
+        <a href="#top-offers" data-en="Bellagio Day Trip" data-th="ทริปเบลลาจิโอ">Bellagio Day Trip</a>
+        <a href="#top-offers" data-en="Varenna Day Trip" data-th="ทริปวาเรนนา">Varenna Day Trip</a>
+        <a href="#services" data-en="Como → Milan Transfer" data-th="รถรับส่งโคโม่ → มิลาน">Como → Milan Transfer</a>
+        <a href="#services" data-en="Airport Transfers" data-th="รถรับส่งสนามบิน">Airport Transfers</a>
+        <a href="#services" data-en="Emergency Transfers" data-th="รถรับส่งฉุกเฉิน">Emergency Transfers</a>
+      </div>
+      <!-- Col 4: Stay Connected -->
+      <div class="footer-col">
+        <h4 data-en="Stay Connected" data-th="ติดตามเรา">Stay Connected</h4>
+        <p data-en="Questions? We reply fast." data-th="มีคำถาม? เราตอบเร็ว">Questions? We reply fast.</p>
+        <a id="footerMessenger" href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener" class="footer-chat-btn">
+          <span id="footerChatIcon">💬</span>
+          <span id="footerChatLabel" data-en="WhatsApp Us" data-th="Line หาเรา">WhatsApp Us</span>
+        </a>
+        <p class="footer-lang" data-en="🇬🇧 English &amp; 🇹🇭 Thai support" data-th="🇬🇧 ภาษาอังกฤษ &amp; 🇹🇭 ภาษาไทย พร้อมให้บริการ">🇬🇧 English &amp; 🇹🇭 Thai support</p>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="#experiences" data-en="Experiences" data-th="ทริป">Experiences</a>
-      <a href="#services" data-en="Services" data-th="บริการ">Services</a>
-      <a href="#contact" data-en="Contact" data-th="ติดต่อ">Contact</a>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-copy" data-en="© 2026 Italy by Amy. All rights reserved." data-th="© 2026 Italy by Amy. สงวนลิขสิทธิ์">© 2026 Italy by Amy. All rights reserved.</p>
+      <p class="footer-copy" data-en="Private tours &amp; transfers — Lake Como, Italy" data-th="ทัวร์ส่วนตัวและรถรับส่ง — ทะเลสาบโคโม่ อิตาลี">Private tours &amp; transfers — Lake Como, Italy</p>
     </div>
-    <p class="footer-copy" data-en="© 2026 Italy by Amy. All rights reserved." data-th="© 2026 Italy by Amy. สงวนลิขสิทธิ์">© 2026 Italy by Amy. All rights reserved.</p>
   </div>
 </footer>
 
