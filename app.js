@@ -378,12 +378,14 @@ function applyLanguage() {
 
   const cfg = messengerConfig[currentLang];
 
-  // Navbar messenger icon (icon-only, update href + icon + tooltip)
+  // Navbar messenger icon — update href, icon, tooltip, and colour class
   const topbarHref = document.getElementById('topbarMessenger');
   const topbarIcon = document.getElementById('topbarChatIcon');
   if (topbarHref) {
     topbarHref.href  = cfg.href;
     topbarHref.title = cfg.label;
+    topbarHref.classList.toggle('nav-wa',   isEn);
+    topbarHref.classList.toggle('nav-line', !isEn);
   }
   if (topbarIcon) topbarIcon.className = cfg.iconClass;
 

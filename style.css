@@ -60,21 +60,19 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .navbar{position:sticky;top:0;left:0;right:0;z-index:1000;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.06)}
 .nav-inner{display:flex;align-items:center;gap:.8rem;max-width:var(--max);margin:0 auto;padding:.6rem 1.5rem}
 .brand{display:flex;align-items:center;gap:.4rem;color:var(--text);flex-shrink:0}
-/* Lang flags — styled for white navbar */
-.nav-utility{display:flex;align-items:center;gap:.25rem;flex-shrink:0;margin-left:.5rem}
-.nav-social-btn{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;font-size:1.15rem;color:var(--text-m);transition:color var(--trans),background var(--trans);text-decoration:none;flex-shrink:0}
-.nav-social-btn:hover{background:var(--grey)}
-.nav-social-btn:hover .fa-instagram{color:#E1306C}
-.nav-social-btn:hover .fa-facebook{color:#1877F2}
-.nav-social-btn:hover .fa-whatsapp{color:#25D366}
-.nav-social-btn:hover .fa-line{color:#06C755}
-.nav-messenger{color:var(--green)}
-.nav-divider{width:1px;height:20px;background:var(--border);margin:0 .2rem;flex-shrink:0}
-.lang-flags{display:flex;align-items:center;gap:.3rem;flex-shrink:0}
-.lang-flag-btn{background:none;border:2px solid transparent;padding:.1rem .15rem;border-radius:4px;cursor:pointer;opacity:.5;transition:opacity var(--trans),border-color var(--trans);line-height:0;flex-shrink:0}
+/* Social icons + flag buttons in navbar */
+.nav-utility{display:flex;align-items:center;gap:.4rem;flex-shrink:0;margin-left:.6rem}
+.nav-social-btn{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;font-size:1rem;color:#fff;text-decoration:none;flex-shrink:0;transition:transform var(--trans),opacity var(--trans)}
+.nav-social-btn:hover{transform:scale(1.12);opacity:.85}
+.nav-ig{background:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)}
+.nav-fb{background:#1877F2}
+.nav-wa{background:#25D366}
+.nav-line{background:#06C755}
+.nav-divider{width:1px;height:22px;background:var(--border);margin:0 .15rem;flex-shrink:0}
+.lang-flags{display:flex;align-items:center;gap:.35rem;flex-shrink:0}
+.lang-flag-btn{background:none;border:2.5px solid transparent;padding:.1rem .2rem;border-radius:6px;cursor:pointer;font-size:1.5rem;line-height:1;flex-shrink:0;opacity:.6;transition:opacity var(--trans),border-color var(--trans),background var(--trans)}
 .lang-flag-btn:hover{opacity:1}
-.lang-flag-btn.active-flag{opacity:1;border-color:var(--green)}
-.lang-flag-btn img{display:block;width:28px;height:auto;border-radius:2px}
+.lang-flag-btn.active-flag{opacity:1;border-color:var(--green);background:rgba(26,138,191,.09)}
 .brand{display:flex;align-items:center;gap:.4rem;color:var(--text)}
 .brand-text{display:flex;flex-direction:column;line-height:1.1}
 .brand-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--text);letter-spacing:-.01em}
@@ -307,8 +305,8 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 @media(max-width:768px){
   .nav-links,.nav-actions{display:none}
   .hamburger{display:block}
-  .nav-social-btn{width:30px;height:30px;font-size:1.05rem}
-  .lang-flag-btn img{width:24px}
+  .nav-social-btn{width:28px;height:28px;font-size:.9rem}
+  .lang-flag-btn{font-size:1.25rem}
   .hero-search-inner{flex-direction:column;align-items:stretch}
   .search-divider{display:none}
   .search-field{padding:.5rem 0;border-bottom:1px solid var(--border)}
