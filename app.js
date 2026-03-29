@@ -366,11 +366,15 @@ function applyLanguage() {
     el.innerHTML = isEn ? el.dataset.en : (el.dataset.th || el.dataset.en);
   });
 
-  // Flag button active states
-  const btnEN = document.getElementById('langBtnEN');
-  const btnTH = document.getElementById('langBtnTH');
-  if (btnEN) btnEN.classList.toggle('active-flag', isEn);
-  if (btnTH) btnTH.classList.toggle('active-flag', !isEn);
+  // Flag button active states (navbar + mobile)
+  ['langBtnEN','langBtnEN2'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('active-flag', isEn);
+  });
+  ['langBtnTH','langBtnTH2'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('active-flag', !isEn);
+  });
 
   const cfg = messengerConfig[currentLang];
 
@@ -403,6 +407,16 @@ function applyLanguage() {
   if (fHref)  fHref.href = cfg.href;
   if (fIcon)  fIcon.className = cfg.iconClass;
   if (fLabel) fLabel.textContent = cfg.label;
+
+  // Mobile chat button
+  const mBtn = document.getElementById('mobileChatBtn');
+  if (mBtn) {
+    mBtn.href = cfg.href;
+    const mIcon = mBtn.querySelector('i');
+    const mLabel = mBtn.querySelector('span');
+    if (mIcon)  mIcon.className = cfg.iconClass;
+    if (mLabel) mLabel.textContent = cfg.label;
+  }
 
   // Re-render cards so names are in the right language
   renderMosaic();

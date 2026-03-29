@@ -55,37 +55,30 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .section-eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--green);margin-bottom:.4rem;display:block;font-family:'Inter',sans-serif}
 
 /* =========================================================
-   TOP UTILITY BAR
-   ========================================================= */
-.topbar{background:var(--green-d);color:rgba(255,255,255,.85);font-size:.8rem;padding:.45rem 1.5rem}
-.topbar-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
-.topbar-left{display:flex;gap:1.5rem;align-items:center}
-.topbar-email{display:none}
-@media(min-width:600px){.topbar-email{display:inline}}
-.topbar-right{display:flex;align-items:center;gap:.8rem}
-.lang-flags{display:flex;align-items:center;gap:.35rem}
-.lang-flag-btn{background:none;border:2px solid transparent;padding:.1rem .15rem;border-radius:4px;cursor:pointer;opacity:.55;transition:opacity var(--trans),border-color var(--trans);line-height:0;flex-shrink:0}
-.lang-flag-btn:hover{opacity:1}
-.lang-flag-btn.active-flag{opacity:1;border-color:rgba(255,255,255,.7)}
-.lang-flag-btn img{display:block;width:22px;height:auto;border-radius:2px}
-.topbar-chat{display:flex;align-items:center;gap:.35rem;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:.3rem .8rem;border-radius:20px;color:#fff;font-size:.78rem;font-weight:500;transition:background var(--trans)}
-.topbar-chat:hover{background:rgba(255,255,255,.28)}
-.topbar-chat .fa-brands{font-size:1rem;line-height:1}
-
-/* =========================================================
-   NAVBAR � always white/solid
+   NAVBAR — always white/solid
    ========================================================= */
 .navbar{position:sticky;top:0;left:0;right:0;z-index:1000;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.nav-inner{display:flex;align-items:center;gap:1.2rem;max-width:var(--max);margin:0 auto;padding:.75rem 1.5rem}
+.nav-inner{display:flex;align-items:center;gap:.8rem;max-width:var(--max);margin:0 auto;padding:.6rem 1.5rem}
+.brand{display:flex;align-items:center;gap:.4rem;color:var(--text);flex-shrink:0}
+/* Lang flags — styled for white navbar */
+.lang-flags{display:flex;align-items:center;gap:.3rem;flex-shrink:0}
+.lang-flag-btn{background:none;border:2px solid transparent;padding:.1rem .15rem;border-radius:4px;cursor:pointer;opacity:.5;transition:opacity var(--trans),border-color var(--trans);line-height:0;flex-shrink:0}
+.lang-flag-btn:hover{opacity:1}
+.lang-flag-btn.active-flag{opacity:1;border-color:var(--green)}
+.lang-flag-btn img{display:block;width:22px;height:auto;border-radius:2px}
+/* Messenger button in navbar */
+.nav-chat-btn{display:inline-flex;align-items:center;gap:.35rem;background:var(--green);color:#fff;padding:.4rem .85rem;border-radius:20px;font-size:.78rem;font-weight:600;transition:background var(--trans);white-space:nowrap;flex-shrink:0}
+.nav-chat-btn:hover{background:var(--green-l)}
+.nav-chat-btn .fa-brands{font-size:.95rem;line-height:1}
 .brand{display:flex;align-items:center;gap:.4rem;color:var(--text)}
 .brand-text{display:flex;flex-direction:column;line-height:1.1}
 .brand-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--text);letter-spacing:-.01em}
 .brand-name em{font-style:italic;color:var(--green)}
 .brand-tagline{font-size:.7rem;color:var(--text-m);font-family:'Inter',sans-serif;letter-spacing:.03em}
-.nav-links{display:flex;gap:.2rem;margin-left:auto}
-.nav-links a{color:var(--text);font-size:.85rem;font-weight:500;padding:.45rem .75rem;border-radius:6px;transition:all var(--trans)}
+.nav-links{display:flex;gap:.1rem;margin-left:auto}
+.nav-links a{color:var(--text);font-size:.82rem;font-weight:500;padding:.4rem .6rem;border-radius:6px;transition:all var(--trans)}
 .nav-links a:hover{background:var(--grey);color:var(--green)}
-.nav-actions{margin-left:.5rem}
+.nav-actions{display:flex;align-items:center;gap:.6rem;margin-left:.4rem}
 .cta-btn{display:inline-block;background:var(--green);color:#fff;padding:.5rem 1.2rem;border-radius:6px;font-size:.85rem;font-weight:600;transition:background var(--trans)}
 .cta-btn:hover{background:var(--green-l)}
 .hamburger{display:none;background:none;border:none;font-size:1.5rem;color:var(--text);cursor:pointer;margin-left:.5rem}
@@ -93,6 +86,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .mobile-menu a{font-size:.9rem;font-weight:500;color:var(--text);padding:.6rem 0;border-bottom:1px solid #f0f0f0}
 .mobile-menu .mobile-cta{background:var(--green);color:#fff;padding:.6rem 1.2rem;border-radius:6px;text-align:center;margin-top:.5rem;border:none;font-weight:600}
 .mobile-menu.open{display:flex}
+.mobile-util{display:flex;align-items:center;gap:.8rem;padding:.7rem 0;border-bottom:1px solid #f0f0f0}
 
 /* =========================================================
    HERO � full height, image bg, text left, search bar bottom
@@ -297,6 +291,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
   .deals-row{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:960px){
+  .nav-chat-btn span{display:none}
   .features-inner{grid-template-columns:repeat(2,1fr)}
   .mosaic-grid{grid-template-columns:1fr 1fr;grid-template-rows:260px 200px}
   .mosaic-card:first-child{grid-column:1/2;grid-row:1/3}
@@ -327,7 +322,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
   .modal-includes ul{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom-inner{flex-direction:column;text-align:center}
-  .topbar-left span:last-child{display:none}
+  .nav-chat-btn span{display:none}
 }
 @media(max-width:480px){
   .trips-grid{grid-template-columns:1fr 1fr}

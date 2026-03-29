@@ -22,26 +22,6 @@
 </head>
 <body>
 
-<!-- ===== TOP UTILITY BAR ===== -->
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="topbar-left">
-      <span>📍 <span data-en="Como, Lake Como — Italy" data-th="โคโม่ ทะเลสาบโคโม่ — อิตาลี">Como, Lake Como — Italy</span></span>
-      <span class="topbar-email">✉️ hello@italybyamy.com</span>
-    </div>
-    <div class="topbar-right">
-      <div class="lang-flags">
-        <button class="lang-flag-btn active-flag" id="langBtnEN" onclick="setLang('en')" title="English"><img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x" alt="EN" /></button>
-        <button class="lang-flag-btn" id="langBtnTH" onclick="setLang('th')" title="ภาษาไทย"><img src="https://flagcdn.com/w20/th.png" srcset="https://flagcdn.com/w40/th.png 2x" alt="TH" /></button>
-      </div>
-      <a id="topbarMessenger" href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener" class="topbar-chat">
-        <i id="topbarChatIcon" class="fa-brands fa-whatsapp"></i>
-        <span id="topbarChatLabel" data-en="WhatsApp Us" data-th="Line หาเรา">WhatsApp Us</span>
-      </a>
-    </div>
-  </div>
-</div>
-
 <!-- ===== NAVBAR ===== -->
 <header class="navbar" id="navbar">
   <div class="nav-inner">
@@ -59,7 +39,15 @@
       <a href="#contact" data-en="Contact" data-th="ติดต่อ">Contact</a>
     </nav>
     <div class="nav-actions">
-      <a href="#contact" class="cta-btn" data-en="📋 Book Now" data-th="📋 จองเลย">📋 Book Now</a>
+      <div class="lang-flags">
+        <button class="lang-flag-btn active-flag" id="langBtnEN" onclick="setLang('en')" title="English"><img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x" alt="EN" /></button>
+        <button class="lang-flag-btn" id="langBtnTH" onclick="setLang('th')" title="ภาษาไทย"><img src="https://flagcdn.com/w20/th.png" srcset="https://flagcdn.com/w40/th.png 2x" alt="TH" /></button>
+      </div>
+      <a id="topbarMessenger" href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener" class="nav-chat-btn">
+        <i id="topbarChatIcon" class="fa-brands fa-whatsapp"></i>
+        <span id="topbarChatLabel" data-en="WhatsApp Us" data-th="Line หาเรา">WhatsApp Us</span>
+      </a>
+      <a href="#contact" class="cta-btn" data-en="Book Now" data-th="จองเลย">Book Now</a>
     </div>
     <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
   </div>
@@ -69,7 +57,17 @@
     <a href="#services"    onclick="toggleMenu()" data-en="Transfers"       data-th="รถรับส่ง">Transfers</a>
     <a href="#van"         onclick="toggleMenu()" data-en="Our Vehicle"     data-th="รถของเรา">Our Vehicle</a>
     <a href="#contact"     onclick="toggleMenu()" data-en="Contact"         data-th="ติดต่อ">Contact</a>
-    <a href="#contact" class="mobile-cta" data-en="Book Now" data-th="จองเลย">Book Now</a>
+    <div class="mobile-util">
+      <div class="lang-flags">
+        <button class="lang-flag-btn active-flag" id="langBtnEN2" onclick="setLang('en')" title="English"><img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x" alt="EN" /></button>
+        <button class="lang-flag-btn" id="langBtnTH2" onclick="setLang('th')" title="ภาษาไทย"><img src="https://flagcdn.com/w20/th.png" srcset="https://flagcdn.com/w40/th.png 2x" alt="TH" /></button>
+      </div>
+      <a href="https://wa.me/39XXXXXXXXXX" target="_blank" rel="noopener" class="nav-chat-btn" id="mobileChatBtn">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span data-en="WhatsApp Us" data-th="Line หาเรา">WhatsApp Us</span>
+      </a>
+    </div>
+    <a href="#contact" onclick="toggleMenu()" class="mobile-cta" data-en="Book Now" data-th="จองเลย">Book Now</a>
   </div>
 </header>
 
