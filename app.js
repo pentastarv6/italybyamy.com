@@ -269,7 +269,7 @@ const trips = [
     image2: 'pictures/lugano2.jpg',
     image3: 'pictures/lugano3.jpg',
     badge: 'Half Day',
-    rating: 4.7,
+    rating: 4.6,
     reviewCount: 22,
     en: {
       name: 'Lugano & Switzerland Day',
