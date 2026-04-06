@@ -126,6 +126,16 @@
   </div>
 </section>
 
+<!-- ===== LINE QR MODAL ===== -->
+<div class="line-qr-overlay" id="lineQrOverlay" onclick="closeLineQr()">
+  <div class="line-qr-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeLineQr()">✕</button>
+    <p class="line-qr-title"><i class="fa-brands fa-line"></i> เพิ่มเพื่อนใน LINE</p>
+    <img src="pictures/qrline.png" alt="LINE QR Code — Italy by Amy" />
+    <p class="line-qr-sub">สแกน QR code เพื่อพูดคุยกับเราใน LINE</p>
+  </div>
+</div>
+
 <!-- ===== TRIP MODAL ===== -->
 <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
   <div class="modal" id="tripModal" onclick="event.stopPropagation()">

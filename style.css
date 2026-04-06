@@ -340,6 +340,15 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 /* Line card */
 .line-card{border-left:4px solid #06C755!important;text-decoration:none;color:var(--text)}
 
+/* LINE QR popup */
+.line-qr-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:3000;align-items:center;justify-content:center;padding:1rem}
+.line-qr-overlay.open{display:flex}
+.line-qr-box{background:#fff;border-radius:var(--radius);padding:2rem 2rem 1.5rem;max-width:320px;width:100%;text-align:center;position:relative;animation:slideUp .25s ease}
+.line-qr-box img{width:100%;border-radius:8px;margin:.8rem 0}
+.line-qr-title{font-size:1.1rem;font-weight:700;color:#06C755;margin-bottom:.2rem}
+.line-qr-title .fa-brands{font-size:1.2rem;margin-right:.3rem}
+.line-qr-sub{font-size:.83rem;color:var(--text-m);margin-top:.4rem}
+
 /* Inline FA icons in card meta */
 .mosaic-meta .fa-solid,.mosaic-meta .fa-regular,
 .deal-location .fa-solid,.deal-meta .fa-solid,.deal-meta .fa-regular,

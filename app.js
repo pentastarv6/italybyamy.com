@@ -341,7 +341,7 @@ const messengerConfig = {
     sub: 'Typically replies within 1 hour'
   },
   th: {
-    href: 'https://line.me/ti/p/XXXXXXXXXX',
+    href: 'https://line.me/ti/p/~amydalina',
     iconClass: 'fa-brands fa-line',
     label: 'Line หาเรา',
     sub: 'ตอบกลับภายใน 1 ชั่วโมง'
@@ -382,7 +382,8 @@ function applyLanguage() {
   const topbarHref = document.getElementById('topbarMessenger');
   const topbarIcon = document.getElementById('topbarChatIcon');
   if (topbarHref) {
-    topbarHref.href  = cfg.href;
+    topbarHref.href  = isEn ? cfg.href : '#';
+    topbarHref.onclick = isEn ? null : (e => { e.preventDefault(); openLineQr(); });
     topbarHref.title = cfg.label;
     topbarHref.classList.toggle('nav-wa',   isEn);
     topbarHref.classList.toggle('nav-line', !isEn);
@@ -395,7 +396,8 @@ function applyLanguage() {
   const cLabel = document.getElementById('contactLabel');
   const cSub   = document.getElementById('contactSub');
   if (cHref) {
-    cHref.href = cfg.href;
+    cHref.href = isEn ? cfg.href : '#';
+    cHref.onclick = isEn ? null : (e => { e.preventDefault(); openLineQr(); });
     cHref.classList.toggle('whatsapp-card', isEn);
     cHref.classList.toggle('line-card', !isEn);
   }
@@ -545,7 +547,17 @@ function closeModal() {
   document.getElementById('modalOverlay').classList.remove('open');
   document.body.style.overflow = '';
 }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+/* -- LINE QR popup --------------------------------------- */
+function openLineQr() {
+  const el = document.getElementById('lineQrOverlay');
+  if (el) { el.classList.add('open'); document.body.style.overflow = 'hidden'; }
+}
+function closeLineQr() {
+  const el = document.getElementById('lineQrOverlay');
+  if (el) { el.classList.remove('open'); document.body.style.overflow = ''; }
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal(); closeLineQr(); } });
 
 /* -- Contact form ----------------------------------------- */
 function submitForm(e) {
