@@ -513,8 +513,10 @@ function openModal(idx) {
   // Images
   document.getElementById('modalImages').innerHTML = `
     <img src="${trip.image}"  alt="${tripImageAlts[trip.id] || info.name}">
-    <img src="${trip.image2}" alt="${info.name} — ${info.location}">
-    <img src="${trip.image3}" alt="${info.name} — Lake Como Italy">
+    <div class="modal-images-side">
+      <img src="${trip.image2}" alt="${info.name} — ${info.location}">
+      <img src="${trip.image3}" alt="${info.name} — Lake Como Italy">
+    </div>
   `;
 
   // Badge + title + stars
