@@ -308,6 +308,16 @@ const trips = [
   }
 ];
 
+/* -- SEO image alt texts --------------------------------- */
+const tripImageAlts = {
+  0:  'Private boat tour to Bellagio and Varenna — Lake Como, Italy',
+  5:  'Villa del Balbianello private boat tour — Lenno, Lake Como, Italy',
+  4:  'Private day trip to Milan from Lake Como — Duomo and fashion district',
+  3:  'Lugano Switzerland day trip from Como — Lake Lugano panoramic view',
+  6:  'Bergamo Alta UNESCO walled city private day trip from Como',
+  10: 'Stresa and Borromean Islands boat tour — Lake Maggiore from Como',
+};
+
 /* -- Language -------------------------------------------- */
 let currentLang = 'en';
 
@@ -328,6 +338,7 @@ const messengerConfig = {
 
 function setLang(lang) {
   currentLang = lang;
+  localStorage.setItem('italybyamy_lang', lang);
   applyLanguage();
   if (typeof gtag !== 'undefined') gtag('event', 'language_toggle', { lang: currentLang });
 }
@@ -338,6 +349,20 @@ function toggleLang() {
 
 function applyLanguage() {
   const isEn = currentLang === 'en';
+
+  // Update HTML lang attribute, page title, meta description, and canonical URL
+  document.documentElement.lang = currentLang;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (isEn) {
+    document.title = 'Private Day Trips & Boat Tours \u00b7 Lake Como, Italy | Italy by Amy';
+    if (metaDesc) metaDesc.content = 'Book private day trips, boat tours & luxury transfers around Lake Como. Bellagio, Varenna, Milan, Lugano & more. Hotel pickup included. English, Thai & Italian spoken.';
+    if (canonical) canonical.href = 'https://italybyamy.com/';
+  } else {
+    document.title = '\u0e17\u0e31\u0e27\u0e23\u0e4c\u0e2a\u0e48\u0e27\u0e19\u0e15\u0e31\u0e27\u0e17\u0e30\u0e40\u0e25\u0e2a\u0e32\u0e1a\u0e42\u0e04\u0e42\u0e21\u0e48 \u00b7 \u0e23\u0e16\u0e23\u0e31\u0e1a\u0e2a\u0e48\u0e07\u0e2b\u0e23\u0e39\u0e2b\u0e23\u0e32 | Italy by Amy';
+    if (metaDesc) metaDesc.content = '\u0e17\u0e31\u0e27\u0e23\u0e4c\u0e2a\u0e48\u0e27\u0e19\u0e15\u0e31\u0e27\u0e17\u0e30\u0e40\u0e25\u0e2a\u0e32\u0e1a\u0e42\u0e04\u0e42\u0e21\u0e48 \u0e40\u0e17\u0e35\u0e48\u0e22\u0e27\u0e40\u0e1a\u0e25\u0e25\u0e32\u0e08\u0e34\u0e42\u0e2d \u0e27\u0e34\u0e25\u0e25\u0e48\u0e32\u0e40\u0e14\u0e25\u0e1a\u0e31\u0e25\u0e40\u0e1a\u0e35\u0e22\u0e40\u0e19\u0e25\u0e42\u0e25 \u0e21\u0e34\u0e25\u0e32\u0e19 \u0e25\u0e39\u0e01\u0e32\u0e42\u0e19 \u0e23\u0e31\u0e1a\u0e17\u0e35\u0e48\u0e42\u0e23\u0e07\u0e41\u0e23\u0e21 \u0e21\u0e35\u0e44\u0e01\u0e14\u0e4c\u0e1e\u0e39\u0e14\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 \u0e40\u0e17\u0e35\u0e48\u0e22\u0e27\u0e42\u0e04\u0e42\u0e21\u0e48';
+    if (canonical) canonical.href = 'https://italybyamy.com/?lang=th';
+  }
 
   // All data-en / data-th elements
   document.querySelectorAll('[data-en]').forEach(el => {
@@ -409,7 +434,7 @@ function renderMosaic() {
     const info = t(trip);
     return `
       <div class="mosaic-card${i === 0 ? ' large' : ''}" onclick="openModal(${idx})">
-        <img src="${trip.image}" alt="${info.name}" loading="lazy">
+        <img src="${trip.image}" alt="${tripImageAlts[trip.id] || info.name}" loading="lazy">
         <span class="mosaic-badge">${trip.badge}</span>
         <div class="mosaic-overlay">
           <div class="mosaic-body">
@@ -433,7 +458,7 @@ function renderDeals() {
     return `
       <div class="deal-card" onclick="openModal(${idx})">
         <div class="deal-card-img">
-          <img src="${trip.image}" alt="${info.name}" loading="lazy">
+          <img src="${trip.image}" alt="${tripImageAlts[trip.id] || info.name}" loading="lazy">
           <span class="deal-badge">${trip.badge}</span>
         </div>
         <div class="deal-body">
@@ -459,7 +484,7 @@ function renderTrips() {
     return `
       <div class="trip-card" onclick="openModal(${idx})">
         <div class="trip-card-img">
-          <img src="${trip.image}" alt="${info.name}" loading="lazy">
+          <img src="${trip.image}" alt="${tripImageAlts[trip.id] || info.name}" loading="lazy">
           <span class="trip-badge${idx < 3 ? ' top' : ''}">${trip.badge}</span>
         </div>
         <div class="trip-card-body">
@@ -487,9 +512,9 @@ function openModal(idx) {
 
   // Images
   document.getElementById('modalImages').innerHTML = `
-    <img src="${trip.image}"  alt="${info.name}">
-    <img src="${trip.image2}" alt="${info.name}">
-    <img src="${trip.image3}" alt="${info.name}">
+    <img src="${trip.image}"  alt="${tripImageAlts[trip.id] || info.name}">
+    <img src="${trip.image2}" alt="${info.name} — ${info.location}">
+    <img src="${trip.image3}" alt="${info.name} — Lake Como Italy">
   `;
 
   // Badge + title + stars
@@ -624,6 +649,17 @@ function toggleMenu() {
 
 /* -- Init ------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
+  // Priority: URL param → localStorage → browser language
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlLang = urlParams.get('lang');
+  const savedLang = localStorage.getItem('italybyamy_lang');
+  if (urlLang === 'th' || urlLang === 'en') {
+    currentLang = urlLang;
+  } else if (savedLang) {
+    currentLang = savedLang;
+  } else if (navigator.language && navigator.language.toLowerCase().startsWith('th')) {
+    currentLang = 'th';
+  }
   renderTrips();
   applyLanguage();
 });
