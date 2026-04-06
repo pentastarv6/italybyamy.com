@@ -150,7 +150,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 /* =========================================================
    ALL TRIPS GRID
    ========================================================= */
-.trips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.2rem}
+.trips-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 .trip-card{background:#fff;border-radius:var(--radius);overflow:hidden;cursor:pointer;border:1px solid var(--border);transition:transform var(--trans),box-shadow var(--trans)}
 .trip-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-h)}
 .trip-card-img{position:relative;height:170px;overflow:hidden}
