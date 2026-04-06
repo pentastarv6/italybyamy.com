@@ -565,7 +565,7 @@ function submitForm(e) {
   const msg     = document.getElementById('formMessage').value.trim();
   const subject = encodeURIComponent(`Italy by Amy Enquiry — ${name}`);
   const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nService: ${service}\nGuests: ${guests}\n\n${msg}`);
-  window.location.href = `mailto:hello@italybyamy.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:italybyamy@gmail.com?subject=${subject}&body=${body}`;
   if (typeof gtag !== 'undefined') gtag('event', 'contact_form_submit');
 }
 
