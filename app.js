@@ -67,9 +67,9 @@ const trips = [
       type: 'Villa & Gardens',
       location: 'Lenno, Lake Como',
       summary: "One of Italy's most celebrated villas — terraced gardens, lakeside loggias, and film-set perfection (James Bond, Star Wars).",
-      description: "Villa del Balbianello is consistently ranked among the world's most beautiful villa gardens. Perched on a wooded promontory above the lake, the villa's elegant loggias and manicured terraces have been immortalised in Casino Royale and Star Wars: Episode II. We arrive by boat for the most dramatic approach, then tour the gardens and historic rooms before a lakeside lunch in Lenno.",
+      description: "Villa del Balbianello is consistently ranked among the world's most beautiful villa gardens. Perched on a wooded promontory above the lake, the villa's elegant loggias and manicured terraces have been immortalised in Casino Royale and Star Wars: Episode II. Explore the botanic gardens and manicured terraces before a lakeside lunch in Lenno.",
       highlights: ['Villa Balbianello Gardens', 'Lakeside Loggias', 'Bond Film Locations', 'Lenno Village', 'Terrace Panoramas'],
-      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Boat transfer', 'Villa entry ticket', 'Bottled water'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Villa entry ticket', 'Bottled water'],
     },
     th: {
       name: 'ทัวร์ Villa del Balbianello',
@@ -77,16 +77,15 @@ const trips = [
       type: 'วิลล่าและสวน',
       location: 'เลนโน, ทะเลสาบโคโม่',
       summary: 'วิลล่าที่มีชื่อเสียงที่สุดในอิตาลี — สวนขั้นบันได loggia ริมทะเลสาบ สวยราวฉากภาพยนตร์ (James Bond, Star Wars)',
-      description: 'Villa del Balbianello ได้รับการยกย่องว่าเป็นสวนวิลล่าที่สวยที่สุดในโลก ตั้งอยู่บนแหลมที่มีต้นไม้ปกคลุม loggia อันสง่างามและระเบียงขั้นบันไดที่ถ่ายทำใน Casino Royale และ Star Wars ภาค 2 เราเดินทางมาด้วยเรือ จากนั้นชมสวนและห้องประวัติศาสตร์ก่อนรับประทานอาหารริมทะเลสาบที่ Lenno',
+      description: 'Villa del Balbianello ได้รับการยกย่องว่าเป็นสวนวิลล่าที่สวยที่สุดในโลก ตั้งอยู่บนแหลมที่มีต้นไม้ปกคลุม loggia อันสง่างามและระเบียงขั้นบันไดที่ถ่ายทำใน Casino Royale และ Star Wars ภาค 2 สำรวจสวนพฤกษศาสตร์และระเบียงขั้นบันไดก่อนรับประทานอาหารริมทะเลสาบที่ Lenno',
       highlights: ['สวน Balbianello', 'Loggia ริมทะเลสาบ', 'สถานที่ถ่ายทำบอนด์', 'หมู่บ้านเลนโน', 'ระเบียงพาโนรามา'],
-      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ค่าโดยสารเรือ', 'ตั๋วเข้าวิลล่า', 'น้ำดื่ม'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้าวิลล่า', 'น้ำดื่ม'],
     },
     itinerary: {
       en: [
         { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'Pickup at your hotel in Como' },
         { time: '',      icon: 'fa-solid fa-car',              label: 'Drive to Lenno village' },
-        { time: '',      icon: 'fa-solid fa-ship',             label: 'Boat transfer to Villa del Balbianello' },
-        { time: '',      icon: 'fa-solid fa-landmark',         label: "Tour the villa's historic rooms" },
+        { time: '',      icon: 'fa-solid fa-tree',             label: 'Botanic garden sightseeing' },
         { time: '',      icon: 'fa-solid fa-tree',             label: 'Explore the terraced gardens & loggias' },
         { time: '',      icon: 'fa-solid fa-camera',           label: 'Panoramic views over Lake Como' },
         { time: '14:00', icon: 'fa-solid fa-hotel',           label: 'Return to your hotel in Como' },
@@ -94,8 +93,7 @@ const trips = [
       th: [
         { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'รับคณะที่โรงแรมในเมืองโคโม่' },
         { time: '',      icon: 'fa-solid fa-car',              label: 'ขับรถไปหมู่บ้านเลนโน' },
-        { time: '',      icon: 'fa-solid fa-ship',             label: 'นั่งเรือไปยัง Villa del Balbianello' },
-        { time: '',      icon: 'fa-solid fa-landmark',         label: 'ชมห้องประวัติศาสตร์ของวิลล่า' },
+        { time: '',      icon: 'fa-solid fa-tree',             label: 'ชมสวนพฤกษศาสตร์' },
         { time: '',      icon: 'fa-solid fa-tree',             label: 'สำรวจสวนขั้นบันไดและ loggia' },
         { time: '',      icon: 'fa-solid fa-camera',           label: 'ชมวิวพาโนรามาทะเลสาบโคโม่' },
         { time: '14:00', icon: 'fa-solid fa-hotel',           label: 'กลับโรงแรมในเมืองโคโม่' },
@@ -496,7 +494,7 @@ function renderTrips() {
             <span>${info.type}</span>
           </div>
           <div class="trip-card-footer">
-            <span class="trip-price">${info.duration.includes('Half Day') ? (currentLang === 'th' ? 'เริ่มต้นที่ €499' : 'Starting from €499') : (currentLang === 'th' ? 'เริ่มต้นที่ €899' : 'Starting from €899')}</span>
+            <span class="trip-price">${trip.en.duration.includes('Half Day') ? (currentLang === 'th' ? 'เริ่มต้นที่ €499' : 'Starting from €499') : (currentLang === 'th' ? 'เริ่มต้นที่ €899' : 'Starting from €899')}</span>
             <button class="btn-enquire">Enquire</button>
           </div>
         </div>
@@ -565,7 +563,7 @@ function openModal(idx) {
   }
 
   // Price
-  const isHalfDay = info.duration.includes('Half Day');
+  const isHalfDay = trip.en.duration.includes('Half Day');
   const priceEl = overlay.querySelector('.modal-price');
   if (priceEl) {
     const enPrice = isHalfDay ? 'Starting from €499' : 'Starting from €899';
