@@ -471,7 +471,7 @@ function renderTrips() {
             <span>${info.type}</span>
           </div>
           <div class="trip-card-footer">
-            <span class="trip-price">${info.duration.includes('Half Day') ? (currentLang === 'th' ? 'เริ่มต้นที่ €499 ต่อคน' : 'Starting from €499 p.p.') : (currentLang === 'th' ? 'เริ่มต้นที่ €799 ต่อคน' : 'Starting from €799 p.p.')}</span>
+            <span class="trip-price">${info.duration.includes('Half Day') ? (currentLang === 'th' ? 'เริ่มต้นที่ €499' : 'Starting from €499') : (currentLang === 'th' ? 'เริ่มต้นที่ €799' : 'Starting from €799')}</span>
             <button class="btn-enquire">Enquire</button>
           </div>
         </div>
@@ -541,8 +541,8 @@ function openModal(idx) {
   const isHalfDay = info.duration.includes('Half Day');
   const priceEl = overlay.querySelector('.modal-price');
   if (priceEl) {
-    const enPrice = isHalfDay ? 'Starting from €499 p.p.' : 'Starting from €799 p.p.';
-    const thPrice = isHalfDay ? 'เริ่มต้นที่ €499 ต่อคน' : 'เริ่มต้นที่ €799 ต่อคน';
+    const enPrice = isHalfDay ? 'Starting from €499' : 'Starting from €799';
+    const thPrice = isHalfDay ? 'เริ่มต้นที่ €499' : 'เริ่มต้นที่ €799';
     priceEl.dataset.en = enPrice;
     priceEl.dataset.th = thPrice;
     priceEl.textContent = currentLang === 'th' ? thPrice : enPrice;
