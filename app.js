@@ -6,7 +6,7 @@
 const trips = [
   {
     id: 0,
-    image: 'pictures/como lago bellagio.jpg',
+    image: 'pictures/como-lago-bellagio.jpg',
     image2: 'pictures/things-to-do-in-lake-como-in-october.jpg',
     image3: 'pictures/como brunate.jpg',
     badge: 'Popular',
