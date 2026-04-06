@@ -30,6 +30,30 @@ const trips = [
       highlights: ['ข้ามเรือเฟอรี่', 'ย่านเก่าเบลลาจิโอ', 'อาหารกลางวันริมทะเลสาบ', 'เส้นทางวาเรนนา', 'Villa Carlotta', 'วิวสวยงาม'],
       includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเรือเฟอรี่', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
+    itinerary: {
+      en: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'Pickup at your hotel in Como' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'Transfer to Tremezzo' },
+        { time: '',      icon: 'fa-solid fa-ship',             label: 'Cross by boat to Varenna' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'Explore Varenna' },
+        { time: '',      icon: 'fa-solid fa-ship',             label: 'Boat from Varenna to Bellagio' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'Explore Bellagio' },
+        { time: '',      icon: 'fa-solid fa-ship',             label: 'Boat from Bellagio back to Tremezzo' },
+        { time: '',      icon: 'fa-solid fa-tree',             label: 'Visit Villa Carlotta & beautiful gardens' },
+        { time: '18:00', icon: 'fa-solid fa-hotel',           label: 'Return to your hotel in Como' },
+      ],
+      th: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'รับคณะที่โรงแรมในเมืองโคโม่' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'เดินทางไปเทรเมซโซ' },
+        { time: '',      icon: 'fa-solid fa-ship',             label: 'นั่งเรือข้ามไปวาเรนนา' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'สำรวจวาเรนนา' },
+        { time: '',      icon: 'fa-solid fa-ship',             label: 'เรือจากวาเรนนาไปเบลลาจิโอ' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'สำรวจเบลลาจิโอ' },
+        { time: '',      icon: 'fa-solid fa-ship',             label: 'เรือจากเบลลาจิโอกลับเทรเมซโซ' },
+        { time: '',      icon: 'fa-solid fa-tree',             label: 'ชม Villa Carlotta และสวนอันงดงาม' },
+        { time: '18:00', icon: 'fa-solid fa-hotel',           label: 'กลับโรงแรมในเมืองโคโม่' },
+      ],
+    },
   },
   {
     id: 3,
@@ -374,6 +398,28 @@ function openModal(idx) {
   // Includes
   document.getElementById('modalIncludes').innerHTML =
     info.includes.map(i => `<li><i class="fa-solid fa-circle-check"></i> ${i}</li>`).join('');
+
+  // Itinerary
+  const itineraryEl = document.getElementById('modalItinerary');
+  if (itineraryEl) {
+    if (trip.itinerary) {
+      const steps = trip.itinerary[currentLang] || trip.itinerary.en;
+      itineraryEl.innerHTML = `
+        <h3 class="itinerary-title">${currentLang === 'th' ? 'รายละเอียดเส้นทาง' : 'Day Itinerary'}</h3>
+        <div class="itinerary-timeline">
+          ${steps.map((s, i) => `
+            <div class="itin-step${i === 0 || i === steps.length - 1 ? ' itin-step--anchor' : ''}">
+              <div class="itin-time">${s.time}</div>
+              <div class="itin-dot-col"><div class="itin-dot"><i class="${s.icon}"></i></div>${i < steps.length - 1 ? '<div class="itin-line"></div>' : ''}</div>
+              <div class="itin-label">${s.label}</div>
+            </div>`).join('')}
+        </div>`;
+      itineraryEl.style.display = 'block';
+    } else {
+      itineraryEl.style.display = 'none';
+      itineraryEl.innerHTML = '';
+    }
+  }
 
   // Price
   const isHalfDay = info.duration.includes('Half Day');

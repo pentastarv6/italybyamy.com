@@ -186,6 +186,18 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .modal-highlights{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.6rem;margin-bottom:1.3rem}
 .highlight-item{background:var(--grey);border-radius:6px;padding:.5rem .8rem;font-size:.8rem;font-weight:500}
 .modal-desc{font-size:.93rem;color:var(--text-m);line-height:1.75;margin-bottom:1.4rem}
+/* Itinerary timeline */
+.modal-itinerary{margin-bottom:1.6rem}
+.itinerary-title{font-family:'Inter',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:.9rem}
+.itinerary-timeline{display:flex;flex-direction:column;gap:0}
+.itin-step{display:grid;grid-template-columns:3rem 2rem 1fr;align-items:flex-start;gap:0 .6rem}
+.itin-time{font-size:.75rem;font-weight:700;color:var(--green);padding-top:.18rem;min-width:3rem;text-align:right}
+.itin-dot-col{display:flex;flex-direction:column;align-items:center}
+.itin-dot{width:1.7rem;height:1.7rem;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;color:#fff;font-size:.7rem;flex-shrink:0}
+.itin-step--anchor .itin-dot{background:#e8921e;width:1.9rem;height:1.9rem;font-size:.75rem}
+.itin-line{width:2px;flex:1;min-height:.9rem;background:linear-gradient(#c8e8d8,#c8e8d8);margin:.15rem 0}
+.itin-label{font-size:.85rem;color:var(--text-d);padding:.18rem 0 .9rem;line-height:1.4}
+.itin-step--anchor .itin-label{font-weight:600;color:var(--text-d)}
 .modal-includes{margin-bottom:1.4rem}
 .modal-includes h3{font-family:'Inter',sans-serif;font-size:.95rem;font-weight:700;margin-bottom:.6rem}
 .modal-includes ul{display:grid;grid-template-columns:1fr 1fr;gap:.35rem}
