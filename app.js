@@ -335,7 +335,7 @@ let currentLang = 'en';
 
 const messengerConfig = {
   en: {
-    href: 'https://wa.me/39XXXXXXXXXX',
+    href: 'https://wa.me/393474527190',
     iconClass: 'fa-brands fa-whatsapp',
     label: 'WhatsApp Us',
     sub: 'Typically replies within 1 hour'
