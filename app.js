@@ -155,9 +155,9 @@ const trips = [
   },
   {
     id: 3,
-    image: 'pictures/como brunate.jpg',
-    image2: 'pictures/como lago bellagio.jpg',
-    image3: 'pictures/como duomo.jpg',
+    image: 'pictures/lugano1.jpg',
+    image2: 'pictures/lugano2.jpg',
+    image3: 'pictures/lugano3.jpg',
     badge: 'Half Day',
     en: {
       name: 'Lugano & Switzerland Day',
@@ -207,8 +207,8 @@ const trips = [
   {
     id: 6,
     image: 'pictures/bergamo citta alta 2.jpeg',
-    image2: 'pictures/como brunate.jpg',
-    image3: 'pictures/como duomo.jpg',
+    image2: 'pictures/bergamo2.jpg',
+    image3: 'pictures/bergamo3.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Bergamo Alta: Walled City',
