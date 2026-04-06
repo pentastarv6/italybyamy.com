@@ -600,6 +600,41 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal
 /* -- Contact form ----------------------------------------- */
 function submitForm(e) {
   e.preventDefault();
+
+  // Validate name and email
+  const nameEl  = document.getElementById('formName');
+  const emailEl = document.getElementById('formEmail');
+  const nameErr  = document.getElementById('nameError');
+  const emailErr = document.getElementById('emailError');
+  const isTh = currentLang === 'th';
+  let valid = true;
+
+  // Clear previous errors
+  [nameEl, emailEl].forEach(el => el.classList.remove('field-error'));
+  [nameErr, emailErr].forEach(el => el.classList.remove('visible'));
+
+  if (!nameEl.value.trim()) {
+    nameEl.classList.add('field-error');
+    nameErr.textContent = isTh ? 'กรุณากรอกชื่อของคุณ' : 'Please enter your name';
+    nameErr.classList.add('visible');
+    valid = false;
+  }
+
+  const emailVal = emailEl.value.trim();
+  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal);
+  if (!emailVal || !emailOk) {
+    emailEl.classList.add('field-error');
+    emailErr.textContent = isTh ? 'กรุณากรอกอีเมลที่ถูกต้อง' : 'Please enter a valid email address';
+    emailErr.classList.add('visible');
+    valid = false;
+  }
+
+  if (!valid) { nameEl.value.trim() === '' ? nameEl.focus() : emailEl.focus(); return; }
+
+  // Clear errors on successful input
+  nameEl.addEventListener('input', () => { nameEl.classList.remove('field-error'); nameErr.classList.remove('visible'); }, { once: true });
+  emailEl.addEventListener('input', () => { emailEl.classList.remove('field-error'); emailErr.classList.remove('visible'); }, { once: true });
+
   const btn = document.getElementById('formSubmitBtn');
   const successMsg = document.getElementById('formSuccess');
   const sendingLabel = currentLang === 'th' ? 'กำลังส่ง…' : 'Sending…';
