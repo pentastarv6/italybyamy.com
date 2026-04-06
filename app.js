@@ -11,8 +11,8 @@ const trips = [
     image3: 'pictures/como brunate.jpg',
     badge: 'Popular',
     en: {
-      name: 'Bellagio & the Villages',
-      duration: 'Full Day — 8 hrs',
+      name: 'Bellagio & Varenna',
+      duration: 'Full Day — 9 hrs',
       type: 'Lake Tour',
       location: 'Bellagio, Varenna',
       summary: 'The crown of Lake Como — stroll narrow lanes, admire the lake from Villa Melzi gardens, and take in panoramic views over lunch.',
@@ -21,8 +21,8 @@ const trips = [
       includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Ferry tickets', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
-      name: 'เบลลาจิโอ & หมู่บ้านริมทะเลสาบ',
-      duration: 'เต็มวัน — 8 ชั่วโมง',
+      name: 'เบลลาจิโอ & วาเรนนา',
+      duration: 'เต็มวัน — 9 ชั่วโมง',
       type: 'ทัวร์ทะเลสาบ',
       location: 'เบลลาจิโอ, วาเรนนา',
       summary: 'มงกุฎแห่งทะเลสาบโคโม่ — เดินเล่นตรอกแคบๆ ชื่นชมทะเลสาบจากสวน Villa Melzi และชมวิวพาโนรามาขณะรับประทานอาหารกลางวัน',
@@ -63,7 +63,7 @@ const trips = [
     badge: 'Half Day',
     en: {
       name: 'Lugano & Switzerland Day',
-      duration: 'Half Day — 4 hrs',
+      duration: 'Half Day — 5 hrs',
       type: 'Cross-border Excursion',
       location: 'Lugano, Switzerland',
       summary: 'Cross the Swiss border for a refined day in elegant Lugano — the city of parks, galleries, and stunning lake views from Monte San Salvatore.',
@@ -73,7 +73,7 @@ const trips = [
     },
     th: {
       name: 'ลูกาโน & วันสวิตเซอร์แลนด์',
-      duration: 'ครึ่งวัน — 4 ชั่วโมง',
+      duration: 'ครึ่งวัน — 5 ชั่วโมง',
       type: 'ทัวร์ข้ามพรมแดน',
       location: 'ลูกาโน, สวิตเซอร์แลนด์',
       summary: 'ข้ามพรมแดนสวิสเพื่อวันอันสวยงามในลูกาโนที่หรูหรา — เมืองแห่งสวนสาธารณะ แกลเลอรี่ และวิวทะเลสาบจาก Monte San Salvatore',
@@ -90,7 +90,7 @@ const trips = [
     badge: 'Day Trip',
     en: {
       name: 'Milan Fashion & Culture Day',
-      duration: 'Full Day — 10 hrs',
+      duration: 'Full Day — 9 hrs',
       type: 'City Excursion',
       location: 'Milan, Italy',
       summary: "Italy's fashion capital in one day — the Duomo, Galleria Vittorio Emanuele II, Navigli canals, and all the couture your heart desires.",
@@ -100,7 +100,7 @@ const trips = [
     },
     th: {
       name: 'มิลาน แฟชั่น & วัฒนธรรม',
-      duration: 'เต็มวัน — 10 ชั่วโมง',
+      duration: 'เต็มวัน — 9 ชั่วโมง',
       type: 'ทัวร์เมือง',
       location: 'มิลาน, อิตาลี',
       summary: 'เมืองหลวงแฟชั่นอิตาลีใน 1 วัน — Duomo, Galleria Vittorio Emanuele II, คลอง Navigli และแฟชั่นสุดหรู',
@@ -144,7 +144,7 @@ const trips = [
     badge: 'Day Trip',
     en: {
       name: 'Bergamo Alta: Walled City',
-      duration: 'Full Day — 8 hrs',
+      duration: 'Full Day — 9 hrs',
       type: 'UNESCO Heritage City',
       location: 'Bergamo Alta',
       summary: 'A perfectly preserved medieval city perched on a hilltop, encircled by Venetian walls and ignored by most tourists.',
@@ -154,7 +154,7 @@ const trips = [
     },
     th: {
       name: 'แบร์กาโม อัลตา: เมืองมีกำแพง',
-      duration: 'เต็มวัน — 8 ชั่วโมง',
+      duration: 'เต็มวัน — 9 ชั่วโมง',
       type: 'เมืองมรดก UNESCO',
       location: 'แบร์กาโม อัลตา',
       summary: 'เมืองยุคกลางที่ได้รับการอนุรักษ์อย่างสมบูรณ์บนยอดเขา ล้อมรอบด้วยกำแพงเวนิสและถูกนักท่องเที่ยวส่วนใหญ่มองข้าม',
@@ -171,7 +171,7 @@ const trips = [
     badge: 'Day Trip',
     en: {
       name: 'Verona: Romeo & Juliet',
-      duration: 'Full Day — 10 hrs',
+      duration: 'Full Day — 9 hrs',
       type: 'UNESCO City Tour',
       location: 'Verona, Veneto',
       summary: "The city of love — Juliet's balcony, the Roman Arena, medieval streets, and the finest Soave wine this side of the Veneto.",
@@ -181,7 +181,7 @@ const trips = [
     },
     th: {
       name: 'เวโรนา: โรมิโอ & จูเลียต',
-      duration: 'เต็มวัน — 10 ชั่วโมง',
+      duration: 'เต็มวัน — 9 ชั่วโมง',
       type: 'ทัวร์เมือง UNESCO',
       location: 'เวโรนา, เวนิโต',
       summary: 'เมืองแห่งความรัก — ระเบียง Juliet, Arena โรมัน, ถนนยุคกลาง และไวน์ Soave ของแท้',
