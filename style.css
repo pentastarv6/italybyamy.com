@@ -104,20 +104,10 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .hero-content h1{margin-bottom:1rem;text-shadow:0 2px 16px rgba(0,0,0,.4);max-width:660px}
 .hero-sub{font-size:clamp(.95rem,1.8vw,1.1rem);max-width:540px;color:rgba(255,255,255,.88);font-weight:300;line-height:1.7}
 
-/* Search bar */
-.hero-search{position:relative;z-index:2;background:#fff;box-shadow:0 8px 40px rgba(0,0,0,.2);border-radius:10px;padding:1.2rem 1.5rem;max-width:var(--max);margin:0 auto;width:calc(100% - 3rem);transform:translateY(42px)}
-.hero-search-inner{display:flex;align-items:flex-end;gap:0;flex-wrap:nowrap}
-.search-field{flex:1;min-width:0;display:flex;flex-direction:column;gap:.3rem;padding:0 1rem}
-.search-field label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-m)}
-.search-field input,.search-field select{border:none;outline:none;font-size:.92rem;font-family:'Inter',sans-serif;color:var(--text);background:transparent;padding:.2rem 0;width:100%}
-.search-divider{width:1px;background:var(--border);align-self:stretch;flex-shrink:0;margin:0}
-.search-btn{flex-shrink:0;background:var(--green);color:#fff;border:none;padding:.8rem 1.8rem;border-radius:6px;font-size:.92rem;font-weight:700;cursor:pointer;margin-left:1rem;transition:background var(--trans);white-space:nowrap}
-.search-btn:hover{background:var(--green-l)}
-
 /* =========================================================
    FEATURES BAR
    ========================================================= */
-.features-bar{background:#fff;border-bottom:1px solid var(--border);padding:2.5rem 1.5rem 2rem;margin-top:42px}
+.features-bar{background:#fff;border-bottom:1px solid var(--border);padding:2.5rem 1.5rem 2rem}
 .features-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
 .feature-item{display:flex;align-items:flex-start;gap:.9rem}
 .feature-icon{font-size:2rem;flex-shrink:0;line-height:1}
@@ -323,10 +313,6 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
   .lang-flag-btn{font-size:1.25rem}
   .hero-search-inner{flex-direction:column;align-items:stretch}
   .search-divider{display:none}
-  .search-field{padding:.5rem 0;border-bottom:1px solid var(--border)}
-  .search-btn{margin:1rem 0 0;width:100%;padding:.85rem}
-  .hero-search{transform:translateY(0);border-radius:0 0 10px 10px;margin:0 1.5rem;width:calc(100% - 3rem)}
-  .features-bar{margin-top:0;padding-top:2rem}
   .mosaic-grid{grid-template-columns:1fr;grid-template-rows:auto}
   .mosaic-card:first-child{grid-row:auto;height:280px}
   .mosaic-card{height:220px}

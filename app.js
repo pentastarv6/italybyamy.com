@@ -547,14 +547,6 @@ function closeModal() {
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-/* -- Search / enquiry ------------------------------------- */
-function handleSearch() {
-  const dest = document.getElementById('searchDest').value.trim().toLowerCase();
-  const section = document.getElementById('all-trips') || document.getElementById('contact');
-  if (section) section.scrollIntoView({ behavior: 'smooth' });
-  if (typeof gtag !== 'undefined') gtag('event', 'search', { search_term: dest });
-}
-
 /* -- Contact form ----------------------------------------- */
 function submitForm(e) {
   e.preventDefault();
