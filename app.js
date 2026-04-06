@@ -558,15 +558,44 @@ function handleSearch() {
 /* -- Contact form ----------------------------------------- */
 function submitForm(e) {
   e.preventDefault();
-  const name    = document.getElementById('formName').value.trim();
-  const email   = document.getElementById('formEmail').value.trim();
-  const service = document.getElementById('formService').value;
-  const guests  = document.getElementById('formGuests').value;
-  const msg     = document.getElementById('formMessage').value.trim();
-  const subject = encodeURIComponent(`Italy by Amy Enquiry — ${name}`);
-  const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nService: ${service}\nGuests: ${guests}\n\n${msg}`);
-  window.location.href = `mailto:italybyamy@gmail.com?subject=${subject}&body=${body}`;
-  if (typeof gtag !== 'undefined') gtag('event', 'contact_form_submit');
+  const btn = document.getElementById('formSubmitBtn');
+  const successMsg = document.getElementById('formSuccess');
+  const sendingLabel = currentLang === 'th' ? 'กำลังส่ง…' : 'Sending…';
+  const originalLabel = currentLang === 'th' ? 'ส่งข้อความสอบถาม' : 'Send Enquiry';
+  const errorLabel = currentLang === 'th' ? 'เกิดข้อผิดพลาด โปรดลองใหม่' : 'Something went wrong — please try again';
+
+  btn.disabled = true;
+  btn.textContent = sendingLabel;
+
+  const payload = {
+    name:    document.getElementById('formName').value.trim(),
+    email:   document.getElementById('formEmail').value.trim(),
+    service: document.getElementById('formService').value,
+    guests:  document.getElementById('formGuests').value,
+    message: document.getElementById('formMessage').value.trim()
+  };
+
+  fetch('https://formspree.io/f/xpwzgqdn', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(r => r.json())
+  .then(data => {
+    if (data.ok) {
+      e.target.reset();
+      btn.style.display = 'none';
+      if (successMsg) { successMsg.style.display = 'block'; applyLanguage(); }
+      if (typeof gtag !== 'undefined') gtag('event', 'contact_form_submit');
+    } else {
+      btn.disabled = false;
+      btn.textContent = errorLabel;
+    }
+  })
+  .catch(() => {
+    btn.disabled = false;
+    btn.textContent = errorLabel;
+  });
 }
 
 /* -- Navbar mobile ---------------------------------------- */

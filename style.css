@@ -276,6 +276,8 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(26,138,191,.1)}
 .form-email-note{font-size:.8rem;color:var(--text-m);margin-top:.8rem;line-height:1.5}
 .form-email-note a{color:var(--green);font-weight:600}
+.form-success{background:#e6f9ee;border:1px solid #6fcf97;border-radius:8px;padding:1.2rem 1.5rem;margin-top:1rem;text-align:center}
+.form-success p{color:#1a7a3f;font-weight:600;font-size:1rem}
 
 /* =========================================================
    FOOTER
