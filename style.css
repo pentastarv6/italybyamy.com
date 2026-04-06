@@ -87,7 +87,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .brand-name em{font-style:italic;color:var(--green)}
 .brand-tagline{font-size:.7rem;color:var(--text-m);font-family:'Inter',sans-serif;letter-spacing:.03em}
 .nav-links{display:flex;gap:.1rem;margin-left:auto}
-.nav-links a{color:var(--text);font-size:.82rem;font-weight:500;padding:.4rem .6rem;border-radius:6px;transition:all var(--trans)}
+.nav-links a{color:var(--text);font-size:.93rem;font-weight:500;padding:.4rem .6rem;border-radius:6px;transition:all var(--trans)}
 .nav-links a:hover{background:var(--grey);color:var(--green)}
 .nav-actions{display:flex;align-items:center;gap:.6rem;margin-left:.4rem}
 .cta-btn{display:inline-block;background:#27ae60;color:#fff;padding:.5rem 1.2rem;border-radius:6px;font-size:.85rem;font-weight:600;transition:background var(--trans)}
