@@ -16,8 +16,8 @@ const trips = [
       type: 'Lake Tour',
       location: 'Bellagio, Varenna',
       summary: 'The crown of Lake Como — stroll narrow lanes, admire the lake from Villa Melzi gardens, and take in panoramic views over lunch.',
-      description: 'Start your day with a scenic drive along the western shore of Lake Como, arriving at Bellagio — the jewel of the lake. Explore the colourful alleys, visit the lakeside promenade. In the afternoon, cross by ferry to Varenna for a peaceful stroll along the Passeggiata degli Innamorati. Return to Como in style as the sun sets over the mountains.',
-      highlights: ['Ferry Crossing', 'Bellagio Old Town', 'Lakeside Lunch', 'Varenna Promenade', 'Scenic Drive'],
+      description: 'Start your day with a scenic drive along the western shore of Lake Como, arriving at Bellagio — the jewel of the lake. Explore the colourful alleys, visit the lakeside promenade, and stop at Villa Carlotta to visit the beautiful gardens. In the afternoon, cross by ferry to Varenna for a peaceful stroll along the Passeggiata degli Innamorati. Return to Como in style as the sun sets over the mountains.',
+      highlights: ['Ferry Crossing', 'Bellagio Old Town', 'Lakeside Lunch', 'Varenna Promenade', 'Villa Carlotta', 'Scenic Drive'],
       includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Ferry tickets', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
@@ -26,8 +26,8 @@ const trips = [
       type: 'ทัวร์ทะเลสาบ',
       location: 'เบลลาจิโอ, วาเรนนา',
       summary: 'มงกุฎแห่งทะเลสาบโคโม่ — เดินเล่นตรอกแคบๆ ชื่นชมทะเลสาบจากสวน Villa Melzi และชมวิวพาโนรามาขณะรับประทานอาหารกลางวัน',
-      description: 'เริ่มต้นวันด้วยการขับรถชมวิวตลอดแนวชายฝั่งตะวันตกของทะเลสาบโคโม่ มาถึงเบลลาจิโอ — อัญมณีแห่งทะเลสาบ สำรวจตรอกซอกซอย เดินเล่น promenade ริมทะเลสาบ ยามบ่ายข้ามเรือเฟอรี่ไปยังวาเรนนา เดินเล่นตลอด Passeggiata degli Innamorati กลับโคโม่อย่างมีสไตล์ขณะพระอาทิตย์ตกดิน',
-      highlights: ['ข้ามเรือเฟอรี่', 'ย่านเก่าเบลลาจิโอ', 'อาหารกลางวันริมทะเลสาบ', 'เส้นทางวาเรนนา', 'วิวสวยงาม'],
+      description: 'เริ่มต้นวันด้วยการขับรถชมวิวตลอดแนวชายฝั่งตะวันตกของทะเลสาบโคโม่ มาถึงเบลลาจิโอ — อัญมณีแห่งทะเลสาบ สำรวจตรอกซอกซอย เดินเล่น promenade ริมทะเลสาบ และแวะที่ Villa Carlotta เพื่อชมสวนอันงดงาม ยามบ่ายข้ามเรือเฟอรี่ไปยังวาเรนนา เดินเล่นตลอด Passeggiata degli Innamorati กลับโคโม่อย่างมีสไตล์ขณะพระอาทิตย์ตกดิน',
+      highlights: ['ข้ามเรือเฟอรี่', 'ย่านเก่าเบลลาจิโอ', 'อาหารกลางวันริมทะเลสาบ', 'เส้นทางวาเรนนา', 'Villa Carlotta', 'วิวสวยงาม'],
       includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเรือเฟอรี่', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   },
