@@ -60,10 +60,10 @@ const trips = [
     image: 'pictures/como brunate.jpg',
     image2: 'pictures/como lago bellagio.jpg',
     image3: 'pictures/como duomo.jpg',
-    badge: 'Day Trip',
+    badge: 'Half Day',
     en: {
       name: 'Lugano & Switzerland Day',
-      duration: 'Full Day — 9 hrs',
+      duration: 'Half Day — 4 hrs',
       type: 'Cross-border Excursion',
       location: 'Lugano, Switzerland',
       summary: 'Cross the Swiss border for a refined day in elegant Lugano — the city of parks, galleries, and stunning lake views from Monte San Salvatore.',
@@ -73,7 +73,7 @@ const trips = [
     },
     th: {
       name: 'ลูกาโน & วันสวิตเซอร์แลนด์',
-      duration: 'เต็มวัน — 9 ชั่วโมง',
+      duration: 'ครึ่งวัน — 4 ชั่วโมง',
       type: 'ทัวร์ข้ามพรมแดน',
       location: 'ลูกาโน, สวิตเซอร์แลนด์',
       summary: 'ข้ามพรมแดนสวิสเพื่อวันอันสวยงามในลูกาโนที่หรูหรา — เมืองแห่งสวนสาธารณะ แกลเลอรี่ และวิวทะเลสาบจาก Monte San Salvatore',
