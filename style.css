@@ -346,9 +346,10 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
   .cta-banner-inner{flex-direction:column;text-align:center}
   .van-images-pair{height:220px}
   .form-grid{grid-template-columns:1fr}
-  .modal-images{grid-template-columns:1fr;height:200px}
-  .modal-images-side{display:none}
-  .modal-images>img:first-child{height:200px}
+  .modal-images{display:flex;flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;height:210px;gap:3px;-webkit-overflow-scrolling:touch}
+  .modal-images>img:first-child{min-width:88%;height:210px;scroll-snap-align:start;object-fit:cover;border-radius:var(--radius) 0 0 0}
+  .modal-images-side{display:contents}
+  .modal-images-side img{min-width:72%;height:210px;flex-shrink:0;scroll-snap-align:start;object-fit:cover}
   .modal-includes ul{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom-inner{flex-direction:column;text-align:center}
