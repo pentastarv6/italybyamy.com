@@ -67,7 +67,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .nav-inner{display:flex;align-items:center;gap:.8rem;max-width:var(--max);margin:0 auto;padding:.6rem 1.5rem}
 .brand{display:flex;align-items:center;gap:.4rem;color:var(--text);flex-shrink:0}
 .brand-logo-img{height:68px;width:68px;object-fit:cover;border-radius:50%}
-.footer-logo-img{height:76px;width:76px}
+.footer-logo-img{height:100px;width:100px}
 /* Social icons + flag buttons in navbar */
 .nav-utility{display:flex;align-items:center;gap:.4rem;flex-shrink:0;margin-left:.6rem}
 .nav-social-btn{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;font-size:1rem;color:#fff;text-decoration:none;flex-shrink:0;transition:transform var(--trans),opacity var(--trans)}
