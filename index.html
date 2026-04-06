@@ -451,12 +451,12 @@
       <form class="contact-form" onsubmit="submitForm(event)">
         <div class="form-grid">
           <div class="form-row">
-            <label for="formName" data-en="Your Name" data-th="ชื่อของคุณ">Your Name</label>
+            <label for="formName" data-en="Your Name" data-th="ชื่อของคุณ">Your Name <span class="req-star">*</span></label>
             <input type="text" id="formName" name="name" required autocomplete="name" />
             <span class="field-error-msg" id="nameError" data-en="Please enter your name" data-th="กรุณากรอกชื่อของคุณ">Please enter your name</span>
           </div>
           <div class="form-row">
-            <label for="formEmail" data-en="Email Address" data-th="ที่อยู่อีเมล">Email Address</label>
+            <label for="formEmail" data-en="Email Address" data-th="ที่อยู่อีเมล">Email Address <span class="req-star">*</span></label>
             <input type="email" id="formEmail" name="email" required autocomplete="email" />
             <span class="field-error-msg" id="emailError" data-en="Please enter a valid email address" data-th="กรุณากรอกอีเมลที่ถูกต้อง">Please enter a valid email address</span>
           </div>
@@ -477,9 +477,21 @@
               <option>4</option><option>5</option>
             </select>
           </div>
+          <div class="form-row">
+            <label for="formSource" data-en="How did you find us?" data-th="คุณพบเราได้อย่างไร?">How did you find us? <span class="req-star">*</span></label>
+            <select id="formSource" name="source" required>
+              <option value="" disabled selected data-en="Select an option…" data-th="เลือกตัวเลือก…">Select an option…</option>
+              <option value="Instagram" data-en="Instagram" data-th="Instagram">Instagram</option>
+              <option value="Facebook" data-en="Facebook" data-th="Facebook">Facebook</option>
+              <option value="TikTok" data-en="TikTok" data-th="TikTok">TikTok</option>
+              <option value="Google" data-en="Google" data-th="Google">Google</option>
+              <option value="Friends" data-en="Friends / Word of mouth" data-th="เพื่อน / บอกต่อ">Friends / Word of mouth</option>
+            </select>
+            <span class="field-error-msg" id="sourceError" data-en="Please let us know how you found us" data-th="กรุณาเลือกว่าคุณพบเราได้อย่างไร">Please let us know how you found us</span>
+          </div>
         </div>
         <div class="form-row full">
-          <label for="formMessage" data-en="Tell us about your trip — dates, destinations, special requests…" data-th="เล่าเรื่องทริปของคุณ — วันที่ จุดหมาย คำขอพิเศษ…">Tell us about your trip — dates, destinations, special requests…</label>
+          <label for="formMessage" data-en="Tell us about your trip — dates, destinations, special requests…" data-th="เล่าเรื่องทริปของคุณ — วันที่ จุดหมาย คำขอพิเศษ…">Tell us about your trip — dates, destinations, special requests… <span class="req-star">*</span></label>
           <textarea id="formMessage" name="message" rows="4" required></textarea>
         </div>
         <button type="submit" class="btn-book full-width" id="formSubmitBtn" data-en="Send Enquiry" data-th="ส่งข้อความสอบถาม">Send Enquiry</button>

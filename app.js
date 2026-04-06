@@ -601,22 +601,26 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal
 function submitForm(e) {
   e.preventDefault();
 
-  // Validate name and email
-  const nameEl  = document.getElementById('formName');
-  const emailEl = document.getElementById('formEmail');
-  const nameErr  = document.getElementById('nameError');
-  const emailErr = document.getElementById('emailError');
+  // Validate required fields
+  const nameEl   = document.getElementById('formName');
+  const emailEl  = document.getElementById('formEmail');
+  const sourceEl = document.getElementById('formSource');
+  const nameErr   = document.getElementById('nameError');
+  const emailErr  = document.getElementById('emailError');
+  const sourceErr = document.getElementById('sourceError');
   const isTh = currentLang === 'th';
   let valid = true;
+  let firstInvalid = null;
 
   // Clear previous errors
-  [nameEl, emailEl].forEach(el => el.classList.remove('field-error'));
-  [nameErr, emailErr].forEach(el => el.classList.remove('visible'));
+  [nameEl, emailEl, sourceEl].forEach(el => el.classList.remove('field-error'));
+  [nameErr, emailErr, sourceErr].forEach(el => el.classList.remove('visible'));
 
   if (!nameEl.value.trim()) {
     nameEl.classList.add('field-error');
     nameErr.textContent = isTh ? 'กรุณากรอกชื่อของคุณ' : 'Please enter your name';
     nameErr.classList.add('visible');
+    if (!firstInvalid) firstInvalid = nameEl;
     valid = false;
   }
 
@@ -626,10 +630,22 @@ function submitForm(e) {
     emailEl.classList.add('field-error');
     emailErr.textContent = isTh ? 'กรุณากรอกอีเมลที่ถูกต้อง' : 'Please enter a valid email address';
     emailErr.classList.add('visible');
+    if (!firstInvalid) firstInvalid = emailEl;
     valid = false;
   }
 
-  if (!valid) { nameEl.value.trim() === '' ? nameEl.focus() : emailEl.focus(); return; }
+  if (!sourceEl.value) {
+    sourceEl.classList.add('field-error');
+    sourceErr.textContent = isTh ? 'กรุณาเลือกว่าคุณพบเราได้อย่างไร' : 'Please let us know how you found us';
+    sourceErr.classList.add('visible');
+    if (!firstInvalid) firstInvalid = sourceEl;
+    valid = false;
+  }
+
+  if (!valid) { firstInvalid.focus(); return; }
+
+  // Auto-clear errors on change
+  sourceEl.addEventListener('change', () => { sourceEl.classList.remove('field-error'); sourceErr.classList.remove('visible'); }, { once: true });
 
   // Clear errors on successful input
   nameEl.addEventListener('input', () => { nameEl.classList.remove('field-error'); nameErr.classList.remove('visible'); }, { once: true });
@@ -649,6 +665,7 @@ function submitForm(e) {
     email:   document.getElementById('formEmail').value.trim(),
     service: document.getElementById('formService').value,
     guests:  document.getElementById('formGuests').value,
+    source:  document.getElementById('formSource').value,
     message: document.getElementById('formMessage').value.trim()
   };
 
