@@ -10,6 +10,8 @@ const trips = [
     image2: 'pictures/things-to-do-in-lake-como-in-october.jpg',
     image3: 'pictures/como brunate.jpg',
     badge: 'Popular',
+    rating: 4.8,
+    reviewCount: 24,
     en: {
       name: 'Bellagio & Varenna',
       duration: 'Full Day — 9 hrs',
@@ -61,6 +63,8 @@ const trips = [
     image2: 'pictures/villa2.jpg',
     image3: 'pictures/villa3.png',
     badge: 'Half Day',
+    rating: 4.7,
+    reviewCount: 18,
     en: {
       name: 'Villa del Balbianello Tour',
       duration: 'Half Day — 5 hrs',
@@ -106,6 +110,8 @@ const trips = [
     image2: 'pictures/milan2.jpg',
     image3: 'pictures/milan3.jpg',
     badge: 'Day Trip',
+    rating: 4.8,
+    reviewCount: 31,
     en: {
       name: 'Milan Fashion & Culture Day',
       duration: 'Full Day — 9 hrs',
@@ -157,6 +163,8 @@ const trips = [
     image2: 'pictures/stresa2.jpg',
     image3: 'pictures/stresa3.jpg',
     badge: 'Day Trip',
+    rating: 4.7,
+    reviewCount: 15,
     en: {
       name: 'Stresa & the Borromean Islands',
       duration: 'Full Day — 9 hrs',
@@ -208,6 +216,8 @@ const trips = [
     image2: 'pictures/bergamo2.jpg',
     image3: 'pictures/bergamo3.jpg',
     badge: 'Day Trip',
+    rating: 4.8,
+    reviewCount: 19,
     en: {
       name: 'Bergamo Alta: Walled City',
       duration: 'Full Day — 9 hrs',
@@ -259,6 +269,8 @@ const trips = [
     image2: 'pictures/lugano2.jpg',
     image3: 'pictures/lugano3.jpg',
     badge: 'Half Day',
+    rating: 4.7,
+    reviewCount: 22,
     en: {
       name: 'Lugano & Switzerland Day',
       duration: 'Half Day — 5 hrs',
@@ -488,7 +500,7 @@ function renderTrips() {
         <div class="trip-card-body">
           <p class="trip-card-location"><i class="fa-solid fa-location-dot"></i> ${info.location}</p>
           <h3>${info.name}</h3>
-          <div class="trip-card-stars">${stars(5)}</div>
+          <div class="trip-card-stars">${stars(5)} <span class="trip-rating-score">${trip.rating}</span></div>
           <div class="trip-meta">
             <span><i class="fa-regular fa-clock"></i> ${info.duration}</span>
             <span>${info.type}</span>
@@ -520,7 +532,7 @@ function openModal(idx) {
   // Badge + title + stars
   document.getElementById('modalBadgeRow').innerHTML = `<span>${trip.badge}</span>`;
   document.getElementById('modalTitle').textContent = info.name;
-  document.getElementById('modalStars').innerHTML = `${stars(5)} <span style="color:#999;font-size:.8rem">(12 reviews)</span>`;
+  document.getElementById('modalStars').innerHTML = `${stars(5)} <span style="color:#999;font-size:.8rem">${trip.rating} · ${trip.reviewCount} reviews · Google</span>`;
 
   // Meta
   document.getElementById('modalMeta').innerHTML = `
