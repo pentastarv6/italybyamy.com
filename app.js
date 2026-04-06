@@ -155,7 +155,7 @@ const trips = [
   },
   {
     id: 10,
-    image: 'pictures/stresa1.jpeg',
+    image: 'pictures/stresa & lake maggiore.jpg',
     image2: 'pictures/stresa2.jpg',
     image3: 'pictures/stresa3.jpg',
     badge: 'Day Trip',
