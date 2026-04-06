@@ -18,7 +18,7 @@ const trips = [
       summary: 'The crown of Lake Como — stroll narrow lanes, admire the lake from Villa Melzi gardens, and take in panoramic views over lunch.',
       description: 'Start your day with a scenic drive along the western shore of Lake Como, arriving at Bellagio — the jewel of the lake. Explore the colourful alleys, visit the lakeside promenade and enjoy time at the famous Villa Melzi botanical gardens. In the afternoon, cross by ferry to Varenna for a peaceful stroll along the Passeggiata degli Innamorati. Return to Como in style as the sun sets over the mountains.',
       highlights: ['Villa Melzi Gardens', 'Ferry Crossing', 'Bellagio Old Town', 'Lakeside Lunch', 'Varenna Promenade', 'Scenic Drive'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Ferry tickets', 'Bottled water', 'Flexible itinerary'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Ferry tickets', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
       name: 'เบลลาจิโอ & หมู่บ้านริมทะเลสาบ',
@@ -28,7 +28,7 @@ const trips = [
       summary: 'มงกุฎแห่งทะเลสาบโคโม่ — เดินเล่นตรอกแคบๆ ชื่นชมทะเลสาบจากสวน Villa Melzi และชมวิวพาโนรามาขณะรับประทานอาหารกลางวัน',
       description: 'เริ่มต้นวันด้วยการขับรถชมวิวตลอดแนวชายฝั่งตะวันตกของทะเลสาบโคโม่ มาถึงเบลลาจิโอ — อัญมณีแห่งทะเลสาบ สำรวจตรอกซอกซอย เดินเล่น promenade ริมทะเลสาบ และใช้เวลาที่สวน Villa Melzi อันโด่งดัง ยามบ่ายข้ามเรือเฟอรี่ไปยังวาเรนนา เดินเล่นตลอด Passeggiata degli Innamorati กลับโคโม่อย่างมีสไตล์ขณะพระอาทิตย์ตกดิน',
       highlights: ['สวน Villa Melzi', 'ข้ามเรือเฟอรี่', 'ย่านเก่าเบลลาจิโอ', 'อาหารกลางวันริมทะเลสาบ', 'เส้นทางวาเรนนา', 'วิวสวยงาม'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเรือเฟอรี่', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเรือเฟอรี่', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   },
   {
@@ -45,7 +45,7 @@ const trips = [
       summary: 'Two of the most photogenic villages on the lake — one medieval, one lively — connected by a scenic ferry crossing.',
       description: "Varenna is arguably the most beautiful village on Lake Como. Its medieval stone alleys, the dramatic Villa Monastero terraced gardens, and the romantic 'lovers' walkway' make it unforgettable. We then cross by ferry to the vibrant town of Menaggio for lunch, gelato, and lakeside views. A perfect half-day escape from the bustle of the city.",
       highlights: ['Villa Monastero', 'Varenna Alleyways', 'Ferry Crossing', 'Menaggio Square', 'Gelato Stop', 'Medieval Castle'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Ferry tickets', 'Bottled water', 'Flexible itinerary'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Ferry tickets', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
       name: 'วาเรนนา & เมนาจิโอ',
@@ -55,7 +55,7 @@ const trips = [
       summary: 'สองหมู่บ้านที่สวยงามที่สุดบนทะเลสาบ — หนึ่งในยุคกลาง หนึ่งที่มีชีวิตชีวา — เชื่อมกันด้วยการข้ามเรือเฟอรี่',
       description: 'วาเรนนาเป็นหมู่บ้านที่สวยงามที่สุดของทะเลสาบโคโม่อย่างไม่ต้องสงสัย ตรอกหินยุคกลาง สวนขั้นบันไดของ Villa Monastero และทางเดินโรแมนติกของคู่รัก จากนั้นข้ามเรือเฟอรี่สู่เมือง Menaggio ที่มีชีวิตชีวาเพื่อรับประทานอาหาร ไอศกรีม และวิวริมทะเลสาบ',
       highlights: ['Villa Monastero', 'ตรอกซอกซอยวาเรนนา', 'ข้ามเรือเฟอรี่', 'จัตุรัสเมนาจิโอ', 'ไอศกรีม', 'ปราสาทยุคกลาง'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเรือเฟอรี่', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเรือเฟอรี่', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   },
   {
@@ -72,7 +72,7 @@ const trips = [
       summary: 'Discover the medieval heart of Como — the Silk Museum, the Cathedral, the old city walls, and the lakeside promenade.',
       description: "Como is more than just the gateway to the lake. This half-day walking tour takes you through the Roman city grid, past the magnificent Gothic-Renaissance Cathedral, through the silk quarter where Como's famous fabric industry began, and along the elegant lakeside boardwalk. A wonderful introduction to the culture and history of this ancient city.",
       highlights: ['Como Cathedral', 'Silk Museum', 'City Walls Walk', 'Lakeside Boardwalk', 'Roman Grid Streets', 'Piazza Cavour'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Museum entry tickets', 'Bottled water', 'Flexible itinerary'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Museum entry tickets', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
       name: 'เมืองโคโม่ & มรดกผ้าไหม',
@@ -82,7 +82,7 @@ const trips = [
       summary: 'ค้นพบหัวใจยุคกลางของโคโม่ — พิพิธภัณฑ์ผ้าไหม มหาวิหาร กำแพงเมืองเก่า และ promenade ริมทะเลสาบ',
       description: 'โคโม่ไม่ใช่แค่ประตูสู่ทะเลสาบ ทัวร์เดินครึ่งวันนี้พาคุณผ่านกริดเมืองโรมัน ผ่านมหาวิหารโกธิก-เรอเนสซองส์อันงดงาม ผ่านย่านผ้าไหมที่อุตสาหกรรมผ้าไหมโด่งดังของโคโม่เริ่มต้นขึ้น และตามแนวทางเดินริมทะเลสาบอันสง่างาม',
       highlights: ['มหาวิหารโคโม่', 'พิพิธภัณฑ์ผ้าไหม', 'เดินกำแพงเมือง', 'ทางเดินริมทะเลสาบ', 'ถนนกริดโรมัน', 'Piazza Cavour'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้าพิพิธภัณฑ์', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้าพิพิธภัณฑ์', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   },
   {
@@ -99,7 +99,7 @@ const trips = [
       summary: 'Cross the Swiss border for a refined day in elegant Lugano — the city of parks, galleries, and stunning lake views from Monte San Salvatore.',
       description: 'Only 45 minutes from Como, Lugano offers a Swiss twist on Mediterranean elegance. Start with a walk through the old town, visit the lakeside park, then take the funicular up Monte San Salvatore for sweeping panoramas. Enjoy lunch in a rooftop restaurant, browse the boutiques of Via Nassa, and return to Italy as the sunset paints the Alps golden. Please bring your passport.',
       highlights: ['Monte San Salvatore', 'Lugano Old Town', 'Lakeside Parks', 'Swiss Border Crossing', 'Via Nassa Shopping', 'Funicular Ride'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Border crossing assistance', 'Bottled water', 'Flexible itinerary'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Border crossing assistance', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
       name: 'ลูกาโน & วันสวิตเซอร์แลนด์',
@@ -109,7 +109,7 @@ const trips = [
       summary: 'ข้ามพรมแดนสวิสเพื่อวันอันสวยงามในลูกาโนที่หรูหรา — เมืองแห่งสวนสาธารณะ แกลเลอรี่ และวิวทะเลสาบจาก Monte San Salvatore',
       description: 'แค่ 45 นาทีจากโคโม่ ลูกาโนมีเสน่ห์สวิสผสมความหรูหราเมดิเตอร์เรเนียน เดินเล่นย่านเก่า เยี่ยมชมสวนริมทะเลสาบ จากนั้นนั่งกระเช้าขึ้น Monte San Salvatore เพื่อวิวพาโนรามา เพลิดเพลินอาหารกลางวันบนดาดฟ้า ช้อปปิ้งบน Via Nassa และกลับอิตาลีขณะพระอาทิตย์ตกย้อมเทือกเขาแอลป์ กรุณาพกพาสปอร์ต',
       highlights: ['Monte San Salvatore', 'ย่านเก่าลูกาโน', 'สวนริมทะเลสาบ', 'ข้ามพรมแดนสวิส', 'ช้อปปิ้ง Via Nassa', 'นั่งกระเช้า'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ช่วยเหลือการข้ามพรมแดน', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ช่วยเหลือการข้ามพรมแดน', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   },
   {
@@ -126,7 +126,7 @@ const trips = [
       summary: "Italy's fashion capital in one day — the Duomo, Galleria Vittorio Emanuele II, Navigli canals, and all the couture your heart desires.",
       description: 'An hour from Como, Milan is a world apart. Your day begins at the spectacular Gothic Duomo before stepping into the glittering Galleria. Browse the Quadrilatero della Moda luxury district, take a canal-side aperitivo in the Navigli neighbourhood, and experience the electric energy of Italy\'s most cosmopolitan city. Perfect for shoppers, art lovers, and fashion enthusiasts alike.',
       highlights: ['Milan Duomo', 'Galleria V.E. II', 'Fashion District', 'Navigli Canals', 'Aperitivo Hour', 'Castello Sforzesco'],
-      includes: ['Hotel pick-up & return', 'Private VW Multivan', 'English, Thai & Italian guide', 'Duomo area walk', 'Bottled water', 'Flexible itinerary'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Duomo area walk', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
       name: 'มิลาน แฟชั่น & วัฒนธรรม',
@@ -136,7 +136,7 @@ const trips = [
       summary: 'เมืองหลวงแฟชั่นอิตาลีใน 1 วัน — Duomo, Galleria Vittorio Emanuele II, คลอง Navigli และแฟชั่นสุดหรู',
       description: 'แค่ 1 ชั่วโมงจากโคโม่ มิลานโดดเด่นในแบบของตัวเอง วันเริ่มต้นที่ Duomo โกธิกอันน่าทึ่ง ก่อนก้าวเข้าสู่ Galleria แวววาว เดินชม Quadrilatero della Moda ย่านแฟชั่นลักชัวรี่ ดื่ม aperitivo ริมคลองใน Navigli และสัมผัสพลังงานของเมืองคอสโมโพลิแทนที่สุดของอิตาลี',
       highlights: ['Duomo มิลาน', 'Galleria V.E. II', 'ย่านแฟชั่น', 'คลอง Navigli', 'ชั่วโมง Aperitivo', 'Castello Sforzesco'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'เดินชมย่าน Duomo', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'เดินชมย่าน Duomo', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   },
   {
@@ -153,7 +153,7 @@ const trips = [
       summary: "One of Italy's most celebrated villas — terraced gardens, lakeside loggias, and film-set perfection (James Bond, Star Wars).",
       description: "Villa del Balbianello is consistently ranked among the world's most beautiful villa gardens. Perched on a wooded promontory above the lake, the villa's elegant loggias and manicured terraces have been immortalised in Casino Royale and Star Wars: Episode II. We arrive by boat for the most dramatic approach, then tour the gardens and historic rooms before a lakeside lunch in Lenno.",
       highlights: ['Villa Balbianello Gardens', 'Lakeside Loggias', 'Bond Film Locations', 'Boat Arrival', 'Lenno Village', 'Terrace Panoramas'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Boat transfer', 'Villa entry ticket', 'Bottled water'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Boat transfer', 'Villa entry ticket', 'Bottled water'],
     },
     th: {
       name: 'ทัวร์ Villa del Balbianello',
@@ -163,7 +163,7 @@ const trips = [
       summary: 'วิลล่าที่มีชื่อเสียงที่สุดในอิตาลี — สวนขั้นบันได loggia ริมทะเลสาบ สวยราวฉากภาพยนตร์ (James Bond, Star Wars)',
       description: 'Villa del Balbianello ได้รับการยกย่องว่าเป็นสวนวิลล่าที่สวยที่สุดในโลก ตั้งอยู่บนแหลมที่มีต้นไม้ปกคลุม loggia อันสง่างามและระเบียงขั้นบันไดที่ถ่ายทำใน Casino Royale และ Star Wars ภาค 2 เราเดินทางมาด้วยเรือ จากนั้นชมสวนและห้องประวัติศาสตร์ก่อนรับประทานอาหารริมทะเลสาบที่ Lenno',
       highlights: ['สวน Balbianello', 'Loggia ริมทะเลสาบ', 'สถานที่ถ่ายทำบอนด์', 'มาถึงด้วยเรือ', 'หมู่บ้านเลนโน', 'ระเบียงพาโนรามา'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ค่าโดยสารเรือ', 'ตั๋วเข้าวิลล่า', 'น้ำดื่ม'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ค่าโดยสารเรือ', 'ตั๋วเข้าวิลล่า', 'น้ำดื่ม'],
     }
   },
   {
@@ -180,7 +180,7 @@ const trips = [
       summary: 'A perfectly preserved medieval city perched on a hilltop, encircled by Venetian walls and ignored by most tourists.',
       description: "Bergamo Alta is one of northern Italy's best-kept secrets — a UNESCO World Heritage hilltop city encircled by 16th-century Venetian walls. Take the historic funicular to the upper town, stroll the Piazza Vecchia, admire the octagonal Cappella Colleoni, and enjoy lunch at a traditional osteria. The views over the Lombard plain from the city walls are simply unforgettable.",
       highlights: ['Venetian City Walls', 'Piazza Vecchia', 'Cappella Colleoni', 'Historic Funicular', 'Lombard Plain Views', 'Trattoria Lunch'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Funicular tickets', 'Bottled water', 'Flexible itinerary'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Funicular tickets', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
       name: 'แบร์กาโม อัลตา: เมืองมีกำแพง',
@@ -190,7 +190,7 @@ const trips = [
       summary: 'เมืองยุคกลางที่ได้รับการอนุรักษ์อย่างสมบูรณ์บนยอดเขา ล้อมรอบด้วยกำแพงเวนิสและถูกนักท่องเที่ยวส่วนใหญ่มองข้าม',
       description: 'แบร์กาโม อัลตา เป็นหนึ่งในความลับที่ยิ่งใหญ่ที่สุดของอิตาลีตอนเหนือ — เมืองบนเขา UNESCO ล้อมรอบด้วยกำแพงเวนิสศตวรรษที่ 16 นั่งกระเช้าสู่เมืองด้านบน เดินเล่น Piazza Vecchia ชม Cappella Colleoni รูปแปดเหลี่ยม และรับประทานอาหารที่ osteria ดั้งเดิม',
       highlights: ['กำแพงเมืองเวนิส', 'Piazza Vecchia', 'Cappella Colleoni', 'กระเช้าประวัติศาสตร์', 'วิวที่ราบลอมบาร์ด', 'อาหาร Trattoria'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วกระเช้า', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วกระเช้า', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   },
   {
@@ -207,7 +207,7 @@ const trips = [
       summary: 'Trade Como for Maggiore for a day — elegant Stresa, the legendary Borromean Islands, and baroque palace gardens in the middle of the lake.',
       description: "Lake Maggiore is Como's equally beautiful neighbour. Drive through the mountains to reach the elegant resort town of Stresa, then take a boat to the famous Borromean Islands — Isola Bella with its baroque palace and terraced gardens, and the charming fishing village of Isola dei Pescatori. An unforgettable full-day excursion that most Como visitors never discover.",
       highlights: ['Isola Bella Palace', 'Borromean Islands', 'Stresa Promenade', 'Baroque Gardens', 'Island Ferry', 'Mountain Drive'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Island ferry tickets', 'Bottled water', 'Flexible itinerary'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Island ferry tickets', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
       name: 'สเตรซา & ทะเลสาบมาจิโอเร',
@@ -217,7 +217,7 @@ const trips = [
       summary: 'แลกทะเลสาบโคโม่กับมาจิโอเรสักหนึ่งวัน — สเตรซาที่หรูหรา เกาะบอร์โรเมโออันโด่งดัง และสวนพระราชวังบาโรกกลางทะเลสาบ',
       description: 'ทะเลสาบมาจิโอเรเป็นเพื่อนบ้านที่สวยงามเท่าเทียมกับโคโม่ ขับรถผ่านภูเขาไปยังเมืองรีสอร์ทหรูหรา Stresa จากนั้นนั่งเรือไปยังเกาะบอร์โรเมโออันโด่งดัง — Isola Bella พร้อมพระราชวังบาโรกและสวนขั้นบันได และหมู่บ้านชาวประมงน่ารัก Isola dei Pescatori',
       highlights: ['พระราชวัง Isola Bella', 'เกาะบอร์โรเมโอ', 'เส้นทาง Stresa', 'สวนบาโรก', 'เรือเฟอรี่เกาะ', 'วิวภูเขา'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเรือเกาะ', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเรือเกาะ', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   },
   {
@@ -234,7 +234,7 @@ const trips = [
       summary: 'The most beautiful hour on Lake Como is golden hour — a lakeside drive with stops at the best viewpoints and a sunset aperitivo in Torno.',
       description: "There is no better way to end a day in Como than watching the sun dip behind the mountains from the terrace of a lakeside café. This exclusive evening experience takes you along the scenic east shore to the hilltop village of Brunate, then wind down with an aperitivo in the ancient village of Torno as the lake turns gold. The perfect romantic evening experience.",
       highlights: ['East Shore Drive', 'Brunate Village', 'Golden Hour Views', 'Torno Village', 'Sunset Aperitivo', 'Lake Reflections'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Aperitivo welcome drink', 'Bottled water', 'Flexible timing'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Aperitivo welcome drink', 'Bottled water', 'Flexible timing'],
     },
     th: {
       name: 'ไดรฟ์ชมพระอาทิตย์ตก & อาเปริติโว',
@@ -244,7 +244,7 @@ const trips = [
       summary: 'ช่วงเวลาที่สวยที่สุดของทะเลสาบโคโม่คือ golden hour — ขับรถริมทะเลสาบหยุดที่จุดชมวิวที่ดีที่สุด และ aperitivo ยามพระอาทิตย์ตกที่ Torno',
       description: 'ไม่มีวิธีสิ้นสุดวันในโคโม่ที่ดีกว่าการดูพระอาทิตย์ตกดินหลังภูเขาจากระเบียงคาเฟ่ริมทะเลสาบ ประสบการณ์ยามเย็นสุดพิเศษนี้พาคุณตลอดชายฝั่งตะวันออกสู่หมู่บ้านบนเขา Brunate แล้วผ่อนคลายกับ aperitivo ในหมู่บ้านโบราณ Torno ขณะทะเลสาบเปลี่ยนเป็นสีทอง',
       highlights: ['ขับรถฝั่งตะวันออก', 'หมู่บ้าน Brunate', 'วิว Golden Hour', 'หมู่บ้าน Torno', 'Aperitivo ยามพระอาทิตย์ตก', 'แสงสะท้อนทะเลสาบ'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'เครื่องดื่ม aperitivo ต้อนรับ', 'น้ำดื่ม', 'เวลายืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'เครื่องดื่ม aperitivo ต้อนรับ', 'น้ำดื่ม', 'เวลายืดหยุ่น'],
     }
   },
   {
@@ -261,7 +261,7 @@ const trips = [
       summary: "Villa Carlotta houses the finest botanical garden on Lake Como — 70,000 plants, flaming azaleas in spring, and marble sculptures by Canova.",
       description: "Villa Carlotta is a national treasure. Its terraced botanical garden bursts with colour year-round — azaleas and rhododendrons in spring, water lilies and ferns in summer, golden foliage in autumn. Inside, you'll find original marble sculptures by Canova and Thorvaldsen. Combined with a lakeside lunch in charming Tremezzo, this is a perfect half-day for garden and art lovers.",
       highlights: ['Villa Carlotta Gardens', 'Canova Sculptures', 'Azalea Walk', 'Terraced Terraces', 'Tremezzo Village', 'Lakeside Lunch'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Villa Carlotta entry', 'Bottled water', 'Flexible itinerary'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Villa Carlotta entry', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
       name: 'เทรเมซโซ & Villa Carlotta',
@@ -271,7 +271,7 @@ const trips = [
       summary: 'Villa Carlotta มีสวนพฤกษศาสตร์ที่สวยที่สุดบนทะเลสาบโคโม่ — 70,000 ต้น อซาเลียสีสวยในฤดูใบไม้ผลิ และประติมากรรมหินอ่อนโดย Canova',
       description: 'Villa Carlotta เป็นสมบัติของชาติ สวนพฤกษศาสตร์ขั้นบันไดงดงามตลอดปี — อซาเลียและโรโดเดนดรอนในฤดูใบไม้ผลิ บัวและเฟิร์นในฤดูร้อน ใบไม้ทองในฤดูใบไม้ร่วง ภายในมีประติมากรรมหินอ่อนต้นฉบับโดย Canova และ Thorvaldsen รวมกับอาหารกลางวันริมทะเลสาบในเทรเมซโซที่น่ารัก',
       highlights: ['สวน Villa Carlotta', 'ประติมากรรม Canova', 'เส้นทางอซาเลีย', 'ระเบียงขั้นบันได', 'หมู่บ้านเทรเมซโซ', 'อาหารกลางวันริมทะเลสาบ'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้า Villa Carlotta', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้า Villa Carlotta', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   },
   {
@@ -288,7 +288,7 @@ const trips = [
       summary: "The city of love — Juliet's balcony, the Roman Arena, medieval streets, and the finest Soave wine this side of the Veneto.",
       description: "Verona ranks among Italy's most romantic cities, and a full day here barely scratches the surface. Visit Juliet's famous balcony (and try not to get swept up in the romance), walk the perfectly preserved Roman Arena, stroll the medieval Piazza dei Signori, and end the day with wine and cicchetti in an enoteca by the Adige river. The drive through Lake Garda is a bonus.",
       highlights: ["Juliet's Balcony", 'Roman Arena', 'Piazza dei Signori', 'Adige Riverside', 'Garda Lakeshore Drive', 'Evening Enoteca'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Arena entry', 'Bottled water', 'Flexible itinerary'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Arena entry', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
       name: 'เวโรนา: โรมิโอ & จูเลียต',
@@ -298,7 +298,7 @@ const trips = [
       summary: 'เมืองแห่งความรัก — ระเบียง Juliet, Arena โรมัน, ถนนยุคกลาง และไวน์ Soave ของแท้',
       description: 'เวโรนาถือเป็นหนึ่งในเมืองโรแมนติกที่สุดของอิตาลี เยี่ยมชมระเบียงอันโด่งดังของ Juliet เดินใน Arena โรมันที่ได้รับการอนุรักษ์อย่างสมบูรณ์ เดินเล่น Piazza dei Signori ยุคกลาง และสิ้นสุดวันด้วยไวน์และ cicchetti ที่ enoteca ริมแม่น้ำ Adige',
       highlights: ['ระเบียง Juliet', 'Arena โรมัน', 'Piazza dei Signori', 'ริมแม่น้ำ Adige', 'ขับรถชายฝั่ง Garda', 'Enoteca ยามเย็น'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้า Arena', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้า Arena', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   },
   {
@@ -315,7 +315,7 @@ const trips = [
       summary: "Switzerland's sunniest town — a Ticino gem with palm-lined piazzas, cobblestone alleys, and a lake shimmer that rivals the Cote d'Azur.",
       description: "Ascona is the southernmost town in Switzerland and one of the most charming in all of Ticino. The palm-lined lakeside piazza feels more Mediterranean than Swiss, and the cobblestone alleys are filled with galleries and artisan shops. Nearby Locarno offers the Piazza Grande, Madonna del Sasso sanctuary above the lake, and a wonderfully relaxed Swiss Italian atmosphere. Bring your passport.",
       highlights: ['Ascona Piazza', 'Lakeside Palm Walk', 'Locarno Old Town', 'Madonna del Sasso', 'Swiss Border Crossing', 'Artisan Alleys'],
-      includes: ['Hotel pick-up & drop-off', 'Private VW Multivan', 'English, Thai & Italian guide', 'Border crossing assistance', 'Bottled water', 'Flexible itinerary'],
+      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Border crossing assistance', 'Bottled water', 'Flexible itinerary'],
     },
     th: {
       name: 'อัสโกนา & โลคาร์โน, สวิตเซอร์แลนด์',
@@ -325,7 +325,7 @@ const trips = [
       summary: 'เมืองที่มีแดดมากที่สุดในสวิตเซอร์แลนด์ — อัญมณีแห่ง Ticino พร้อมจัตุรัสปูด้วยต้นปาล์ม ตรอกหินกรวด และแสงสะท้อนทะเลสาบ',
       description: 'อัสโกนาเป็นเมืองใต้สุดในสวิตเซอร์แลนด์และน่ารักที่สุดแห่งหนึ่งของ Ticino จัตุรัสริมทะเลสาบที่มีต้นปาล์มรู้สึกเหมือนเมดิเตอร์เรเนียนมากกว่าสวิส ตรอกหินกรวดเต็มไปด้วยแกลเลอรี่และร้านช่างฝีมือ ใกล้ๆ กัน Locarno เสนอ Piazza Grande สถานที่ศักดิ์สิทธิ์ Madonna del Sasso เหนือทะเลสาบ กรุณาพกพาสปอร์ต',
       highlights: ['จัตุรัส Ascona', 'เดินริมทะเลสาบต้นปาล์ม', 'ย่านเก่า Locarno', 'Madonna del Sasso', 'ข้ามพรมแดนสวิส', 'ตรอกช่างฝีมือ'],
-      includes: ['รับ-ส่งที่โรงแรม', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ช่วยเหลือการข้ามพรมแดน', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
+      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ช่วยเหลือการข้ามพรมแดน', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   }
 ];
