@@ -341,7 +341,7 @@ const messengerConfig = {
     sub: 'Typically replies within 1 hour'
   },
   th: {
-    href: 'https://line.me/ti/p/~amydalina',
+    href: 'https://line.me/ti/p/AcCnzepV4r',
     iconClass: 'fa-brands fa-line',
     label: 'Line หาเรา',
     sub: 'ตอบกลับภายใน 1 ชั่วโมง'
@@ -382,8 +382,8 @@ function applyLanguage() {
   const topbarHref = document.getElementById('topbarMessenger');
   const topbarIcon = document.getElementById('topbarChatIcon');
   if (topbarHref) {
-    topbarHref.href  = isEn ? cfg.href : '#';
-    topbarHref.onclick = isEn ? null : (e => { e.preventDefault(); openLineQr(); });
+    topbarHref.href  = cfg.href;
+    topbarHref.onclick = null;
     topbarHref.title = cfg.label;
     topbarHref.classList.toggle('nav-wa',   isEn);
     topbarHref.classList.toggle('nav-line', !isEn);
@@ -396,8 +396,8 @@ function applyLanguage() {
   const cLabel = document.getElementById('contactLabel');
   const cSub   = document.getElementById('contactSub');
   if (cHref) {
-    cHref.href = isEn ? cfg.href : '#';
-    cHref.onclick = isEn ? null : (e => { e.preventDefault(); openLineQr(); });
+    cHref.href = cfg.href;
+    cHref.onclick = null;
     cHref.classList.toggle('whatsapp-card', isEn);
     cHref.classList.toggle('line-card', !isEn);
   }
@@ -579,24 +579,27 @@ function submitForm(e) {
     message: document.getElementById('formMessage').value.trim()
   };
 
-  fetch('https://formspree.io/f/xpwzgqdn', {
+  fetch('https://formspree.io/f/xqegwdrz', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
     body: JSON.stringify(payload)
   })
   .then(r => r.json())
   .then(data => {
+    console.log('Formspree response:', data);
     if (data.ok) {
       e.target.reset();
       btn.style.display = 'none';
       if (successMsg) { successMsg.style.display = 'block'; applyLanguage(); }
       if (typeof gtag !== 'undefined') gtag('event', 'contact_form_submit');
     } else {
+      console.error('Formspree error:', data.errors || data);
       btn.disabled = false;
       btn.textContent = errorLabel;
     }
   })
-  .catch(() => {
+  .catch(err => {
+    console.error('Form submission error:', err);
     btn.disabled = false;
     btn.textContent = errorLabel;
   });
