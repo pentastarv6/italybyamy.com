@@ -159,9 +159,9 @@ const trips = [
   },
   {
     id: 5,
-    image: 'pictures/orrido bellano.jpg',
-    image2: 'pictures/como lago bellagio.jpg',
-    image3: 'pictures/things-to-do-in-lake-como-in-october.jpg',
+    image: 'pictures/villa1.jpg',
+    image2: 'pictures/villa2.jpg',
+    image3: 'pictures/villa3.png',
     badge: 'Half Day',
     en: {
       name: 'Villa del Balbianello Tour',
