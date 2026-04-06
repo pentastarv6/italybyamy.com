@@ -67,7 +67,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .nav-inner{display:flex;align-items:center;gap:.8rem;max-width:var(--max);margin:0 auto;padding:.6rem 1.5rem;padding-right:max(1.5rem,env(safe-area-inset-right))}
 .brand{display:flex;align-items:center;gap:.4rem;color:var(--text);flex-shrink:0}
 .brand-logo-img{height:68px;width:68px;object-fit:cover;border-radius:50%}
-.footer-logo-img{height:100px;width:100px}
+.footer-logo-img{height:140px;width:140px}
 /* Social icons + flag buttons in navbar */
 .nav-utility{display:flex;align-items:center;gap:.4rem;flex-shrink:0;margin-left:.6rem}
 .nav-social-btn{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;font-size:1rem;color:#fff;text-decoration:none;flex-shrink:0;transition:transform var(--trans),opacity var(--trans)}
@@ -297,6 +297,7 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .footer-top{padding:3.5rem 1.5rem 2.5rem}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.5rem;max-width:var(--max);margin:0 auto}
 .footer-col{display:flex;flex-direction:column;gap:.6rem}
+.footer-col:first-child{align-items:center;text-align:center}
 .footer-col h4{color:rgba(255,255,255,.95);font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.3rem}
 .footer-col p,.footer-detail,.footer-lang{font-size:.83rem;color:rgba(255,255,255,.6)}
 .footer-col a{font-size:.83rem;color:rgba(255,255,255,.65);transition:color var(--trans)}
