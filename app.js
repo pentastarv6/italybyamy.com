@@ -109,8 +109,8 @@ const trips = [
   {
     id: 4,
     image: 'pictures/milan.jpg',
-    image2: 'pictures/como brunate.jpg',
-    image3: 'pictures/como duomo.jpg',
+    image2: 'pictures/milan2.jpg',
+    image3: 'pictures/milan3.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Milan Fashion & Culture Day',
