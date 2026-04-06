@@ -32,60 +32,6 @@ const trips = [
     }
   },
   {
-    id: 1,
-    image: 'pictures/things-to-do-in-lake-como-in-october.jpg',
-    image2: 'pictures/Como Lago menaggio.jpg',
-    image3: 'pictures/orrido bellano.jpg',
-    badge: 'Top Rated',
-    en: {
-      name: 'Varenna & Menaggio',
-      duration: 'Half Day — 5 hrs',
-      type: 'Lake Village Tour',
-      location: 'Varenna, Menaggio',
-      summary: 'Two of the most photogenic villages on the lake — one medieval, one lively — connected by a scenic ferry crossing.',
-      description: "Varenna is arguably the most beautiful village on Lake Como. Its medieval stone alleys, the dramatic Villa Monastero terraced gardens, and the romantic 'lovers' walkway' make it unforgettable. We then cross by ferry to the vibrant town of Menaggio for lunch, gelato, and lakeside views. A perfect half-day escape from the bustle of the city.",
-      highlights: ['Villa Monastero', 'Varenna Alleyways', 'Ferry Crossing', 'Menaggio Square', 'Gelato Stop', 'Medieval Castle'],
-      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Ferry tickets', 'Bottled water', 'Flexible itinerary'],
-    },
-    th: {
-      name: 'วาเรนนา & เมนาจิโอ',
-      duration: 'ครึ่งวัน — 5 ชั่วโมง',
-      type: 'ทัวร์หมู่บ้านริมทะเลสาบ',
-      location: 'วาเรนนา, เมนาจิโอ',
-      summary: 'สองหมู่บ้านที่สวยงามที่สุดบนทะเลสาบ — หนึ่งในยุคกลาง หนึ่งที่มีชีวิตชีวา — เชื่อมกันด้วยการข้ามเรือเฟอรี่',
-      description: 'วาเรนนาเป็นหมู่บ้านที่สวยงามที่สุดของทะเลสาบโคโม่อย่างไม่ต้องสงสัย ตรอกหินยุคกลาง สวนขั้นบันไดของ Villa Monastero และทางเดินโรแมนติกของคู่รัก จากนั้นข้ามเรือเฟอรี่สู่เมือง Menaggio ที่มีชีวิตชีวาเพื่อรับประทานอาหาร ไอศกรีม และวิวริมทะเลสาบ',
-      highlights: ['Villa Monastero', 'ตรอกซอกซอยวาเรนนา', 'ข้ามเรือเฟอรี่', 'จัตุรัสเมนาจิโอ', 'ไอศกรีม', 'ปราสาทยุคกลาง'],
-      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเรือเฟอรี่', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
-    }
-  },
-  {
-    id: 2,
-    image: 'pictures/como duomo.jpg',
-    image2: 'pictures/duomo como 2.jpg',
-    image3: 'pictures/como brunate.jpg',
-    badge: 'Guided',
-    en: {
-      name: 'Como City & Silk Heritage',
-      duration: 'Half Day — 4 hrs',
-      type: 'City Walking Tour',
-      location: 'Como City Centre',
-      summary: 'Discover the medieval heart of Como — the Silk Museum, the Cathedral, the old city walls, and the lakeside promenade.',
-      description: "Como is more than just the gateway to the lake. This half-day walking tour takes you through the Roman city grid, past the magnificent Gothic-Renaissance Cathedral, through the silk quarter where Como's famous fabric industry began, and along the elegant lakeside boardwalk. A wonderful introduction to the culture and history of this ancient city.",
-      highlights: ['Como Cathedral', 'Silk Museum', 'City Walls Walk', 'Lakeside Boardwalk', 'Roman Grid Streets', 'Piazza Cavour'],
-      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Museum entry tickets', 'Bottled water', 'Flexible itinerary'],
-    },
-    th: {
-      name: 'เมืองโคโม่ & มรดกผ้าไหม',
-      duration: 'ครึ่งวัน — 4 ชั่วโมง',
-      type: 'ทัวร์เดินเมือง',
-      location: 'ใจกลางเมืองโคโม่',
-      summary: 'ค้นพบหัวใจยุคกลางของโคโม่ — พิพิธภัณฑ์ผ้าไหม มหาวิหาร กำแพงเมืองเก่า และ promenade ริมทะเลสาบ',
-      description: 'โคโม่ไม่ใช่แค่ประตูสู่ทะเลสาบ ทัวร์เดินครึ่งวันนี้พาคุณผ่านกริดเมืองโรมัน ผ่านมหาวิหารโกธิก-เรอเนสซองส์อันงดงาม ผ่านย่านผ้าไหมที่อุตสาหกรรมผ้าไหมโด่งดังของโคโม่เริ่มต้นขึ้น และตามแนวทางเดินริมทะเลสาบอันสง่างาม',
-      highlights: ['มหาวิหารโคโม่', 'พิพิธภัณฑ์ผ้าไหม', 'เดินกำแพงเมือง', 'ทางเดินริมทะเลสาบ', 'ถนนกริดโรมัน', 'Piazza Cavour'],
-      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้าพิพิธภัณฑ์', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
-    }
-  },
-  {
     id: 3,
     image: 'pictures/como brunate.jpg',
     image2: 'pictures/como lago bellagio.jpg',
@@ -194,87 +140,6 @@ const trips = [
     }
   },
   {
-    id: 7,
-    image: 'pictures/como lago bellagio.jpg',
-    image2: 'pictures/Como Lago menaggio.jpg',
-    image3: 'pictures/things-to-do-in-lake-como-in-october.jpg',
-    badge: 'Scenic',
-    en: {
-      name: 'Stresa & Lake Maggiore',
-      duration: 'Full Day — 9 hrs',
-      type: 'Lake & Islands',
-      location: 'Stresa & Borromean Islands',
-      summary: 'Trade Como for Maggiore for a day — elegant Stresa, the legendary Borromean Islands, and baroque palace gardens in the middle of the lake.',
-      description: "Lake Maggiore is Como's equally beautiful neighbour. Drive through the mountains to reach the elegant resort town of Stresa, then take a boat to the famous Borromean Islands — Isola Bella with its baroque palace and terraced gardens, and the charming fishing village of Isola dei Pescatori. An unforgettable full-day excursion that most Como visitors never discover.",
-      highlights: ['Isola Bella Palace', 'Borromean Islands', 'Stresa Promenade', 'Baroque Gardens', 'Island Ferry', 'Mountain Drive'],
-      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Island ferry tickets', 'Bottled water', 'Flexible itinerary'],
-    },
-    th: {
-      name: 'สเตรซา & ทะเลสาบมาจิโอเร',
-      duration: 'เต็มวัน — 9 ชั่วโมง',
-      type: 'ทะเลสาบ & เกาะ',
-      location: 'สเตรซา & เกาะบอร์โรเมโอ',
-      summary: 'แลกทะเลสาบโคโม่กับมาจิโอเรสักหนึ่งวัน — สเตรซาที่หรูหรา เกาะบอร์โรเมโออันโด่งดัง และสวนพระราชวังบาโรกกลางทะเลสาบ',
-      description: 'ทะเลสาบมาจิโอเรเป็นเพื่อนบ้านที่สวยงามเท่าเทียมกับโคโม่ ขับรถผ่านภูเขาไปยังเมืองรีสอร์ทหรูหรา Stresa จากนั้นนั่งเรือไปยังเกาะบอร์โรเมโออันโด่งดัง — Isola Bella พร้อมพระราชวังบาโรกและสวนขั้นบันได และหมู่บ้านชาวประมงน่ารัก Isola dei Pescatori',
-      highlights: ['พระราชวัง Isola Bella', 'เกาะบอร์โรเมโอ', 'เส้นทาง Stresa', 'สวนบาโรก', 'เรือเฟอรี่เกาะ', 'วิวภูเขา'],
-      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเรือเกาะ', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
-    }
-  },
-  {
-    id: 8,
-    image: 'pictures/duomo como 2.jpg',
-    image2: 'pictures/como brunate.jpg',
-    image3: 'pictures/como lago bellagio.jpg',
-    badge: 'Sunset',
-    en: {
-      name: 'Sunset & Aperitivo Drive',
-      duration: '3 hrs — Evening',
-      type: 'Scenic Evening Tour',
-      location: 'Como Lakeshore',
-      summary: 'The most beautiful hour on Lake Como is golden hour — a lakeside drive with stops at the best viewpoints and a sunset aperitivo in Torno.',
-      description: "There is no better way to end a day in Como than watching the sun dip behind the mountains from the terrace of a lakeside café. This exclusive evening experience takes you along the scenic east shore to the hilltop village of Brunate, then wind down with an aperitivo in the ancient village of Torno as the lake turns gold. The perfect romantic evening experience.",
-      highlights: ['East Shore Drive', 'Brunate Village', 'Golden Hour Views', 'Torno Village', 'Sunset Aperitivo', 'Lake Reflections'],
-      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Aperitivo welcome drink', 'Bottled water', 'Flexible timing'],
-    },
-    th: {
-      name: 'ไดรฟ์ชมพระอาทิตย์ตก & อาเปริติโว',
-      duration: '3 ชั่วโมง — ยามเย็น',
-      type: 'ทัวร์ยามเย็นสวยงาม',
-      location: 'ชายฝั่งทะเลสาบโคโม่',
-      summary: 'ช่วงเวลาที่สวยที่สุดของทะเลสาบโคโม่คือ golden hour — ขับรถริมทะเลสาบหยุดที่จุดชมวิวที่ดีที่สุด และ aperitivo ยามพระอาทิตย์ตกที่ Torno',
-      description: 'ไม่มีวิธีสิ้นสุดวันในโคโม่ที่ดีกว่าการดูพระอาทิตย์ตกดินหลังภูเขาจากระเบียงคาเฟ่ริมทะเลสาบ ประสบการณ์ยามเย็นสุดพิเศษนี้พาคุณตลอดชายฝั่งตะวันออกสู่หมู่บ้านบนเขา Brunate แล้วผ่อนคลายกับ aperitivo ในหมู่บ้านโบราณ Torno ขณะทะเลสาบเปลี่ยนเป็นสีทอง',
-      highlights: ['ขับรถฝั่งตะวันออก', 'หมู่บ้าน Brunate', 'วิว Golden Hour', 'หมู่บ้าน Torno', 'Aperitivo ยามพระอาทิตย์ตก', 'แสงสะท้อนทะเลสาบ'],
-      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'เครื่องดื่ม aperitivo ต้อนรับ', 'น้ำดื่ม', 'เวลายืดหยุ่น'],
-    }
-  },
-  {
-    id: 9,
-    image: 'pictures/Como Lago menaggio.jpg',
-    image2: 'pictures/como lago bellagio.jpg',
-    image3: 'pictures/orrido bellano.jpg',
-    badge: 'Day Trip',
-    en: {
-      name: 'Tremezzo & Villa Carlotta',
-      duration: 'Half Day — 5 hrs',
-      type: 'Villa & Botanical Garden',
-      location: 'Tremezzo, Lake Como',
-      summary: "Villa Carlotta houses the finest botanical garden on Lake Como — 70,000 plants, flaming azaleas in spring, and marble sculptures by Canova.",
-      description: "Villa Carlotta is a national treasure. Its terraced botanical garden bursts with colour year-round — azaleas and rhododendrons in spring, water lilies and ferns in summer, golden foliage in autumn. Inside, you'll find original marble sculptures by Canova and Thorvaldsen. Combined with a lakeside lunch in charming Tremezzo, this is a perfect half-day for garden and art lovers.",
-      highlights: ['Villa Carlotta Gardens', 'Canova Sculptures', 'Azalea Walk', 'Terraced Terraces', 'Tremezzo Village', 'Lakeside Lunch'],
-      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Villa Carlotta entry', 'Bottled water', 'Flexible itinerary'],
-    },
-    th: {
-      name: 'เทรเมซโซ & Villa Carlotta',
-      duration: 'ครึ่งวัน — 5 ชั่วโมง',
-      type: 'วิลล่าและสวนพฤกษศาสตร์',
-      location: 'เทรเมซโซ, ทะเลสาบโคโม่',
-      summary: 'Villa Carlotta มีสวนพฤกษศาสตร์ที่สวยที่สุดบนทะเลสาบโคโม่ — 70,000 ต้น อซาเลียสีสวยในฤดูใบไม้ผลิ และประติมากรรมหินอ่อนโดย Canova',
-      description: 'Villa Carlotta เป็นสมบัติของชาติ สวนพฤกษศาสตร์ขั้นบันไดงดงามตลอดปี — อซาเลียและโรโดเดนดรอนในฤดูใบไม้ผลิ บัวและเฟิร์นในฤดูร้อน ใบไม้ทองในฤดูใบไม้ร่วง ภายในมีประติมากรรมหินอ่อนต้นฉบับโดย Canova และ Thorvaldsen รวมกับอาหารกลางวันริมทะเลสาบในเทรเมซโซที่น่ารัก',
-      highlights: ['สวน Villa Carlotta', 'ประติมากรรม Canova', 'เส้นทางอซาเลีย', 'ระเบียงขั้นบันได', 'หมู่บ้านเทรเมซโซ', 'อาหารกลางวันริมทะเลสาบ'],
-      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้า Villa Carlotta', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
-    }
-  },
-  {
     id: 10,
     image: 'pictures/arena verona.jpg',
     image2: 'pictures/verona.jpg',
@@ -299,33 +164,6 @@ const trips = [
       description: 'เวโรนาถือเป็นหนึ่งในเมืองโรแมนติกที่สุดของอิตาลี เยี่ยมชมระเบียงอันโด่งดังของ Juliet เดินใน Arena โรมันที่ได้รับการอนุรักษ์อย่างสมบูรณ์ เดินเล่น Piazza dei Signori ยุคกลาง และสิ้นสุดวันด้วยไวน์และ cicchetti ที่ enoteca ริมแม่น้ำ Adige',
       highlights: ['ระเบียง Juliet', 'Arena โรมัน', 'Piazza dei Signori', 'ริมแม่น้ำ Adige', 'ขับรถชายฝั่ง Garda', 'Enoteca ยามเย็น'],
       includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้า Arena', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
-    }
-  },
-  {
-    id: 11,
-    image: 'pictures/como brunate.jpg',
-    image2: 'pictures/Como Lago menaggio.jpg',
-    image3: 'pictures/things-to-do-in-lake-como-in-october.jpg',
-    badge: 'Day Trip',
-    en: {
-      name: 'Ascona & Locarno, Switzerland',
-      duration: 'Full Day — 9 hrs',
-      type: 'Swiss Town Tour',
-      location: 'Ascona, Switzerland',
-      summary: "Switzerland's sunniest town — a Ticino gem with palm-lined piazzas, cobblestone alleys, and a lake shimmer that rivals the Cote d'Azur.",
-      description: "Ascona is the southernmost town in Switzerland and one of the most charming in all of Ticino. The palm-lined lakeside piazza feels more Mediterranean than Swiss, and the cobblestone alleys are filled with galleries and artisan shops. Nearby Locarno offers the Piazza Grande, Madonna del Sasso sanctuary above the lake, and a wonderfully relaxed Swiss Italian atmosphere. Bring your passport.",
-      highlights: ['Ascona Piazza', 'Lakeside Palm Walk', 'Locarno Old Town', 'Madonna del Sasso', 'Swiss Border Crossing', 'Artisan Alleys'],
-      includes: ['Pickup/dropoff in Como City', 'Private VW Multivan', 'English, Thai & Italian guide', 'Border crossing assistance', 'Bottled water', 'Flexible itinerary'],
-    },
-    th: {
-      name: 'อัสโกนา & โลคาร์โน, สวิตเซอร์แลนด์',
-      duration: 'เต็มวัน — 9 ชั่วโมง',
-      type: 'ทัวร์เมืองสวิส',
-      location: 'อัสโกนา, สวิตเซอร์แลนด์',
-      summary: 'เมืองที่มีแดดมากที่สุดในสวิตเซอร์แลนด์ — อัญมณีแห่ง Ticino พร้อมจัตุรัสปูด้วยต้นปาล์ม ตรอกหินกรวด และแสงสะท้อนทะเลสาบ',
-      description: 'อัสโกนาเป็นเมืองใต้สุดในสวิตเซอร์แลนด์และน่ารักที่สุดแห่งหนึ่งของ Ticino จัตุรัสริมทะเลสาบที่มีต้นปาล์มรู้สึกเหมือนเมดิเตอร์เรเนียนมากกว่าสวิส ตรอกหินกรวดเต็มไปด้วยแกลเลอรี่และร้านช่างฝีมือ ใกล้ๆ กัน Locarno เสนอ Piazza Grande สถานที่ศักดิ์สิทธิ์ Madonna del Sasso เหนือทะเลสาบ กรุณาพกพาสปอร์ต',
-      highlights: ['จัตุรัส Ascona', 'เดินริมทะเลสาบต้นปาล์ม', 'ย่านเก่า Locarno', 'Madonna del Sasso', 'ข้ามพรมแดนสวิส', 'ตรอกช่างฝีมือ'],
-      includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ช่วยเหลือการข้ามพรมแดน', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
     }
   }
 ];
@@ -448,7 +286,7 @@ function renderMosaic() {
 function renderDeals() {
   const el = document.getElementById('dealsRow');
   if (!el) return;
-  const picks = [0, 1, 6, 3];
+  const picks = [0, 2, 4, 5];
   el.innerHTML = picks.map(idx => {
     const trip = trips[idx];
     const info = t(trip);
@@ -493,7 +331,7 @@ function renderTrips() {
             <span>${info.type}</span>
           </div>
           <div class="trip-card-footer">
-            <span class="trip-price">Starting from €150 p.p.</span>
+            <span class="trip-price">${info.duration.includes('Half Day') ? (currentLang === 'th' ? 'เริ่มต้นที่ €499 ต่อคน' : 'Starting from €499 p.p.') : (currentLang === 'th' ? 'เริ่มต้นที่ €799 ต่อคน' : 'Starting from €799 p.p.')}</span>
             <button class="btn-enquire">Enquire</button>
           </div>
         </div>
@@ -536,6 +374,17 @@ function openModal(idx) {
   // Includes
   document.getElementById('modalIncludes').innerHTML =
     info.includes.map(i => `<li><i class="fa-solid fa-circle-check"></i> ${i}</li>`).join('');
+
+  // Price
+  const isHalfDay = info.duration.includes('Half Day');
+  const priceEl = overlay.querySelector('.modal-price');
+  if (priceEl) {
+    const enPrice = isHalfDay ? 'Starting from €499 p.p.' : 'Starting from €799 p.p.';
+    const thPrice = isHalfDay ? 'เริ่มต้นที่ €499 ต่อคน' : 'เริ่มต้นที่ €799 ต่อคน';
+    priceEl.dataset.en = enPrice;
+    priceEl.dataset.th = thPrice;
+    priceEl.textContent = currentLang === 'th' ? thPrice : enPrice;
+  }
 
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
