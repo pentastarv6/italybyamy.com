@@ -257,9 +257,9 @@ const trips = [
   },
   {
     id: 10,
-    image: 'pictures/como lago bellagio.jpg',
-    image2: 'pictures/things-to-do-in-lake-como-in-october.jpg',
-    image3: 'pictures/como brunate.jpg',
+    image: 'pictures/stresa1.jpeg',
+    image2: 'pictures/stresa2.jpg',
+    image3: 'pictures/stresa3.jpg',
     badge: 'Day Trip',
     en: {
       name: 'Stresa & the Borromean Islands',
