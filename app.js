@@ -80,7 +80,31 @@ const trips = [
       description: 'แค่ 45 นาทีจากโคโม่ ลูกาโนมีเสน่ห์สวิสผสมความหรูหราเมดิเตอร์เรเนียน เดินเล่นย่านเก่า เยี่ยมชมสวนริมทะเลสาบ จากนั้นนั่งกระเช้าขึ้น Monte San Salvatore เพื่อวิวพาโนรามา เพลิดเพลินอาหารกลางวันบนดาดฟ้า ช้อปปิ้งบน Via Nassa และกลับอิตาลีขณะพระอาทิตย์ตกย้อมเทือกเขาแอลป์ กรุณาพกพาสปอร์ต',
       highlights: ['Monte San Salvatore', 'ย่านเก่าลูกาโน', 'สวนริมทะเลสาบ', 'ข้ามพรมแดนสวิส', 'ช้อปปิ้ง Via Nassa', 'นั่งกระเช้า'],
       includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ช่วยเหลือการข้ามพรมแดน', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
-    }
+    },
+    itinerary: {
+      en: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'Pickup at your hotel in Como' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'Scenic drive to the Swiss border' },
+        { time: '',      icon: 'fa-solid fa-passport',         label: 'Cross into Switzerland' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'Explore Lugano Old Town' },
+        { time: '',      icon: 'fa-solid fa-tree',             label: 'Stroll the lakeside parks' },
+        { time: '',      icon: 'fa-solid fa-cable-car',        label: 'Funicular ride up Monte San Salvatore' },
+        { time: '',      icon: 'fa-solid fa-camera',           label: 'Panoramic views over the Alps & lake' },
+        { time: '',      icon: 'fa-solid fa-bag-shopping',     label: 'Browse Via Nassa boutiques' },
+        { time: '14:00', icon: 'fa-solid fa-hotel',           label: 'Return to your hotel in Como' },
+      ],
+      th: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'รับคณะที่โรงแรมในเมืองโคโม่' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'ขับรถชมวิวไปยังพรมแดนสวิส' },
+        { time: '',      icon: 'fa-solid fa-passport',         label: 'ข้ามเข้าสวิตเซอร์แลนด์' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'สำรวจย่านเก่าลูกาโน' },
+        { time: '',      icon: 'fa-solid fa-tree',             label: 'เดินเล่นในสวนริมทะเลสาบ' },
+        { time: '',      icon: 'fa-solid fa-cable-car',        label: 'นั่งกระเช้าขึ้น Monte San Salvatore' },
+        { time: '',      icon: 'fa-solid fa-camera',           label: 'ชมวิวพาโนรามาเทือกเขาแอลป์และทะเลสาบ' },
+        { time: '',      icon: 'fa-solid fa-bag-shopping',     label: 'เลือกซื้อของที่ Via Nassa' },
+        { time: '14:00', icon: 'fa-solid fa-hotel',           label: 'กลับโรงแรมในเมืองโคโม่' },
+      ],
+    },
   },
   {
     id: 4,
@@ -107,7 +131,31 @@ const trips = [
       description: 'แค่ 1 ชั่วโมงจากโคโม่ มิลานโดดเด่นในแบบของตัวเอง วันเริ่มต้นที่ Duomo โกธิกอันน่าทึ่ง ก่อนก้าวเข้าสู่ Galleria แวววาว เดินชม Quadrilatero della Moda ย่านแฟชั่นลักชัวรี่ ดื่ม aperitivo ริมคลองใน Navigli และสัมผัสพลังงานของเมืองคอสโมโพลิแทนที่สุดของอิตาลี',
       highlights: ['Duomo มิลาน', 'Galleria V.E. II', 'ย่านแฟชั่น', 'คลอง Navigli', 'ชั่วโมง Aperitivo', 'Castello Sforzesco'],
       includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'เดินชมย่าน Duomo', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
-    }
+    },
+    itinerary: {
+      en: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'Pickup at your hotel in Como' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'Scenic drive to Milan (1 hour)' },
+        { time: '',      icon: 'fa-solid fa-church',           label: 'Visit the Gothic Milan Duomo' },
+        { time: '',      icon: 'fa-solid fa-landmark',         label: 'Explore Galleria Vittorio Emanuele II' },
+        { time: '',      icon: 'fa-solid fa-bag-shopping',     label: 'Walk the Quadrilatero della Moda' },
+        { time: '',      icon: 'fa-solid fa-utensils',         label: 'Lunch in the city centre' },
+        { time: '',      icon: 'fa-solid fa-landmark',         label: 'Visit Castello Sforzesco' },
+        { time: '',      icon: 'fa-solid fa-wine-glass',       label: 'Aperitivo along the Navigli canals' },
+        { time: '18:00', icon: 'fa-solid fa-hotel',           label: 'Return to your hotel in Como' },
+      ],
+      th: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'รับคณะที่โรงแรมในเมืองโคโม่' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'ขับรถไปมิลาน (1 ชั่วโมง)' },
+        { time: '',      icon: 'fa-solid fa-church',           label: 'ชม Duomo โกธิกอันตระการตา' },
+        { time: '',      icon: 'fa-solid fa-landmark',         label: 'สำรวจ Galleria Vittorio Emanuele II' },
+        { time: '',      icon: 'fa-solid fa-bag-shopping',     label: 'เดินชม Quadrilatero della Moda' },
+        { time: '',      icon: 'fa-solid fa-utensils',         label: 'อาหารกลางวันในใจกลางเมือง' },
+        { time: '',      icon: 'fa-solid fa-landmark',         label: 'เยี่ยมชม Castello Sforzesco' },
+        { time: '',      icon: 'fa-solid fa-wine-glass',       label: 'Aperitivo ริมคลอง Navigli' },
+        { time: '18:00', icon: 'fa-solid fa-hotel',           label: 'กลับโรงแรมในเมืองโคโม่' },
+      ],
+    },
   },
   {
     id: 5,
@@ -134,7 +182,27 @@ const trips = [
       description: 'Villa del Balbianello ได้รับการยกย่องว่าเป็นสวนวิลล่าที่สวยที่สุดในโลก ตั้งอยู่บนแหลมที่มีต้นไม้ปกคลุม loggia อันสง่างามและระเบียงขั้นบันไดที่ถ่ายทำใน Casino Royale และ Star Wars ภาค 2 เราเดินทางมาด้วยเรือ จากนั้นชมสวนและห้องประวัติศาสตร์ก่อนรับประทานอาหารริมทะเลสาบที่ Lenno',
       highlights: ['สวน Balbianello', 'Loggia ริมทะเลสาบ', 'สถานที่ถ่ายทำบอนด์', 'หมู่บ้านเลนโน', 'ระเบียงพาโนรามา'],
       includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ค่าโดยสารเรือ', 'ตั๋วเข้าวิลล่า', 'น้ำดื่ม'],
-    }
+    },
+    itinerary: {
+      en: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'Pickup at your hotel in Como' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'Drive to Lenno village' },
+        { time: '',      icon: 'fa-solid fa-ship',             label: 'Boat transfer to Villa del Balbianello' },
+        { time: '',      icon: 'fa-solid fa-landmark',         label: "Tour the villa's historic rooms" },
+        { time: '',      icon: 'fa-solid fa-tree',             label: 'Explore the terraced gardens & loggias' },
+        { time: '',      icon: 'fa-solid fa-camera',           label: 'Panoramic views over Lake Como' },
+        { time: '14:00', icon: 'fa-solid fa-hotel',           label: 'Return to your hotel in Como' },
+      ],
+      th: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'รับคณะที่โรงแรมในเมืองโคโม่' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'ขับรถไปหมู่บ้านเลนโน' },
+        { time: '',      icon: 'fa-solid fa-ship',             label: 'นั่งเรือไปยัง Villa del Balbianello' },
+        { time: '',      icon: 'fa-solid fa-landmark',         label: 'ชมห้องประวัติศาสตร์ของวิลล่า' },
+        { time: '',      icon: 'fa-solid fa-tree',             label: 'สำรวจสวนขั้นบันไดและ loggia' },
+        { time: '',      icon: 'fa-solid fa-camera',           label: 'ชมวิวพาโนรามาทะเลสาบโคโม่' },
+        { time: '14:00', icon: 'fa-solid fa-hotel',           label: 'กลับโรงแรมในเมืองโคโม่' },
+      ],
+    },
   },
   {
     id: 6,
@@ -161,7 +229,31 @@ const trips = [
       description: 'แบร์กาโม อัลตา เป็นหนึ่งในความลับที่ยิ่งใหญ่ที่สุดของอิตาลีตอนเหนือ — เมืองบนเขา UNESCO ล้อมรอบด้วยกำแพงเวนิสศตวรรษที่ 16 นั่งกระเช้าสู่เมืองด้านบน เดินเล่น Piazza Vecchia ชม Cappella Colleoni รูปแปดเหลี่ยม และรับประทานอาหารที่ osteria ดั้งเดิม',
       highlights: ['กำแพงเมืองเวนิส', 'Piazza Vecchia', 'Cappella Colleoni', 'กระเช้าประวัติศาสตร์', 'วิวที่ราบลอมบาร์ด', 'อาหาร Trattoria'],
       includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วกระเช้า', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
-    }
+    },
+    itinerary: {
+      en: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'Pickup at your hotel in Como' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'Scenic drive to Bergamo (1 hour)' },
+        { time: '',      icon: 'fa-solid fa-cable-car',        label: 'Ride the historic funicular to Città Alta' },
+        { time: '',      icon: 'fa-solid fa-landmark',         label: 'Walk the 16th-century Venetian city walls' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'Explore Piazza Vecchia' },
+        { time: '',      icon: 'fa-solid fa-church',           label: 'Admire the octagonal Cappella Colleoni' },
+        { time: '',      icon: 'fa-solid fa-utensils',         label: 'Lunch at a traditional osteria' },
+        { time: '',      icon: 'fa-solid fa-camera',           label: 'Panoramic views over the Lombard plain' },
+        { time: '18:00', icon: 'fa-solid fa-hotel',           label: 'Return to your hotel in Como' },
+      ],
+      th: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'รับคณะที่โรงแรมในเมืองโคโม่' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'ขับรถชมวิวไปแบร์กาโม (1 ชั่วโมง)' },
+        { time: '',      icon: 'fa-solid fa-cable-car',        label: 'นั่งกระเช้าประวัติศาสตร์ขึ้น Città Alta' },
+        { time: '',      icon: 'fa-solid fa-landmark',         label: 'เดินชมกำแพงเวนิสศตวรรษที่ 16' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'สำรวจ Piazza Vecchia' },
+        { time: '',      icon: 'fa-solid fa-church',           label: 'ชม Cappella Colleoni รูปแปดเหลี่ยม' },
+        { time: '',      icon: 'fa-solid fa-utensils',         label: 'อาหารกลางวันที่ osteria ดั้งเดิม' },
+        { time: '',      icon: 'fa-solid fa-camera',           label: 'ชมวิวพาโนรามาที่ราบลอมบาร์ด' },
+        { time: '18:00', icon: 'fa-solid fa-hotel',           label: 'กลับโรงแรมในเมืองโคโม่' },
+      ],
+    },
   },
   {
     id: 10,
@@ -188,7 +280,31 @@ const trips = [
       description: 'เวโรนาถือเป็นหนึ่งในเมืองโรแมนติกที่สุดของอิตาลี เยี่ยมชมระเบียงอันโด่งดังของ Juliet เดินใน Arena โรมันที่ได้รับการอนุรักษ์อย่างสมบูรณ์ เดินเล่น Piazza dei Signori ยุคกลาง และสิ้นสุดวันด้วยไวน์และ cicchetti ที่ enoteca ริมแม่น้ำ Adige',
       highlights: ['ระเบียง Juliet', 'Arena โรมัน', 'Piazza dei Signori', 'ริมแม่น้ำ Adige', 'ขับรถชายฝั่ง Garda', 'Enoteca ยามเย็น'],
       includes: ['รับ-ส่งในเมืองโคโม่', 'รถ VW Multivan ส่วนตัว', 'ไกด์ภาษาอังกฤษ ไทย & อิตาลี', 'ตั๋วเข้า Arena', 'น้ำดื่ม', 'เส้นทางยืดหยุ่น'],
-    }
+    },
+    itinerary: {
+      en: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'Pickup at your hotel in Como' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'Scenic drive along Lake Garda' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'Arrive in Verona' },
+        { time: '',      icon: 'fa-solid fa-heart',            label: "Visit Juliet's famous balcony" },
+        { time: '',      icon: 'fa-solid fa-landmark',         label: 'Walk the perfectly preserved Roman Arena' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'Stroll Piazza dei Signori' },
+        { time: '',      icon: 'fa-solid fa-utensils',         label: 'Lunch in the historic centre' },
+        { time: '',      icon: 'fa-solid fa-wine-glass',       label: 'Wine & cicchetti at an Adige enoteca' },
+        { time: '18:00', icon: 'fa-solid fa-hotel',           label: 'Return to your hotel in Como' },
+      ],
+      th: [
+        { time: '09:00', icon: 'fa-solid fa-hotel',           label: 'รับคณะที่โรงแรมในเมืองโคโม่' },
+        { time: '',      icon: 'fa-solid fa-car',              label: 'ขับรถชมวิวตลอดแนวทะเลสาบการ์ดา' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'เดินทางถึงเวโรนา' },
+        { time: '',      icon: 'fa-solid fa-heart',            label: 'เยี่ยมชมระเบียงอันโด่งดังของ Juliet' },
+        { time: '',      icon: 'fa-solid fa-landmark',         label: 'เดินใน Arena โรมันที่ได้รับการอนุรักษ์' },
+        { time: '',      icon: 'fa-solid fa-map-location-dot', label: 'เดินเล่น Piazza dei Signori' },
+        { time: '',      icon: 'fa-solid fa-utensils',         label: 'อาหารกลางวันในย่านประวัติศาสตร์' },
+        { time: '',      icon: 'fa-solid fa-wine-glass',       label: 'ไวน์และ cicchetti ที่ enoteca ริมแม่น้ำ Adige' },
+        { time: '18:00', icon: 'fa-solid fa-hotel',           label: 'กลับโรงแรมในเมืองโคโม่' },
+      ],
+    },
   }
 ];
 
