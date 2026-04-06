@@ -52,6 +52,10 @@ h4{font-size:1rem;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:
 .section-inner{max-width:var(--max);margin:0 auto}
 .section-header{text-align:center;max-width:700px;margin:0 auto 2.8rem}
 .section-header p{color:var(--text-m);margin-top:.6rem;font-size:1rem}
+.pricing-notice{text-align:center;background:rgba(26,138,191,.08);border:1px solid rgba(26,138,191,.2);border-radius:var(--radius-s);padding:.75rem 1.5rem;margin-bottom:2.2rem;font-size:.92rem;color:var(--text)}
+.pricing-notice strong{color:var(--green)}
+.pricing-notice a{color:var(--green);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.pricing-notice a:hover{color:var(--green-d)}
 .section-eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--green);margin-bottom:.4rem;display:block;font-family:'Inter',sans-serif}
 
 /* =========================================================

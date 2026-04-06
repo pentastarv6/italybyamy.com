@@ -32,7 +32,7 @@
       </div>
     </a>
     <nav class="nav-links">
-      <a href="#top-offers" data-en="Day Trips" data-th="ทริปประจำวัน">Day Trips</a>
+      <a href="#all-trips" data-en="Day Trips" data-th="ทริปประจำวัน">Day Trips</a>
       <a href="#all-trips" data-en="All Experiences" data-th="ทริปทั้งหมด">All Experiences</a>
       <a href="#services" data-en="Transfers" data-th="รถรับส่ง">Transfers</a>
       <a href="#van" data-en="Our Vehicle" data-th="รถของเรา">Our Vehicle</a>
@@ -57,7 +57,7 @@
     <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#top-offers"  onclick="toggleMenu()" data-en="Day Trips"       data-th="ทริปประจำวัน">Day Trips</a>
+    <a href="#all-trips"  onclick="toggleMenu()" data-en="Day Trips"       data-th="ทริปประจำวัน">Day Trips</a>
     <a href="#all-trips"   onclick="toggleMenu()" data-en="All Experiences" data-th="ทริปทั้งหมด">All Experiences</a>
     <a href="#services"    onclick="toggleMenu()" data-en="Transfers"       data-th="รถรับส่ง">Transfers</a>
     <a href="#van"         onclick="toggleMenu()" data-en="Our Vehicle"     data-th="รถของเรา">Our Vehicle</a>
@@ -143,29 +143,6 @@
   </div>
 </section>
 
-<!-- ===== TOP OFFERS MOSAIC ===== -->
-<section class="section" id="top-offers">
-  <div class="section-inner">
-    <div class="section-header">
-      <p class="section-eyebrow" data-en="HAND-PICKED FAVOURITES" data-th="ทริปแนะนำ">HAND-PICKED FAVOURITES</p>
-      <h2 data-en="Explore Our Top Offers" data-th="สำรวจทริปแนะนำของเรา">Explore Our Top Offers</h2>
-      <p data-en="The most loved experiences on Lake Como, curated for private groups. All include hotel pickup &amp; return in our VW Multivan." data-th="ประสบการณ์ที่ได้รับความนิยมมากที่สุดบนทะเลสาบโคโม่ คัดสรรมาสำหรับกลุ่มส่วนตัว ทุกทริปรวมรับ-ส่งโรงแรมด้วยรถ VW Multivan">The most loved experiences on Lake Como, curated for private groups. All include hotel pickup &amp; return in our VW Multivan.</p>
-    </div>
-    <div class="mosaic-grid" id="mosaicGrid"><!-- injected by JS --></div>
-  </div>
-</section>
-
-<!-- ===== MOST POPULAR ===== -->
-<section class="section section-grey" id="popular">
-  <div class="section-inner">
-    <div class="section-header">
-      <p class="section-eyebrow" data-en="MOST POPULAR" data-th="ยอดนิยม">MOST POPULAR</p>
-      <h2 data-en="Most Popular Experiences" data-th="ประสบการณ์ยอดนิยม">Most Popular Experiences</h2>
-    </div>
-    <div class="deals-row" id="dealsRow"><!-- injected by JS --></div>
-  </div>
-</section>
-
 <!-- ===== ALL EXPERIENCES ===== -->
 <section class="section" id="all-trips">
   <div class="section-inner">
@@ -173,6 +150,9 @@
       <p class="section-eyebrow" data-en="AROUND COMO" data-th="รอบโคโม่">AROUND COMO</p>
       <h2 data-en="All Como Experiences" data-th="ทริปรอบโคโม่ทั้งหมด">All Como Experiences</h2>
       <p data-en="Choose your adventure — every trip departs from your accommodation in Como and returns you home at the end of the day." data-th="เลือกการผจญภัยของคุณ — ทุกทริปออกเดินทางจากที่พักของคุณในโคโม่และส่งคืนเมื่อสิ้นสุดวัน">Choose your adventure — every trip departs from your accommodation in Como and returns you home at the end of the day.</p>
+    </div>
+    <div class="pricing-notice">
+      <span>💡 <strong>Starting from €150 p.p.</strong> &nbsp;·&nbsp; Minimum 2 guests required &nbsp;·&nbsp; <a href="#contact">Contact us for custom group deals</a></span>
     </div>
     <div class="trips-grid" id="tripsGrid"><!-- injected by JS --></div>
   </div>
@@ -203,8 +183,8 @@
       </div>
       <div class="modal-booking">
         <div>
-          <p class="modal-price" data-en="💬 Contact us for a personalised quote" data-th="💬 ติดต่อเราเพื่อรับใบเสนอราคา">💬 Contact us for a personalised quote</p>
-          <p class="modal-price-sub" data-en="Private group · Up to 7 guests" data-th="กลุ่มส่วนตัว · สูงสุด 7 คน">Private group · Up to 7 guests</p>
+          <p class="modal-price" data-en="Starting from €150 p.p." data-th="เริ่มต้นที่ €150 ต่อคน">Starting from €150 p.p.</p>
+          <p class="modal-price-sub" data-en="Private group · Min. 2 guests · Up to 7 guests" data-th="กลุ่มส่วนตัว · อย่างน้อย 2 คน · สูงสุด 7 คน">Private group · Min. 2 guests · Up to 7 guests</p>
         </div>
         <a href="#contact" class="btn-book modal-cta" onclick="closeModal()" data-en="Request a Quote" data-th="ขอใบเสนอราคา">Request a Quote</a>
       </div>
@@ -397,7 +377,7 @@
       <!-- Col 2: Quick Links -->
       <div class="footer-col">
         <h4 data-en="Quick Links" data-th="ลิงก์ด่วน">Quick Links</h4>
-        <a href="#top-offers" data-en="Top Offers" data-th="ทริปแนะนำ">Top Offers</a>
+        <a href="#all-trips" data-en="All Experiences" data-th="ทริปทั้งหมด">All Experiences</a>
         <a href="#all-trips" data-en="All Experiences" data-th="ทริปทั้งหมด">All Experiences</a>
         <a href="#services" data-en="Transfers" data-th="รถรับส่ง">Transfers</a>
         <a href="#van" data-en="Our Vehicle" data-th="รถของเรา">Our Vehicle</a>
@@ -406,8 +386,8 @@
       <!-- Col 3: Services -->
       <div class="footer-col">
         <h4 data-en="Our Services" data-th="บริการของเรา">Our Services</h4>
-        <a href="#top-offers" data-en="Bellagio Day Trip" data-th="ทริปเบลลาจิโอ">Bellagio Day Trip</a>
-        <a href="#top-offers" data-en="Varenna Day Trip" data-th="ทริปวาเรนนา">Varenna Day Trip</a>
+        <a href="#all-trips" data-en="Bellagio Day Trip" data-th="ทริปเบลลาจิโอ">Bellagio Day Trip</a>
+        <a href="#all-trips" data-en="Varenna Day Trip" data-th="ทริปวาเรนนา">Varenna Day Trip</a>
         <a href="#services" data-en="Como → Milan Transfer" data-th="รถรับส่งโคโม่ → มิลาน">Como → Milan Transfer</a>
         <a href="#services" data-en="Airport Transfers" data-th="รถรับส่งสนามบิน">Airport Transfers</a>
         <a href="#services" data-en="Emergency Transfers" data-th="รถรับส่งฉุกเฉิน">Emergency Transfers</a>

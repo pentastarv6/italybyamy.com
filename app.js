@@ -493,7 +493,7 @@ function renderTrips() {
             <span>${info.type}</span>
           </div>
           <div class="trip-card-footer">
-            <span class="trip-price">Contact for quote</span>
+            <span class="trip-price">Starting from €150 p.p.</span>
             <button class="btn-enquire">Enquire</button>
           </div>
         </div>
