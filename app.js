@@ -412,8 +412,6 @@ function applyLanguage() {
   if (fLabel) fLabel.textContent = cfg.label;
 
   // Re-render cards so names are in the right language
-  renderMosaic();
-  renderDeals();
   renderTrips();
 }
 
@@ -579,8 +577,6 @@ function toggleMenu() {
 
 /* -- Init ------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
-  renderMosaic();
-  renderDeals();
   renderTrips();
   applyLanguage();
 });
