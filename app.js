@@ -347,16 +347,11 @@ const messengerConfig = {
 };
 
 /* -- Google Ads conversion tracking -------------------- */
-function trackContactClick(platform, url) {
+function trackContactClick(platform) {
   if (typeof gtag === 'function') {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-18068768532',
-      'event_callback': function() { window.open(url, '_blank', 'noopener'); }
-    });
-  } else {
-    window.open(url, '_blank', 'noopener');
+    gtag('event', 'conversion', { 'send_to': 'AW-18068768532' });
   }
-  return false;
+  // Return true so the href follows naturally — no popup-blocker issues
 }
 
 function setLang(lang) {
@@ -409,7 +404,7 @@ function applyLanguage() {
   const topbarIcon = document.getElementById('topbarChatIcon');
   if (topbarHref) {
     topbarHref.href  = cfg.href;
-    topbarHref.onclick = (function(href) { return function() { return trackContactClick(isEn ? 'WhatsApp' : 'LINE', href); }; })(cfg.href);
+    topbarHref.onclick = function() { trackContactClick(isEn ? 'WhatsApp' : 'LINE'); };
     topbarHref.title = cfg.label;
     topbarHref.classList.toggle('nav-wa',   isEn);
     topbarHref.classList.toggle('nav-line', !isEn);
@@ -423,7 +418,7 @@ function applyLanguage() {
   const cSub   = document.getElementById('contactSub');
   if (cHref) {
     cHref.href = cfg.href;
-    cHref.onclick = (function(href) { return function() { return trackContactClick(isEn ? 'WhatsApp' : 'LINE', href); }; })(cfg.href);
+    cHref.onclick = function() { trackContactClick(isEn ? 'WhatsApp' : 'LINE'); };
     cHref.classList.toggle('whatsapp-card', isEn);
     cHref.classList.toggle('line-card', !isEn);
   }
@@ -437,7 +432,7 @@ function applyLanguage() {
   const fLabel = document.getElementById('footerChatLabel');
   if (fHref) {
     fHref.href = cfg.href;
-    fHref.onclick = (function(href) { return function() { return trackContactClick(isEn ? 'WhatsApp' : 'LINE', href); }; })(cfg.href);
+    fHref.onclick = function() { trackContactClick(isEn ? 'WhatsApp' : 'LINE'); };
   }
   if (fIcon)  fIcon.className = cfg.iconClass;
   if (fLabel) fLabel.textContent = cfg.label;
