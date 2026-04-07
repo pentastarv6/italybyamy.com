@@ -62,7 +62,7 @@ const trips = [
     image: 'pictures/villa1.jpg',
     image2: 'pictures/villa2.jpg',
     image3: 'pictures/villa3.png',
-    badge: 'Half Day',
+    badge: 'Popular',
     rating: 4.7,
     reviewCount: 18,
     en: {
