@@ -503,11 +503,15 @@ function renderTrips() {
           <div class="trip-card-stars">${stars(5)} <span class="trip-rating-score">${trip.rating}</span></div>
           <div class="trip-meta">
             <span><i class="fa-regular fa-clock"></i> ${info.duration}</span>
+            <span>${currentLang === 'th' ? 'โคโม่' : 'Como'}</span>
             <span>${info.type}</span>
           </div>
           <div class="trip-card-footer">
-            <span class="trip-price">${trip.en.duration.includes('Half Day') ? (currentLang === 'th' ? 'เริ่มต้นที่ €499' : 'Starting from €499') : (currentLang === 'th' ? 'เริ่มต้นที่ €899' : 'Starting from €899')}</span>
-            <button class="btn-enquire">Enquire</button>
+            <div>
+              <span class="trip-price">${trip.en.duration.includes('Half Day') ? (currentLang === 'th' ? 'เริ่มต้นที่ €499' : 'Starting from €499') : (currentLang === 'th' ? 'เริ่มต้นที่ €899' : 'Starting from €899')}</span>
+              <p class="trip-price-sub">${currentLang === 'th' ? 'กลุ่มส่วนตัว · สูงสุด 5 ท่าน' : 'Private group · Up to 5 guests'}</p>
+            </div>
+            <button class="btn-enquire">${currentLang === 'th' ? 'สอบถาม' : 'Enquire'}</button>
           </div>
         </div>
       </div>`;
