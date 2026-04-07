@@ -519,7 +519,6 @@ function renderTrips() {
           <div class="trip-card-stars">${stars(5)} <span class="trip-rating-score">${trip.rating}</span></div>
           <div class="trip-meta">
             <span><i class="fa-regular fa-clock"></i> ${info.duration}</span>
-            <span>${currentLang === 'th' ? 'โคโม่' : 'Como'}</span>
             <span>${info.type}</span>
           </div>
           <div class="trip-card-footer">
