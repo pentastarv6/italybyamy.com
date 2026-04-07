@@ -523,10 +523,7 @@ function renderTrips() {
             <span>${info.type}</span>
           </div>
           <div class="trip-card-footer">
-            <div>
-              <span class="trip-price">${trip.en.duration.includes('Half Day') ? (currentLang === 'th' ? 'เริ่มต้นที่ €499' : 'Starting from €499') : (currentLang === 'th' ? 'เริ่มต้นที่ €899' : 'Starting from €899')}</span>
-              <p class="trip-price-sub">${currentLang === 'th' ? 'กลุ่มส่วนตัว · สูงสุด 5 ท่าน' : 'Private group · Up to 5 guests'}</p>
-            </div>
+            <span class="trip-price">${trip.en.duration.includes('Half Day') ? (currentLang === 'th' ? 'เริ่มต้นที่ €499' : 'Starting from €499') : (currentLang === 'th' ? 'เริ่มต้นที่ €899' : 'Starting from €899')}</span>
             <button class="btn-enquire">${currentLang === 'th' ? 'สอบถาม' : 'Enquire'}</button>
           </div>
         </div>
