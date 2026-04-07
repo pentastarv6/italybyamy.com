@@ -346,6 +346,19 @@ const messengerConfig = {
   }
 };
 
+/* -- Google Ads conversion tracking -------------------- */
+function trackContactClick(platform, url) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18068768532',
+      'event_callback': function() { window.open(url, '_blank', 'noopener'); }
+    });
+  } else {
+    window.open(url, '_blank', 'noopener');
+  }
+  return false;
+}
+
 function setLang(lang) {
   currentLang = lang;
   localStorage.setItem('italybyamy_lang', lang);
@@ -396,7 +409,7 @@ function applyLanguage() {
   const topbarIcon = document.getElementById('topbarChatIcon');
   if (topbarHref) {
     topbarHref.href  = cfg.href;
-    topbarHref.onclick = null;
+    topbarHref.onclick = (function(href) { return function() { return trackContactClick(isEn ? 'WhatsApp' : 'LINE', href); }; })(cfg.href);
     topbarHref.title = cfg.label;
     topbarHref.classList.toggle('nav-wa',   isEn);
     topbarHref.classList.toggle('nav-line', !isEn);
@@ -410,7 +423,7 @@ function applyLanguage() {
   const cSub   = document.getElementById('contactSub');
   if (cHref) {
     cHref.href = cfg.href;
-    cHref.onclick = null;
+    cHref.onclick = (function(href) { return function() { return trackContactClick(isEn ? 'WhatsApp' : 'LINE', href); }; })(cfg.href);
     cHref.classList.toggle('whatsapp-card', isEn);
     cHref.classList.toggle('line-card', !isEn);
   }
@@ -422,7 +435,10 @@ function applyLanguage() {
   const fHref  = document.getElementById('footerMessenger');
   const fIcon  = document.getElementById('footerChatIcon');
   const fLabel = document.getElementById('footerChatLabel');
-  if (fHref)  fHref.href = cfg.href;
+  if (fHref) {
+    fHref.href = cfg.href;
+    fHref.onclick = (function(href) { return function() { return trackContactClick(isEn ? 'WhatsApp' : 'LINE', href); }; })(cfg.href);
+  }
   if (fIcon)  fIcon.className = cfg.iconClass;
   if (fLabel) fLabel.textContent = cfg.label;
 
